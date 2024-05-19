@@ -1888,7 +1888,7 @@
            </td>
             <td>"Sitecore.Services.Token.Authorization.Timeout"</td><td>"20" </td></tr>
 
-            <!--
+            <tr><td>
                   Please use this value to pass API Key to Service.
                   Currently this can be passed through headers or as a query string.
                   Query string gets the priority if it is passed in both (Query string and headers).
@@ -1903,7 +1903,7 @@
            </td>
             <td>"Sitecore.Services.IsThrottleEnabled"</td><td>"false" </td></tr>
 
-            <!--
+           <tr><td>
                   Timeout in seconds during which the cached user name is valid.
                   The cache is used in Sitecore.Services.Infrastructure.Sitecore.Security.UserService.UserExists(string userName) method.
            </td>
@@ -2018,15 +2018,8 @@
 	   <tr><td>The URI of the IdentityServer provider.</td>
       <td>"FederatedAuthentication.IdentityServer.Authority"</td><td>"$(identityServerAuthority)" </td></tr>
 
-      <tr><td>The internal authority of SI Server. Leave it empty if it is the same as FederatedAuthentication.IdentityServer.Authority.
-           Example: http://sitecore.identity</td>
-      <!--<td>"FederatedAuthentication.IdentityServer.InternalAuthority"</td><td>"" </td></tr>-->
-
       <tr><td>The client identifier on the IdentityServer.</td>
       <td>"FederatedAuthentication.IdentityServer.ClientId"</td><td>"Sitecore" </td></tr>
-
-      <tr><td>Fill the FederatedAuthentication.IdentityServer.CallbackAuthority setting if you need another host to receive callbacks from IdentityServer. It is useful for reverse proxy configuration.</td>
-      <!--<td>"FederatedAuthentication.IdentityServer.CallbackAuthority"</td><td>"http://proxy" </td></tr>-->
 
       <tr><td>The client identifier for the Resource Owner Password flow on the IdentityServer.</td>
       <td>"FederatedAuthentication.IdentityServer.ResourceOwnerClientId"</td><td>"SitecorePassword" </td></tr>
@@ -2916,7 +2909,7 @@
         <tr><td>The regular expression used for url validation.</td>
         <td>"EXM.UrlValidationRegex"</td><td>"^(http|https){1}\:\/\/(([a-zA-Z0-9][a-zA-Z0-9\-]{0,61}[a-zA-Z0-9]?)\.)*([a-zA-Z0-9][A-Za-z0-9\-]{0,61}[A-Za-z0-9]?)(:\d{2,5})?(\/[a-zA-Z0-9][A-Za-z0-9\-]{0,61}[A-Za-z0-9]?)*(\/{1})?$" </td></tr>
 
-        <!--The host name that is used to download the message source when a message is being previewed and/or dispatched to recipients</td>
+        <tr><td>The host name that is used to download the message source when a message is being previewed and/or dispatched to recipients</td>
         <td>"EXM.RendererUrl"</td><td>"" </td></tr>
 
         <tr><td>The size of the message body cache.</td>
