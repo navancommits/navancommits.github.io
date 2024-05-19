@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script language="JavaScript">
 
-var oRows = document.getElementById('settings').getElementsByTagName('tr');
-var iRowCount = oRows.length;
-document.getElementById("count").innerHTML = 'No. of rows ' + iRowCount;
-
-</script>
 <title>Sitecore Settings List</title>
 <style>
 #settings {
@@ -4042,7 +4036,13 @@ document.getElementById("count").innerHTML = 'No. of rows ' + iRowCount;
       <td>"Pipelines.Profiling.MeasureCpuTime"</td><td>"false" </td></tr>
   
   </table>
+<script language="JavaScript">
 
+var oRows = document.getElementById('settings').getElementsByTagName('tr');
+var iRowCount = oRows.length;
+document.getElementById("count").innerHTML = 'No. of rows ' + iRowCount;
+
+</script>
 </body>
 </html>
 
