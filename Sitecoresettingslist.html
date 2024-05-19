@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script language="JavaScript">
+
+var oRows = document.getElementById('settings').getElementsByTagName('tr');
+var iRowCount = oRows.length;
+document.getElementById("count").innerHTML = 'No. of rows ' + iRowCount;
+
+</script>
 <title>Sitecore Settings List</title>
 <style>
 #settings {
@@ -39,6 +46,7 @@
 <body>
 
   <table  id="settings">
+  <p id="count"></p>
 	<tr><th>Description</th><th>Name</th><th>Default Value</th><tr>  
      <tr><td>ALIASES
             Turn the following setting on to use aliases
