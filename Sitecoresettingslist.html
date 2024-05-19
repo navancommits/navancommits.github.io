@@ -40,10 +40,7 @@
 
   <table  id="settings">
 	<tr><th>Description</th><th>Name</th><th>Default Value</th><tr>  
-    <tr id='settings2' colspan=3><th>Sitecore.config</th><tr>  
-    
-  
-  <tr><td>ALIASES
+     <tr><td>ALIASES
             Turn the following setting on to use aliases
     </td>
     <td>"AliasesActive"</td><td>"true"</td></tr>
@@ -415,7 +412,9 @@
             and color
     </td>
     <td>"DebugBorderColor"</td><td>"red"</td></tr>
-    <td>"DebugBorderTag"</td><td>"span"</td></tr>
+    <tr><td>DEBUG BORDERS
+            Control html tag used for debug borders (usually span or div)            
+    </td><td>"DebugBorderTag"</td><td>"span"</td></tr>
     <tr><td>DEBUG FOLDER
             Path to debug folder
             Can be site path (ex. /folder/...) or absolute (ex. c:\folder\...)
@@ -502,7 +501,7 @@
             For example, when processing a request for the URL http://site.com/parent/child.aspx, 
             Sitecore first checks for the existence of <webroot>/parent/site.config. 
             Syntax: The site.config files should contain the following XML markup:
-              <site reference="[name of the site definition from the web.config]"</td></tr>
+              site reference="[name of the site definition from the web.config]"
             Default value: false
     </td>
     <td>"EnableSiteConfigFiles"</td><td>"false"</td></tr>
@@ -578,9 +577,11 @@
             Default value on CD, Processing and Reporting servers: false.
   </td>
     <td>"ItemCloning.Enabled"</td><td>"false"</td></tr>
-    <td>"ItemCloning.Enabled" role:require="ContentManagement or XMCloud or Standalone">
-      <patch:attribute name="value">true</patch:attribute>
-    </setting>
+    <tr><td>ITEM CLONING ENABLED
+            Specifies whether the Item Cloning feature is enabled.
+            Default value on CM and Standalone servers: true.</td><td>"ItemCloning.Enabled">
+     <td>true</td>
+    </tr>
     <tr><td>ITEM CLONING NON INHERITED FIELDS
             Specifies a pipe-separated list of field names or field IDs which should be not be inherited by clones from their source item,
             in addition to the following fields from the standard template that are never be inherited: 
@@ -1777,11 +1778,11 @@
      </td>
       <td>"Speak.GobalLogo.LaunchPadId"</td><td>"{6B846FBD-8549-4C91-AE6B-18286EFE82D2}" </td></tr>
 	  
-	  <td>"GraphQL.Subscription.Enabled"</td><td>"true" </td></tr>
+	  <tr><td>"GraphQL.Subscription.Enabled"</td><td>"GraphQL.Subscription.Enabled"</td><td>"true" </td></tr>
 
-      <td>"GraphQL.Subscription.MaxActiveConnectionsLimit"</td><td>"300" </td></tr>
+      <tr><td>"GraphQL.Subscription.MaxActiveConnectionsLimit"</td><td>"GraphQL.Subscription.MaxActiveConnectionsLimit"</td><td>"300" </td></tr>
 	  
-	  <td>"GraphQL.AllowGetRequests"</td><td>"true" </td></tr>
+	  <tr><td>"GraphQL.AllowGetRequests"</td><td>"GraphQL.AllowGetRequests"</td><td>"true" </td></tr>
 
       <tr><td>  GRAPHQL - ALLOW INTROSPECTION QUERIES
                   Controls whether an introspection information can be requested.
@@ -1789,7 +1790,7 @@
                   Default value: true
      </td>
       <td>"GraphQL.AllowIntrospectionQueries"</td><td>"true" </td></tr>
-
+<tr><td>"GraphQL.Enabled"</td>
       <td>"GraphQL.Enabled"</td><td>"true" </td></tr>
 
       <tr><td>  GRAPHQL - EXPOSE PLAYGROUND
