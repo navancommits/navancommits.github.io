@@ -40,13 +40,13 @@
 </head>
 <body>
 
-<table width=100%  id="settings">
+<table width=100% >
 <h2 align=center>Sitecore Pipeline Processor list</h2>
 <tr><td><label id="count"></label></td><td align=right>v10.4.0 / xp0</td></tr>
 </table>
   <table  id="settings">
   
-<tr><td>S.No.</td><td>Pipeline</td><td>Processor</td><td>Type</td><td>Method</td>
+<tr><th>S.No.</th><th>Pipeline</th><th>Processor</th><th>Type</th><th>Method</th></tr>
 <tr><td>1</td><td>initialize</td><td>ShowVersion</td><td>"Sitecore.Pipelines.Loader.ShowVersion, Sitecore.Kernel"</td><td></td></tr>
 <tr><td>2</td><td>initialize</td><td>SetGlobals</td><td>"Sitecore.Pipelines.Loader.SetGlobals, Sitecore.Kernel" </td><td></td></tr>
 <tr><td>3</td><td>initialize</td><td>LoadHooks</td><td>"Sitecore.Pipelines.Loader.LoadHooks, Sitecore.Kernel" </td><td></td></tr>
@@ -1702,7 +1702,7 @@
 
 var oRows = document.getElementById('settings').getElementsByTagName('tr');
 var iRowCount = oRows.length;
-document.getElementById("count").innerHTML = 'No. of rows ' + iRowCount-1;
+document.getElementById("count").innerHTML = 'No. of rows ' + iRowCount;
 
 </script>
 </body>
