@@ -152,511 +152,520 @@
 <tr><td>103</td><td>uiReturnFieldEditorValues</td><td>Sitecore.config</td><td></td></tr>
 <tr><td>104</td><td>uiUpload</td><td>Sitecore.config</td><td></td></tr>
 <tr><td>105</td><td>pageextenders</td><td>Sitecore.config</td><td> PAGE EXTENDERS Page Extenders allows additional controls to be added to every page. The Debugger, Preview and WebEdit are examples of this. </td></tr>
-<tr><td>106</td><td>buckets.resolveUIDocumentMapperFactoryRules</td><td>Sitecore.Buckets.config</td><td> RESOLVE UI DOCUMENT MAPPER FACTORY RULES PIPELINE This pipeline is executed when you use the search UI. The default processor overrides the document mapper rules to ensure that the search results are instantiated as SitecoreUISearchResultItem objects. This is necessary for the default search views to display search results correctly. </td></tr>
-<tr><td>107</td><td>buckets.addSearchTabToItem</td><td>Sitecore.Buckets.config</td><td> ADD SEARCH TAB PIPELINE Pipeline for adding search tabs to items. Arguments : (Item) The item to add a search tab to. (bool) Whether the tab was added or not. </td></tr>
-<tr><td>108</td><td>buckets.cloneItemIntoBucket</td><td>Sitecore.Buckets.config</td><td> CLONE ITEM INTO BUCKET PIPELINE Pipeline for cloning items into an item bucket. Arguments : (Item) Source, (Item) Target, (bool) Whether or not cloning was successful, (bool) Deep check. </td></tr>
-<tr><td>109</td><td>buckets.copyItemIntoBucket</td><td>Sitecore.Buckets.config</td><td> COPY ITEM INTO BUCKET PIPELINE Pipeline for copying items into an item bucket. Arguments : (Item) The item to add a search tab to. (bool) Whether the tab was added or not. </td></tr>
-<tr><td>110</td><td>buckets.createBucket</td><td>Sitecore.Buckets.config</td><td> CREATE BUCKET PIPELINE Pipeline for creating an item bucket. Arguments : (Item) Bucket Item, (Action<Item) CallBack, (bool) Whether the item bucket was created or not. </td></tr>
-<tr><td>111</td><td>buckets.getFacets</td><td>Sitecore.Buckets.config</td><td> FETCH FACET PIPELINE Pipeline for getting facets (grouping and categorization of search results) from a search. Arguments : (Item) The item to add a search tab to. (bool) Whether the tab was added or not. </td></tr>
-<tr><td>112</td><td>buckets.isBucket</td><td>Sitecore.Buckets.config</td><td> IS ITEM A BUCKET PIPELINE Pipeline for determining whether or not an item is an item bucket. Arguments : (Item) The item to add a search tab to. (bool) Whether the tab was added or not. </td></tr>
-<tr><td>113</td><td>buckets.isItemContainedWithinBucket</td><td>Sitecore.Buckets.config</td><td> ITEM IN BUCKET CHECK PIPELINE Pipeline for checking whether or not an item is contained within an item bucket. Arguments : (Item) The item to add a search tab to. (bool) Whether the tab was added or not. </td></tr>
-<tr><td>114</td><td>buckets.isTemplateBucketable</td><td>Sitecore.Buckets.config</td><td> TEMPLATE BUCKETABLE PIPELINE Pipeline for determining whether or not an item is "bucketable". Arguments : (Item) The item to add a search tab to. (bool) Whether the tab was added or not. </td></tr>
-<tr><td>115</td><td>buckets.moveItemIntoBucket</td><td>Sitecore.Buckets.config</td><td> MOVE ITEM INTO BUCKET PIPELINE Pipeline for moving items into or out of an item bucket. This pipeline also makes sure that the item being moved is "bucketable". If it is bucketable, it is automatically bucketed after it has been moved. Arguments : (Item) The item being moved. (bool) Whether the item was moved successfully or not. </td></tr>
-<tr><td>116</td><td>buckets.removeBucket</td><td>Sitecore.Buckets.config</td><td> UNBUCKETING PROCESS PIPELINE Pipeline for converting an item bucket into a content item. Arguments : (Item) The item bucket being converted into an ordinary content item. (bool) Whether the conversion was successful or not. </td></tr>
-<tr><td>117</td><td>buckets.syncBucket</td><td>Sitecore.Buckets.config</td><td> BUCKET SYNCING PIPELINE Pipeline for syncing an item bucket. This updates an item bucket after changing the bucketable value of templates, or if the bucketing process was interrupted and needs to be resumed. Arguments : (Item) The item bucket being synced. (bool) Whether the item bucket was synced successfully or not. </td></tr>
-<tr><td>118</td><td>buckets.dialogSearchFilters</td><td>Sitecore.Buckets.config</td><td> SEARCH DIALOG GLOBAL FILTERS PIPELINE Pipeline for adding default search filters to built-in Sitecore dialog boxes that use the search tab, for example, the Insert From Template dialog box. This allows you to set default locations to search in, default templates to filter on, etc. </td></tr>
-<tr><td>119</td><td>buckets.expandIdBasedSearchFilters</td><td>Sitecore.Buckets.config</td><td> EXPAND ID-BASED SEARCH FILTERS Sitecore executes this pipeline for search filters when their Client Side Hook is set to "id". To display a user-friendly item name in the UI, the ExpandIds processor replaces "<ID" with "<Item Display Name|<ID" in these search filters. </td></tr>
-<tr><td>120</td><td>buckets.fillItem</td><td>Sitecore.Buckets.config</td><td> SEARCH RESULT DISPLAY PIPELINE Pipeline for dynamically setting the SearchResultItem properties </td></tr>
-<tr><td>121</td><td>getContentEditorWarnings</td><td>Sitecore.Buckets.config</td><td> EXTENDED GETCONTENTEDITORWARNINGS PIPELINE This allows for warnings related to item buckets </td></tr>
-<tr><td>122</td><td>getDatasourceExamples</td><td>Sitecore.Buckets.config</td><td> This allows the pipeline to return examples of the items that are returned by search-based datasources. </td></tr>
-<tr><td>123</td><td>getLookupSourceItems</td><td>Sitecore.Buckets.config</td><td> EXTENDED TEMPLATE FIELD SOURCE RESOLVERS This allows the custom Template Field sources to be resolved. </td></tr>
-<tr><td>124</td><td>buckets.dynamicFields</td><td>Sitecore.Buckets.config</td><td> DYNAMIC UI SEARCH FIELD PIPELINE Pipeline to Inject Dynamic Values into the SitecoreItem object. Useful for content authoring and delivery environment </td></tr>
-<tr><td>125</td><td>getQueryState</td><td>Sitecore.Buckets.config</td><td></td></tr>
-<tr><td>126</td><td>publish</td><td>Sitecore.Buckets.config</td><td></td></tr>
-<tr><td>127</td><td>publishItem</td><td>Sitecore.Buckets.config</td><td></td></tr>
-<tr><td>128</td><td>renderField</td><td>Sitecore.Buckets.config</td><td></td></tr>
-<tr><td>129</td><td>getRenderingDatasource</td><td>Sitecore.Buckets.config</td><td></td></tr>
-<tr><td>130</td><td>uiBucketItems</td><td>Sitecore.Buckets.config</td><td> ITEM BUCKET PIPELINES Pipeline for creating an item bucket from the UI. </td></tr>
-<tr><td>131</td><td>uiUnBucketItems</td><td>Sitecore.Buckets.config</td><td></td></tr>
-<tr><td>132</td><td>uiCloneItems</td><td>Sitecore.Buckets.config</td><td></td></tr>
-<tr><td>133</td><td>uiDragItemTo</td><td>Sitecore.Buckets.config</td><td></td></tr>
-<tr><td>134</td><td>uiCopyItems</td><td>Sitecore.Buckets.config</td><td></td></tr>
-<tr><td>135</td><td>uiMoveItems</td><td>Sitecore.Buckets.config</td><td></td></tr>
-<tr><td>136</td><td>uiDuplicateItem</td><td>Sitecore.Buckets.config</td><td></td></tr>
-<tr><td>137</td><td>uiDeleteItems</td><td>Sitecore.Buckets.config</td><td></td></tr>
-<tr><td>138</td><td>speak.client.resolveScript</td><td>Sitecore.Marketing.Campaigns.Client.config</td><td> Configure JavaScript sources for Campaign Creator </td></tr>
-<tr><td>139</td><td>initialize</td><td>Sitecore.Diagnostics.config</td><td></td></tr>
-<tr><td>140</td><td>healthMonitor</td><td>Sitecore.Diagnostics.config</td><td></td></tr>
-<tr><td>141</td><td>initialize</td><td>Sitecore.Eventing.config</td><td></td></tr>
-<tr><td>142</td><td>initialize</td><td>Sitecore.JSNLog.config</td><td></td></tr>
-<tr><td>143</td><td>getFieldValue</td><td>Sitecore.LanguageFallback.config</td><td>  Extending the getFieldValue pipeline allows to enable the field based language fallback functionality </td></tr>
-<tr><td>144</td><td>getItem</td><td>Sitecore.LanguageFallback.config</td><td></td></tr>
-<tr><td>145</td><td>getVersions</td><td>Sitecore.LanguageFallback.config</td><td></td></tr>
-<tr><td>146</td><td>renderField</td><td>Sitecore.Media.RequestProtection.config</td><td></td></tr>
-<tr><td>147</td><td>saveItem</td><td>Sitecore.PipelineBased.ItemProvider.config</td><td> "Processors should derive from Sitecore.Pipelines.ItemProvider.SaveItem.SaveItemProcessor."</td></tr>
-<tr><td>148</td><td>copyItem</td><td>Sitecore.PipelineBased.ItemProvider.config</td><td> "Processors should derive from Sitecore.Pipelines.ItemProvider.CopyItem.CopyItemProcessor."</td></tr>
-<tr><td>149</td><td>httpRequestBegin</td><td>Sitecore.ThumbnailGenerator.config</td><td></td></tr>
-<tr><td>150</td><td>initialize</td><td>Sitecore.Webhooks.config</td><td></td></tr>
-<tr><td>151</td><td>getContentEditorWarnings</td><td>Sitecore.Webhooks.config</td><td></td></tr>
-<tr><td>152</td><td>contentSearch.stripQueryStringParameters</td><td>Sitecore.ContentSearch.config</td><td> SEARCH PIPELINES </td></tr>
-<tr><td>153</td><td>contentSearch.getContextIndex</td><td>Sitecore.ContentSearch.config</td><td> CONTENT SEARCH GET CONTEXT INDEX This pipeline retrieves the index that should be queried based on the context item or the location that the search was initiated from. Arguments    : (Item) The item used to determine the context index. Example Usage: If you need some custom logic to determine which index should be queried and written to based on the context item, you can create it here. For example, if the context item contains a field that links to another item that determines the context index. </td></tr>
-<tr><td>154</td><td>contentSearch.getGlobalSearchFilters</td><td>Sitecore.ContentSearch.config</td><td> CONTENT SEARCH GET GLOBAL SEARCH FILTERS This pipeline sets the global search filters for every query that is run through the UI. Example: You don't want anyone to be able to globally search for a particular template. Arguments    : (IQueryable) An open session to the index. Example Usage: If you want every query that goes through the UI to use a filter, such as Security, or Templates, place this filter here. Best Practice: The Filter predicate is a good replacement for the Where predicate, when the predicate in the Where statement is repeated in a lot of your code. For example, if you find that your code is always putting the same Where predicate in all your LINQ statements, the Filter predicate is a good replacement. When you build your predicates for IQueryable, use the Filter predicate instead of e.g. the Where predicate. The Filter predicate caches itself in memory and the Search Provider does not have to keep re-running this part of the query. This results in search queries that consistently take the same time to run. </td></tr>
-<tr><td>155</td><td>contentSearch.getGlobalLinqFilters</td><td>Sitecore.ContentSearch.config</td><td> GET GLOBAL LINQ FILTERS This pipeline allows you to apply global search filters to every query that is executed through the Linq layer or the search UI. For example, this pipeline could be used to apply a filter that globally limits search results based on security or templates. Arguments: (object) Query, (Type) QueryElementType, (List<IExecutionContext) ExecutionContext </td></tr>
-<tr><td>156</td><td>contentSearch.getFacets</td><td>Sitecore.ContentSearch.config</td><td> CONTENT SEARCH GET FACETS This pipeline pre-processes facets. Arguments : (IDictionary<string, ICollection<KeyValuePair<string, int) Facet values </td></tr>
-<tr><td>157</td><td>contentSearch.processFacets</td><td>Sitecore.ContentSearch.config</td><td> CONTENT SEARCH PROCESS FACETS This pipeline post processes facets. Arguments : (IDictionary<string, ICollection<KeyValuePair<string, int) Facet values </td></tr>
-<tr><td>158</td><td>contentSearch.queryWarmup</td><td>Sitecore.ContentSearch.config</td><td> CONTENT SEARCH QUERY WARMUP This pipeline runs search queries that warm up the index caches when Sitecore is initialized. Only enable this in a production environment. Arguments : (IQueryable) Open session to the search index. </td></tr>
-<tr><td>159</td><td>contentSearch.translateQuery</td><td>Sitecore.ContentSearch.config</td><td> CONTENT SEARCH TRANSLATE QUERY This pipeline takes a search query and manipulates the search terms before passing it to the Linq layer. Example usage: When the Solr search provider runs date searches, it must use a different format than Lucene. If other providers are integrated, this gives the ability to modify field names, values, and boolean operations before translation to the Linq layer. </td></tr>
-<tr><td>160</td><td>contentSearch.cleanUp</td><td>Sitecore.ContentSearch.config</td><td> CONTENT SEARCH - CLEAN UP This pipeline allows you to modify the data of an IIndexable before the document builder processes it. For example, you can use this pipeline to de-duplicate, merge, or override data. Arguments : (IIndexable) The document being indexed, (IProviderUpdateContext) The open update context for the index, (bool) A flag that indicates if the IIndexable was modified during the process </td></tr>
-<tr><td>161</td><td>getQueryState</td><td>Sitecore.ContentSearch.config</td><td></td></tr>
-<tr><td>162</td><td>indexing.filterIndex.inbound</td><td>Sitecore.ContentSearch.config</td><td> INDEX INTBOUND FILTER This pipeline filters out items so that they are not added to a search index. By default this pipeline does not filter out any items. </td></tr>
-<tr><td>163</td><td>indexing.getDependencies</td><td>Sitecore.ContentSearch.config</td><td> INDEXING GET DEPENDENCIES This pipeline fetches dependant items when one item is being index. Useful for fetching related or connected items that also need to be updated in the indexes. Arguments: (IQueryable) Open session to the search index, (Item) The item being indexed. Examples: Update clone references. Update the data sources that are used in the presentation components for the item being indexed.  "Processors should derive from Sitecore.ContentSearch.Pipelines.GetDependencies.BaseProcessor"</td></tr>
-<tr><td>164</td><td>indexing.getChildrenToIndex</td><td>Sitecore.ContentSearch.config</td><td> GET CHILDREN TO INDEX Pipeline to allow for overriding the getting of children of an item for indexing. Arguments: (IIndexable) The document being indexed, (ISearchIndex) The search index. Examples: Do not allow for indexing children of a certain template type  "Processors should derive from Sitecore.ContentSearch.Pipelines.GetChildrenToIndex.GetChildrenToIndexProcessor"</td></tr>
-<tr><td>165</td><td>indexing.resolveFieldBoost</td><td>Sitecore.ContentSearch.config</td><td> RESOLVE FIELD LEVEL BOOSTING Pipeline for resolving boosting rules on fields. Arguments: (Item) Item being indexed Example : Boost search results by a field value.  "Processors should derive from Sitecore.ContentSearch.Pipelines.ResolveBoost.ResolveFieldBoost.BaseResolveFieldBoostPipelineProcessor"</td></tr>
-<tr><td>166</td><td>indexing.resolveItemBoost</td><td>Sitecore.ContentSearch.config</td><td> RESOLVE ITEM LEVEL BOOSTING Pipeline for resolving boosting rules on items. Arguments: (Item) Item being indexed Example : Boost search results by a Item Template.  "Processors should derive from Sitecore.ContentSearch.Pipelines.ResolveBoost.ResolveItemBoost.BaseResolveItemBoostPipelineProcessor"</td></tr>
-<tr><td>167</td><td>parseDataSource</td><td>Sitecore.ContentSearch.config</td><td></td></tr>
-<tr><td>168</td><td>search</td><td>Sitecore.ContentSearch.config</td><td></td></tr>
-<tr><td>169</td><td>initialize</td><td>Sitecore.ContentSearch.Solr.DefaultIndexConfiguration.config</td><td></td></tr>
-<tr><td>170</td><td>contentSearch.translateQuery</td><td>Sitecore.ContentSearch.Solr.DefaultIndexConfiguration.config</td><td></td></tr>
-<tr><td>171</td><td>contentSearch.formatQueryFieldValue</td><td>Sitecore.ContentSearch.Solr.DefaultIndexConfiguration.config</td><td> The 'contentSearch.formatQueryFieldValue' pipeline has been obsoleted. It will be removed in a future release. </td></tr>
-<tr><td>172</td><td>contentSearch.PopulateSolrSchema</td><td>Sitecore.ContentSearch.Solr.DefaultIndexConfiguration.config</td><td></td></tr>
-<tr><td>173</td><td>getTaggingConfiguration</td><td>Sitecore.ContentTagging.config</td><td></td></tr>
-<tr><td>174</td><td>tagContent</td><td>Sitecore.ContentTagging.config</td><td></td></tr>
-<tr><td>175</td><td>normalizeContent</td><td>Sitecore.ContentTagging.config</td><td></td></tr>
-<tr><td>176</td><td>tagContent</td><td>Sitecore.ContentTagging.OpenCalais.config</td><td></td></tr>
-<tr><td>177</td><td>renderRulePlaceholder.afterAction</td><td>Sitecore.ContentTesting.Client.RulePerformance.config</td><td></td></tr>
-<tr><td>178</td><td>addPersonalizationVariables</td><td>Sitecore.ContentTesting.config</td><td> ADD PERSONALIZATION VARIABLES Loads and filters the personalization test variables in the test set </td></tr>
-<tr><td>179</td><td>AddSuggestedPersonalizations</td><td>Sitecore.ContentTesting.config</td><td> ADD SUGGESTED PERSONALIZATION Apply suggested personalization to item </td></tr>
-<tr><td>180</td><td>calculateTestScore</td><td>Sitecore.ContentTesting.config</td><td> CALCULATE TEST SCORE Calculates the score for the test </td></tr>
-<tr><td>181</td><td>canCancelTest</td><td>Sitecore.ContentTesting.config</td><td> CAN CANCEL TEST Determine if a test can be cancelled </td></tr>
-<tr><td>182</td><td>cancelTest</td><td>Sitecore.ContentTesting.config</td><td> CANCEL TEST Cancels a test and reverts test candidates back to their original state </td></tr>
-<tr><td>183</td><td>canStopTest</td><td>Sitecore.ContentTesting.config</td><td> CAN STOP TEST Determine if a test can be stopped </td></tr>
-<tr><td>184</td><td>determineTestExposure</td><td>Sitecore.ContentTesting.config</td><td> DETERMINE TEST EXPOSURE Determine if a user should be exposed to a test </td></tr>
-<tr><td>185</td><td>generateVariantDescription</td><td>Sitecore.ContentTesting.config</td><td> GENERATE VARIANT DESCRIPTION Generate a user friendly description for the variant in the experience. </td></tr>
-<tr><td>186</td><td>getChromeData</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
-<tr><td>187</td><td>getContentEditorWarnings</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
-<tr><td>188</td><td>getCurrentTestCombination</td><td>Sitecore.ContentTesting.config</td><td> GET CURRENT TEST COMBINATION Returns a test combination to expose to the current visitor. </td></tr>
-<tr><td>189</td><td>getDatasourceWarningsForTest</td><td>Sitecore.ContentTesting.config</td><td> GET DATASOURCE WARNINGS FOR TEST Inspect an item being used as a datsource in a test and raise issues that could prevent it from acting within the test </td></tr>
-<tr><td>190</td><td>getItemWarningsForTest</td><td>Sitecore.ContentTesting.config</td><td> GET ITEM WARNINGS FOR TEST Inspect an item being added to a page version test and raise issues that could prevent it from acting within the test </td></tr>
-<tr><td>191</td><td>getNonVersionedTestCandidates</td><td>Sitecore.ContentTesting.config</td><td> GET VERSIONED TEST CANDIDATES Inspect an item without workflow and identify test candidates for it </td></tr>
-<tr><td>192</td><td>getRenderingRules</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
-<tr><td>193</td><td>getScreenshot</td><td>Sitecore.ContentTesting.config</td><td> GET SCEENSHOT Generate and scale screenshots </td></tr>
-<tr><td>194</td><td>getScreenShotForURL</td><td>Sitecore.ContentTesting.config</td><td> GET SCREEN SHOT FOR URL Generate a screenshot for a page </td></tr>
-<tr><td>195</td><td>getTests</td><td>Sitecore.ContentTesting.config</td><td> GET TESTS Inspect an item and identify all tests for it </td></tr>
-<tr><td>196</td><td>getTestCandidateVariantDescription</td><td>Sitecore.ContentTesting.config</td><td> GET TEST CANDIDATE VARIANT DESCRIPTION Generate a user friendly description for a test candidate variant </td></tr>
-<tr><td>197</td><td>getTestObjectives</td><td>Sitecore.ContentTesting.config</td><td> GET TEST OBJECTIVES Locate options to list as objectives of a test </td></tr>
-<tr><td>198</td><td>getTestToRun</td><td>Sitecore.ContentTesting.config</td><td> GET TEST TO RUN Inspect an item for a test to run </td></tr>
-<tr><td>199</td><td>getVersionedTestCandidates</td><td>Sitecore.ContentTesting.config</td><td> GET VERSIONED TEST CANDIDATES Inspect an item with workflow and identify test candidates for it </td></tr>
-<tr><td>200</td><td>httpRequestBegin</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
-<tr><td>201</td><td>initialize</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
-<tr><td>202</td><td>insertRenderings</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
-<tr><td>203</td><td>publishVersion</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
-<tr><td>204</td><td>renderDeviceEditorRendering</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
-<tr><td>205</td><td>renderField</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
-<tr><td>206</td><td>renderLayout</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
-<tr><td>207</td><td>renderLayoutGridRendering</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
-<tr><td>208</td><td>renderingRuleEvaluated</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
-<tr><td>209</td><td>parseDataSource</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
-<tr><td>210</td><td>revertContent</td><td>Sitecore.ContentTesting.config</td><td> REVERT CONTENT Remove a test from an item and revert content to its original state </td></tr>
-<tr><td>211</td><td>saveTestOutcome</td><td>Sitecore.ContentTesting.config</td><td> SAVE TEST OUTCOME Process and save outcome data of the test </td></tr>
-<tr><td>212</td><td>sessionEnd</td><td>Sitecore.ContentTesting.config</td><td> SESSIOND END Performs cleanup on session end </td></tr>
-<tr><td>213</td><td>speak.client.initialize.layout</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
-<tr><td>214</td><td>startPageTest</td><td>Sitecore.ContentTesting.config</td><td> START PAGE TEST Starts the page test </td></tr>
-<tr><td>215</td><td>startTest</td><td>Sitecore.ContentTesting.config</td><td> START TEST Starts a test </td></tr>
-<tr><td>216</td><td>stopTest</td><td>Sitecore.ContentTesting.config</td><td> STOP TEST Stops the test </td></tr>
-<tr><td>217</td><td>suggestTests</td><td>Sitecore.ContentTesting.config</td><td> SUGGEST TESTS Inspect an item and suggest tests which may be run against it </td></tr>
-<tr><td>218</td><td>suspendTest</td><td>Sitecore.ContentTesting.config</td><td> SUSPEND TEST Suspend the test. </td></tr>
-<tr><td>219</td><td>registerMLWorkers</td><td>Sitecore.ContentTesting.config</td><td> REGISTER MACHINE LEARNING WORKERS Register Machine Learning Workers into Processing Engine. </td></tr>
-<tr><td>220</td><td>validateModelTrainingRequirements</td><td>Sitecore.ContentTesting.config</td><td> VALIDATE MODEL TRAINING REQUIREMENTS Validates whether the test fulfills the requirements to start machine learning model training. </td></tr>
-<tr><td>221</td><td>validateDataSourceConfiguration</td><td>Sitecore.ContentTesting.config</td><td> VALIDATE DATA SOURCE CONFIGURATION Validates whethr data source for specified Test Value Item is not corrupted. </td></tr>
-<tr><td>222</td><td>validateStopAction</td><td>Sitecore.ContentTesting.config</td><td> VALIDATE STOP ACTION Validates whether it's possible to stop the test. </td></tr>
-<tr><td>223</td><td>speak.client.resolveScript</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
-<tr><td>224</td><td>getItem</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
-<tr><td>225</td><td>getPageEditorNotifications</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
-<tr><td>226</td><td>convertToXConnectInteraction</td><td>Sitecore.ContentTesting.config</td><td> CONVERT TO XCONNECT INTERACTION Convert to MVTestEvent Convert to PersonalizationEvent </td></tr>
-<tr><td>227</td><td>convertFromXConnectContact</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
-<tr><td>228</td><td>getRibbonControlState</td><td>Sitecore.ContentTesting.ExperienceEditor.config</td><td></td></tr>
-<tr><td>229</td><td>ribbonStylesheets</td><td>Sitecore.ContentTesting.ExperienceEditor.config</td><td></td></tr>
-<tr><td>230</td><td>pageEditingStyleSheets</td><td>Sitecore.ContentTesting.ExperienceEditor.config</td><td></td></tr>
-<tr><td>231</td><td>pageEditingScripts</td><td>Sitecore.ContentTesting.ExperienceEditor.config</td><td></td></tr>
-<tr><td>232</td><td>getPageModeCapabilities</td><td>Sitecore.ContentTesting.ExperienceEditor.config</td><td></td></tr>
-<tr><td>233</td><td>executePageEditorAction</td><td>Sitecore.ContentTesting.ExperienceEditor.config</td><td></td></tr>
-<tr><td>234</td><td>executePageEditorActionArgumentResolver</td><td>Sitecore.ContentTesting.ExperienceEditor.config</td><td></td></tr>
-<tr><td>235</td><td>getTestingClusters</td><td>Sitecore.ContentTesting.Intelligence.config</td><td> GET TESTING CLUSTERS Performs segmention across sessions for a test. </td></tr>
-<tr><td>236</td><td>calculateStatisticalRelevancy</td><td>Sitecore.ContentTesting.Intelligence.config</td><td> CALCULATE STATISTICAL RELEVANCY Determines whether a content test has been exposed to enough visitors to successfully determine the winning variant. </td></tr>
-<tr><td>237</td><td>forecastTestDuration</td><td>Sitecore.ContentTesting.Intelligence.config</td><td> TEST DURATION FORECAST Forecasts the number of sessions required for a successful content test and the number of days required to reach statistical relevancy. </td></tr>
-<tr><td>238</td><td>savePersonalizationRules</td><td>Sitecore.ContentTesting.Intelligence.config</td><td> SAVE PERSONALIZATION RULES Save personalization rules into reporting database </td></tr>
-<tr><td>239</td><td>mvc.getPageItem</td><td>Sitecore.ContentTesting.Mvc.config</td><td></td></tr>
-<tr><td>240</td><td>mvc.requestBegin</td><td>Sitecore.ContentTesting.Mvc.config</td><td></td></tr>
-<tr><td>241</td><td>mvc.customizeRendering</td><td>Sitecore.ContentTesting.Mvc.config</td><td></td></tr>
-<tr><td>242</td><td>interactions</td><td>Sitecore.ContentTesting.Processing.Aggregation.config</td><td></td></tr>
-<tr><td>243</td><td>itemWebApiSearch</td><td>Sitecore.ContentTesting.Search.config</td><td></td></tr>
-<tr><td>244</td><td>ces.geoIp.handleLookupError</td><td>Sitecore.CES.GeoIp.config</td><td>  HANDLE LOOKUP ERROR Handles exceptions happened when look up for IP geo information. </td></tr>
-<tr><td>245</td><td>ces.geoIp.parseResponse</td><td>Sitecore.CES.GeoIp.config</td><td>  PARSE RESPONSE Parses the response from the Sitecore IP Geolocation service. </td></tr>
-<tr><td>246</td><td>initialize</td><td>Sitecore.CES.GeoIp.config</td><td></td></tr>
-<tr><td>247</td><td>initialize</td><td>Sitecore.CES.DeviceDetection.CheckInitialization.config</td><td></td></tr>
-<tr><td>248</td><td>getFallbackUserAgent</td><td>Sitecore.CES.DeviceDetection.config</td><td></td></tr>
-<tr><td>249</td><td>redirectUrl</td><td>Sitecore.EmailExperience.ContentDelivery.config</td><td> REDIRECT URL PIPELINE This pipeline is executed when Email Experience Manager receives a request to redirect a page request from an email link to the correct destination page. </td></tr>
-<tr><td>250</td><td>registerEmailOpened</td><td>Sitecore.EmailExperience.ContentDelivery.config</td><td> REGISTER EMAIL OPENED PIPELINE This pipeline is executed when Email Experience Manager receives a request to RegisterEmailOpened Web Handler. </td></tr>
-<tr><td>251</td><td>convertToXConnectEvent</td><td>Sitecore.EmailExperience.ContentDelivery.config</td><td></td></tr>
-<tr><td>252</td><td>createContact</td><td>Sitecore.EmailExperience.ContentDelivery.config</td><td> The create contact pipeline is called by the send email submit actions to create a new contact and save it to the collection database. This pipline populates the email address list facet and the consent information facet according to the values supplied in the form. </td></tr>
-<tr><td>253</td><td>transformFormsCustomToken</td><td>Sitecore.EmailExperience.ContentDelivery.config</td><td> The transform forms custom token pipeline is called for each custom token that is configured in the send email submit action. Add processors to this pipeline in order to transform the form original value that is resolved from the form field to the desirable form (e.g. traforming the value that is obtained from a CheckBoxListViewModel field from a List<string to a string). Processors of this pipeline implements the ITransformFormsCustomTokenProcessor interface. </td></tr>
-<tr><td>254</td><td>emailOpened</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td> EMAIL OPENED PIPELINE This pipeline is executed when Email Experience Manager processes a email opened task. The pipeline creates an interaction with a "Email Opened" and a "Email Opened First Time" page event The pipeline will be aborted if: - The message item cannot be found - The campaign cannot be found </td></tr>
-<tr><td>255</td><td>exm.recipientListManagement.add</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td> RECIPIENT LIST MANAGEMENT PIPELINE This pipeline is executed when a recipient list management task from the recipientListManagementTaskPool task pool is processed. The pipeline is executed for each task individually and adds the corresponding contact to the global opt out list. </td></tr>
-<tr><td>256</td><td>exm.recipientListManagement.remove</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td> RECIPIENT LIST MANAGEMENT PIPELINE This pipeline is executed when a recipient list management task from the recipientListManagementTaskPool task pool is processed. The pipeline is executed for each task individually and removes the contact from any include lists on the message. </td></tr>
-<tr><td>257</td><td>handleUndeliveredMessage</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td> HANDLE UNDELIVERED MESSAGE PIPELINE This pipeline is executed when a bounced message task from the bounced messages task pool is processed. The pipeline is executed for each task individually and updates the number of undelivered emails on the recipient's profile. Furthermore an interaction is created with a "Email Bounced" page event in xDB. </td></tr>
-<tr><td>258</td><td>handleSpamComplaint</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td> HANDLE SPAM COMPLAINT PIPELINE This pipeline is executed when a spam complaint task from the spam complaints task pool is processed. An interaction is created with a "Email Spam Reported" page event in xDB. </td></tr>
-<tr><td>259</td><td>handleListUnsubscribe</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td> HANDLE LIST UNSUBSCRIBE PIPELINE This pipeline is executed when a task from the list unsubscribe task pool is processed. An interaction is created with an "Unsubscribe from email" page event in xDB. </td></tr>
-<tr><td>260</td><td>handleSentMessage</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td> HANDLE SENT MESSAGE PIPELINE This pipeline is executed when a sent message task from the sent messages task pool is processed. An interaction is created with a "Email Sent" page event in xDB. </td></tr>
-<tr><td>261</td><td>SendEmail</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td> SEND EMAIL PIPELINE This pipeline dispatches a single email through the SMTP server. </td></tr>
-<tr><td>262</td><td>handleDispatchFailed</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td> HANDLE DISPATCH FAILED PIPELINE This pipeline is executed when a dispatch failed task from the dispatch failed task pool is processed. An interaction is created with a "Dispatch Failed" page event in xDB. </td></tr>
-<tr><td>263</td><td>owin.cookieAuthentication.validateIdentity</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td></td></tr>
-<tr><td>264</td><td>DispatchNewsletter</td><td>Sitecore.EmailExperience.ContentManagementPrimary.config</td><td> DISPATCH NEWSLETTER PIPELINE This pipeline defines the message dispatch process in the Email Experience Manager. For regular messages the pipeline is executed once. For automated messages it is executed every time a message is triggered. </td></tr>
-<tr><td>265</td><td>UnsubscribeFromList</td><td>Sitecore.EmailExperience.ContentManagementPrimary.config</td><td> UNSUBSCRIBE FROM LIST PIPELINE This pipeline is executed for each subscribed list of a contact whose unsubscribing from a message. </td></tr>
-<tr><td>266</td><td>SubscribeEvent</td><td>Sitecore.EmailExperience.ContentManagementPrimary.config</td><td> SUBSCRIBE EVENT PIPELINE This pipeline is executed when a recipient subscribes to a message. </td></tr>
-<tr><td>267</td><td>UnsubscribeFromAllEvent</td><td>Sitecore.EmailExperience.ContentManagementPrimary.config</td><td> UNSUBSCRIBE FROM ALL EVENT PIPELINE This pipeline is executed when a recipient unsubscribes from all messages. </td></tr>
-<tr><td>268</td><td>transformQueryString</td><td>Sitecore.EmailExperience.Core.config</td><td> TRANSFORM QUERY STRING PIPELINE This pipeline is executed when a message event page is requested. It can be used to reformat the query string prior to the event handling. E.g. decrypting encrypted content, adding support for legacy formats, etc. </td></tr>
-<tr><td>269</td><td>getContact</td><td>Sitecore.EmailExperience.Core.config</td><td></td></tr>
-<tr><td>270</td><td>generateBodyLink</td><td>Sitecore.EmailExperience.Core.config</td><td> GENERATE BODY LINK PIPELINE This pipeline is executed during dispatch when EXM generates the link to download the email campaign contents from </td></tr>
-<tr><td>271</td><td>getContentEditorFields</td><td>Sitecore.EmailExperience.Core.config</td><td></td></tr>
-<tr><td>272</td><td>httpRequestBegin</td><td>Sitecore.EmailExperience.Core.config</td><td></td></tr>
-<tr><td>273</td><td>ensureSessionContext</td><td>Sitecore.EmailExperience.Core.config</td><td></td></tr>
-<tr><td>274</td><td>initializeTracker</td><td>Sitecore.EmailExperience.Core.config</td><td></td></tr>
-<tr><td>275</td><td>renderField</td><td>Sitecore.EmailExperience.Core.config</td><td></td></tr>
-<tr><td>276</td><td>modifyHyperlink</td><td>Sitecore.EmailExperience.Core.config</td><td></td></tr>
-<tr><td>277</td><td>modifyImageLink</td><td>Sitecore.EmailExperience.Core.config</td><td></td></tr>
-<tr><td>278</td><td>DispatchNewsletter</td><td>Sitecore.EmailExperience.EmailProcessing.config</td><td> DISPATCH NEWSLETTER PIPELINE This is a customization of the DispatchNewsletter pipeline specific for dedicated dispatch servers. </td></tr>
-<tr><td>279</td><td>journey</td><td>Sitecore.EmailExperience.ExperienceProfile.config</td><td></td></tr>
-<tr><td>280</td><td>getExperienceEditorRibbon</td><td>Sitecore.EmailExperience.UI.config</td><td></td></tr>
-<tr><td>281</td><td>speak.client.resolveScript</td><td>Sitecore.EmailExperience.UI.config</td><td></td></tr>
-<tr><td>282</td><td>getQueryState</td><td>Sitecore.EmailExperience.UI.config</td><td></td></tr>
-<tr><td>283</td><td>initialize</td><td>Sitecore.ExM.Framework.ContentManagement.config</td><td></td></tr>
-<tr><td>284</td><td>getRibbonControlState</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
-<tr><td>285</td><td>canShowEditor</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
-<tr><td>286</td><td>prepareEditorResources</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
-<tr><td>287</td><td>preLoadImages</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
-<tr><td>288</td><td>resourceItemResolver</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
-<tr><td>289</td><td>ribbonStylesheets</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
-<tr><td>290</td><td>pageEditingStyleSheets</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
-<tr><td>291</td><td>getPageModeCapabilities</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
-<tr><td>292</td><td>getExperienceEditorRibbon</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
-<tr><td>293</td><td>executePageEditorAction</td><td>Sitecore.ExperienceEditor.config</td><td>  Controls actions performed on presentation components in Experience Editor </td></tr>
-<tr><td>294</td><td>executePageEditorActionArgumentResolver</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
-<tr><td>295</td><td>getPageEditorNotifications</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
-<tr><td>296</td><td>getPageEditorValidators</td><td>Sitecore.ExperienceEditor.config</td><td> Gets the validators, that will be executed when saving page in Experience Editor</td></tr>
-<tr><td>297</td><td>pageEditingScripts</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
-<tr><td>298</td><td>getLayoutSourceFields</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
-<tr><td>299</td><td>injectExperienceEditorRibbonComponents</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
-<tr><td>300</td><td>changeEditorResourcesToInclude</td><td>Sitecore.ExperienceEditor.config</td><td> changeEditorResourcesToInclude pipeline is no longer supported please use pageEditingScripts pipeline instead </td></tr>
-<tr><td>301</td><td>httpRequestBegin</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
-<tr><td>302</td><td>renderField</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
-<tr><td>303</td><td>getChromeData</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
-<tr><td>304</td><td>getPlaceholderRenderings</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
-<tr><td>305</td><td>speak.client.resolveScript</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
-<tr><td>306</td><td>interactions</td><td>Sitecore.ExperienceAnalytics.Aggregation.Processing.config</td><td></td></tr>
-<tr><td>307</td><td>processSegments</td><td>Sitecore.ExperienceAnalytics.Aggregation.Processing.config</td><td></td></tr>
-<tr><td>308</td><td>initialize</td><td>Sitecore.ExperienceAnalytics.Client.config</td><td></td></tr>
-<tr><td>309</td><td>httpRequestBegin</td><td>Sitecore.ExperienceAnalytics.Client.config</td><td></td></tr>
-<tr><td>310</td><td>owin.cookieAuthentication.validateIdentity</td><td>Sitecore.ExperienceAnalytics.Client.config</td><td></td></tr>
-<tr><td>311</td><td>experienceAnalytics.syncSegments</td><td>Sitecore.ExperienceAnalytics.Client.config</td><td></td></tr>
-<tr><td>312</td><td>initialize</td><td>Sitecore.ExperienceAnalytics.WebAPI.config</td><td></td></tr>
-<tr><td>313</td><td>initialize</td><td>Sitecore.ExperienceAnalytics.WebAPI.Processing.config</td><td></td></tr>
-<tr><td>314</td><td>httpRequestBegin</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
-<tr><td>315</td><td>renderLayout</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
-<tr><td>316</td><td>mvc.renderPageExtenders</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
-<tr><td>317</td><td>startTracking</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
-<tr><td>318</td><td>commitSession</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
-<tr><td>319</td><td>ensureSessionContext</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
-<tr><td>320</td><td>sessionEnd</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
-<tr><td>321</td><td>getItemPersonalizationVisibility</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
-<tr><td>322</td><td>resolveExplorerDatabase</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
-<tr><td>323</td><td>initializeModel</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
-<tr><td>324</td><td>applyModelToTracker</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
-<tr><td>325</td><td>resolveExplorerMode</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
-<tr><td>326</td><td>cleanupAnalytics</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
-<tr><td>327</td><td>initialize</td><td>Sitecore.ExperienceExplorer.Services.config</td><td></td></tr>
-<tr><td>328</td><td>interactions</td><td>Sitecore.ExperienceForms.Analytics.Aggregation.config</td><td></td></tr>
-<tr><td>329</td><td>sessionEnd</td><td>Sitecore.ExperienceForms.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>330</td><td>initialize</td><td>Sitecore.ExperienceForms.Mvc.config</td><td></td></tr>
-<tr><td>331</td><td>forms.renderForm</td><td>Sitecore.ExperienceForms.Mvc.config</td><td></td></tr>
-<tr><td>332</td><td>forms.renderFields</td><td>Sitecore.ExperienceForms.Mvc.config</td><td></td></tr>
-<tr><td>333</td><td>forms.renderField</td><td>Sitecore.ExperienceForms.Mvc.config</td><td></td></tr>
-<tr><td>334</td><td>forms.getModel</td><td>Sitecore.ExperienceForms.Mvc.config</td><td></td></tr>
-<tr><td>335</td><td>forms.validateSubmit</td><td>Sitecore.ExperienceForms.Mvc.config</td><td></td></tr>
-<tr><td>336</td><td>forms.executeSubmit</td><td>Sitecore.ExperienceForms.Mvc.config</td><td></td></tr>
-<tr><td>337</td><td>forms.sessionEnd</td><td>Sitecore.ExperienceForms.Mvc.config</td><td></td></tr>
-<tr><td>338</td><td>initialize</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
-<tr><td>339</td><td>speak.client.resolveScript</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
-<tr><td>340</td><td>forms.renderForm</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
-<tr><td>341</td><td>forms.renderFields</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
-<tr><td>342</td><td>forms.renderField</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
-<tr><td>343</td><td>forms.getModel</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
-<tr><td>344</td><td>forms.saveForm</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
-<tr><td>345</td><td>forms.deleteForms</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
-<tr><td>346</td><td>forms.renameForm</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
-<tr><td>347</td><td>forms.formDetails</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
-<tr><td>348</td><td>forms.getLanguages</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
-<tr><td>349</td><td>forms.removeFormVersion</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
-<tr><td>350</td><td>forms.moveForm</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
-<tr><td>351</td><td>forms.getImportantNotes</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
-<tr><td>352</td><td>forms.getPublishingTargets</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
-<tr><td>353</td><td>forms.getFormFields</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
-<tr><td>354</td><td>initialize</td><td>Sitecore.ExperienceProfile.Client.config</td><td></td></tr>
-<tr><td>355</td><td>speak.client.resolveScript</td><td>Sitecore.ExperienceProfile.Client.config</td><td></td></tr>
-<tr><td>356</td><td>owin.cookieAuthentication.validateIdentity</td><td>Sitecore.ExperienceProfile.Client.config</td><td></td></tr>
-<tr><td>357</td><td>initialize</td><td>Sitecore.ExperienceProfile.config</td><td></td></tr>
-<tr><td>358</td><td>registerReportingDataSource</td><td>Sitecore.ExperienceProfile.config</td><td> Adds a reporting data source which is specific to Experience Profile. Datasource receives a name of query pipeline which is then executed on the reporting server. </td></tr>
-<tr><td>359</td><td>visits</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>360</td><td>journey</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>361</td><td>journey-detail-outcome</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>362</td><td>journey-detail-online-interaction</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>363</td><td>journey-detail-offline-interaction</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>364</td><td>channel-summary</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>365</td><td>channel-goal-distribution</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>366</td><td>channel-interaction-distribution</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>367</td><td>visit-summary</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>368</td><td>latest-statistics</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>369</td><td>visit-pages</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>370</td><td>visit-goals</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>371</td><td>internal-keyword-summary</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>372</td><td>internal-keyword-detail</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>373</td><td>visit-internal-searches</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>374</td><td>paid-keyword-summary</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>375</td><td>external-keyword-summary</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>376</td><td>paid-keyword-detail</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>377</td><td>external-keyword-detail</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>378</td><td>campaigns</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>379</td><td>recent-campaigns</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>380</td><td>goals</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>381</td><td>profile-pattern-matches</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>382</td><td>profile-info</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>383</td><td>best-pattern-matches</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>384</td><td>profiling-profile-key-values</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>385</td><td>automations</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>386</td><td>latest-events</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>387</td><td>events</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>388</td><td>outcome-detail</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>389</td><td>contact-query</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>390</td><td>visit-pattern-scores</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>391</td><td>visit-scoring-profiles</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>392</td><td>visit-events-query</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>393</td><td>visits-query</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>394</td><td>campaigns-query</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>395</td><td>pages-by-visit-query</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>396</td><td>goals-query</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>397</td><td>visit-channel</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>398</td><td>latest-visitors</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
-<tr><td>399</td><td>preprocessRequest</td><td>Sitecore.FXM.Bundle.config</td><td></td></tr>
-<tr><td>400</td><td>bundle.beacon</td><td>Sitecore.FXM.Bundle.config</td><td> **** Bundle Registration Pipelines **** </td></tr>
-<tr><td>401</td><td>saveUI</td><td>Sitecore.FXM.config</td><td></td></tr>
-<tr><td>402</td><td>initialize</td><td>Sitecore.FXM.config</td><td> **** Kernel integration pipeline customizations **** </td></tr>
-<tr><td>403</td><td>getPlaceholderRenderings</td><td>Sitecore.FXM.config</td><td></td></tr>
-<tr><td>404</td><td>getItemPersonalizationVisibility</td><td>Sitecore.FXM.config</td><td></td></tr>
-<tr><td>405</td><td>getChromeData</td><td>Sitecore.FXM.config</td><td></td></tr>
-<tr><td>406</td><td>mvc.renderPlaceholder</td><td>Sitecore.FXM.config</td><td></td></tr>
-<tr><td>407</td><td>getSessionIdManager</td><td>Sitecore.FXM.config</td><td></td></tr>
-<tr><td>408</td><td>convertToXConnectEvent</td><td>Sitecore.FXM.config</td><td></td></tr>
-<tr><td>409</td><td>tryResolveFxmContext</td><td>Sitecore.FXM.config</td><td> Try to resolve Fxm context for the current request. Context is resolved only if request is for a configured site. </td></tr>
-<tr><td>410</td><td>tracking.initializeContext</td><td>Sitecore.FXM.config</td><td> **** Tracking Request Pipelines **** </td></tr>
-<tr><td>411</td><td>tracking.resolveMatchingElements</td><td>Sitecore.FXM.config</td><td> Run when a page visit occurs on an tracked external site. Finds all page filters that match the visit and any sub-page level matchers belonging to them. </td></tr>
-<tr><td>412</td><td>tracking.triggerPageMatchers</td><td>Sitecore.FXM.config</td><td></td></tr>
-<tr><td>413</td><td>tracking.trackpagevisit</td><td>Sitecore.FXM.config</td><td></td></tr>
-<tr><td>414</td><td>tracking.triggerpageevent</td><td>Sitecore.FXM.config</td><td></td></tr>
-<tr><td>415</td><td>tracking.getitemrenderedcontent</td><td>Sitecore.FXM.config</td><td></td></tr>
-<tr><td>416</td><td>externalsiteproxy.buildrequest</td><td>Sitecore.FXM.config</td><td> **** External Site Proxy Pipelines - used in the Experience Editor UI **** </td></tr>
-<tr><td>417</td><td>externalsiteproxy.processresponse</td><td>Sitecore.FXM.config</td><td></td></tr>
-<tr><td>418</td><td>externalsiteproxy.processhtmlresponse</td><td>Sitecore.FXM.config</td><td></td></tr>
-<tr><td>419</td><td>content.experienceeditor</td><td>Sitecore.FXM.config</td><td> **** Experience Editor Integration **** </td></tr>
-<tr><td>420</td><td>executePageEditorAction</td><td>Sitecore.FXM.config</td><td></td></tr>
-<tr><td>421</td><td>getExperienceEditorRibbon</td><td>Sitecore.FXM.Speak.config</td><td></td></tr>
-<tr><td>422</td><td>speak.client.resolveScript</td><td>Sitecore.FXM.Speak.config</td><td></td></tr>
-<tr><td>423</td><td>httpRequestBegin</td><td>Sitecore.ItemWebApi.config</td><td></td></tr>
-<tr><td>424</td><td>httpRequestEnd</td><td>Sitecore.ItemWebApi.config</td><td></td></tr>
-<tr><td>425</td><td>preprocessRequest</td><td>Sitecore.ItemWebApi.config</td><td></td></tr>
-<tr><td>426</td><td>itemWebApiDelete</td><td>Sitecore.ItemWebApi.config</td><td>Handles the item delete operation. </td></tr>
-<tr><td>427</td><td>itemWebApiGetFields</td><td>Sitecore.ItemWebApi.config</td><td>Determines which item fields should are included in response. </td></tr>
-<tr><td>428</td><td>itemWebApiGetProperties</td><td>Sitecore.ItemWebApi.config</td><td>Determines which item properties (display name, ID etc.) are included in response. </td></tr>
-<tr><td>429</td><td>itemWebApiCreate</td><td>Sitecore.ItemWebApi.config</td><td>Handles the item create operation. </td></tr>
-<tr><td>430</td><td>itemWebApiRead</td><td>Sitecore.ItemWebApi.config</td><td>Handles the item read operation. </td></tr>
-<tr><td>431</td><td>itemWebApiRequest</td><td>Sitecore.ItemWebApi.config</td><td>Processes Item Web API requests. </td></tr>
-<tr><td>432</td><td>itemWebApiUpdate</td><td>Sitecore.ItemWebApi.config</td><td>Handles the item update operation. </td></tr>
-<tr><td>433</td><td>getStartUrl</td><td>Sitecore.Speak.LaunchPad.config</td><td></td></tr>
-<tr><td>434</td><td>httpRequestBegin</td><td>Sitecore.Speak.LaunchPad.XMCloud.config</td><td></td></tr>
-<tr><td>435</td><td>speak.client.resolveScript</td><td>Sitecore.ListManagement.Client.config</td><td></td></tr>
-<tr><td>436</td><td>owin.cookieAuthentication.validateIdentity</td><td>Sitecore.ListManagement.Client.config</td><td></td></tr>
-<tr><td>437</td><td>listManagement.importMediaContacts</td><td>Sitecore.ListManagement.config</td><td>  IMPORT MEDIA CONTACTS The pipeline is responsible for importing of the contacts from file stored in media library into the xDB. </td></tr>
-<tr><td>438</td><td>getMediaUrlOptions</td><td>Sitecore.Marketing.Definitions.MarketingAssets.Repositories.config</td><td></td></tr>
-<tr><td>439</td><td>getResponseCacheHeaders</td><td>Sitecore.Marketing.Definitions.MarketingAssets.Repositories.config</td><td></td></tr>
-<tr><td>440</td><td>isMarketingDefinition</td><td>Sitecore.Marketing.Definitions.MarketingAssets.Repositories.config</td><td></td></tr>
-<tr><td>441</td><td>speak.client.resolveScript</td><td>Sitecore.Marketing.Automation.Client.config</td><td></td></tr>
-<tr><td>442</td><td>Marketing.Automation.ExportCampaignContacts</td><td>Sitecore.Marketing.Automation.Client.config</td><td></td></tr>
-<tr><td>443</td><td>owin.cookieAuthentication.validateIdentity</td><td>Sitecore.Marketing.Automation.Client.config</td><td></td></tr>
-<tr><td>444</td><td>deployDefinition</td><td>Sitecore.Marketing.Automation.Client.config</td><td></td></tr>
-<tr><td>445</td><td>speak.client.resolveScript</td><td>Sitecore.Marketing.Client.config</td><td></td></tr>
-<tr><td>446</td><td>speak.client.initialize.layout</td><td>Sitecore.Marketing.Client.config</td><td></td></tr>
-<tr><td>447</td><td>initialize</td><td>Sitecore.Marketing.config</td><td></td></tr>
-<tr><td>448</td><td>deployDefinition</td><td>Sitecore.Marketing.config</td><td></td></tr>
-<tr><td>449</td><td>isMarketingDefinition</td><td>Sitecore.Marketing.config</td><td></td></tr>
-<tr><td>450</td><td>validateJsonFieldLinks</td><td>Sitecore.Marketing.config</td><td></td></tr>
-<tr><td>451</td><td>validateJsonPropertyLink</td><td>Sitecore.Marketing.config</td><td></td></tr>
-<tr><td>452</td><td>deployDefinition</td><td>Sitecore.MarketingCD.config</td><td></td></tr>
-<tr><td>453</td><td>classificationStrategy</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>454</td><td>commitSession</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>455</td><td>convertFromXConnectContact</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>456</td><td>convertToXConnectInteraction</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>457</td><td>convertToXConnectEvent</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>458</td><td>createItemChangeTest</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>459</td><td>createTracker</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>460</td><td>createVisit</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>461</td><td>endAnalytics</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>462</td><td>ensureClassification</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>463</td><td>ensureSessionContext</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>464</td><td>excludeRobots</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>465</td><td>findVisitorEmailAddress</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>466</td><td>getContentEditorWarnings</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>467</td><td>getItemPersonalizationVisibility</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>468</td><td>handlePageError</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>469</td><td>handlePageNotFound</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>470</td><td>httpRequestBegin</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>471</td><td>httpRequestEnd</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>472</td><td>httpRequestProcessed</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>473</td><td>initialize</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>474</td><td>initializeInteractionProfile</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>475</td><td>initializeTracker</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>476</td><td>mergeContacts</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>477</td><td>parseReferrer</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>478</td><td>processItem</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>479</td><td>registerOutcome</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>480</td><td>registerPageEvent</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>481</td><td>renderContentEditorHeader</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>482</td><td>renderLayout</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>483</td><td>sessionEnd</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>484</td><td>startAnalytics</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>485</td><td>startTracking</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>486</td><td>submitSessionContext</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>487</td><td>triggerCampaign</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>488</td><td>visitEnd</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>489</td><td>getFallbackUserAgent</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
-<tr><td>490</td><td>commitSession</td><td>Sitecore.Analytics.Tracking.Database.config</td><td></td></tr>
-<tr><td>491</td><td>postSessionEnd</td><td>Sitecore.Analytics.Tracking.Database.config</td><td></td></tr>
-<tr><td>492</td><td>submitSessionContext</td><td>Sitecore.Analytics.Tracking.Database.config</td><td></td></tr>
-<tr><td>493</td><td>determineInteractionChannel</td><td>Sitecore.Analytics.Channel.config</td><td> Determines the initial channel for the interaction. </td></tr>
-<tr><td>494</td><td>createVisit</td><td>Sitecore.Analytics.Channel.config</td><td></td></tr>
-<tr><td>495</td><td>triggerCampaign</td><td>Sitecore.Analytics.Channel.config</td><td></td></tr>
-<tr><td>496</td><td>initialize</td><td>Sitecore.Analytics.Processing.Aggregation.config</td><td></td></tr>
-<tr><td>497</td><td>interactionsBatch</td><td>Sitecore.Analytics.Processing.Aggregation.config</td><td></td></tr>
-<tr><td>498</td><td>interactions</td><td>Sitecore.Analytics.Processing.Aggregation.config</td><td></td></tr>
-<tr><td>499</td><td>registerReportingDataSource</td><td>Sitecore.Analytics.Reporting.config</td><td></td></tr>
-<tr><td>500</td><td>initialize</td><td>Sitecore.Xdb.config</td><td></td></tr>
-<tr><td>501</td><td>registerOutcome</td><td>Sitecore.Xdb.MarketingAutomation.Tracking.config</td><td></td></tr>
-<tr><td>502</td><td>registerPageEvent</td><td>Sitecore.Xdb.MarketingAutomation.Tracking.config</td><td></td></tr>
-<tr><td>503</td><td>submitLiveAutomationEvent</td><td>Sitecore.Xdb.MarketingAutomation.Tracking.config</td><td>- Pipeline that submits live automation event to Marketing Automation engine. </td></tr>
-<tr><td>504</td><td>initialize</td><td>Sitecore.Messaging.config</td><td></td></tr>
-<tr><td>505</td><td>initialize</td><td>Sitecore.Mvc.config</td><td> Loader </td></tr>
-<tr><td>506</td><td>httpRequestBegin</td><td>Sitecore.Mvc.config</td><td> Http Request Begin </td></tr>
-<tr><td>507</td><td>normalizePlaceholderKey</td><td>Sitecore.Mvc.config</td><td> Normalize Placeholder Key</td></tr>
-<tr><td>508</td><td>mvc.actionExecuting</td><td>Sitecore.Mvc.config</td><td> Mvc Events </td></tr>
-<tr><td>509</td><td>mvc.actionExecuted</td><td>Sitecore.Mvc.config</td><td></td></tr>
-<tr><td>510</td><td>mvc.exception</td><td>Sitecore.Mvc.config</td><td></td></tr>
-<tr><td>511</td><td>mvc.resultExecuting</td><td>Sitecore.Mvc.config</td><td></td></tr>
-<tr><td>512</td><td>mvc.resultExecuted</td><td>Sitecore.Mvc.config</td><td></td></tr>
-<tr><td>513</td><td>mvc.requestBegin</td><td>Sitecore.Mvc.config</td><td> Mvc Request </td></tr>
-<tr><td>514</td><td>mvc.requestEnd</td><td>Sitecore.Mvc.config</td><td></td></tr>
-<tr><td>515</td><td>mvc.createController</td><td>Sitecore.Mvc.config</td><td></td></tr>
-<tr><td>516</td><td>mvc.getModel</td><td>Sitecore.Mvc.config</td><td></td></tr>
-<tr><td>517</td><td>mvc.getPageItem</td><td>Sitecore.Mvc.config</td><td> Mvc Response </td></tr>
-<tr><td>518</td><td>mvc.buildPageDefinition</td><td>Sitecore.Mvc.config</td><td></td></tr>
-<tr><td>519</td><td>mvc.getPageRendering</td><td>Sitecore.Mvc.config</td><td></td></tr>
-<tr><td>520</td><td>mvc.getXmlBasedLayoutDefinition</td><td>Sitecore.Mvc.config</td><td></td></tr>
-<tr><td>521</td><td>mvc.renderPlaceholder</td><td>Sitecore.Mvc.config</td><td></td></tr>
-<tr><td>522</td><td>mvc.renderRendering</td><td>Sitecore.Mvc.config</td><td></td></tr>
-<tr><td>523</td><td>mvc.getRenderer</td><td>Sitecore.Mvc.config</td><td></td></tr>
-<tr><td>524</td><td>mvc.getDynamicPlaceholderKeys</td><td>Sitecore.Mvc.config</td><td></td></tr>
-<tr><td>525</td><td>mvc.getDynamicPlaceholderInitialKey</td><td>Sitecore.Mvc.config</td><td></td></tr>
-<tr><td>526</td><td>httpRequestBegin</td><td>Sitecore.MVC.DeviceSimulator.config</td><td></td></tr>
-<tr><td>527</td><td>mvc.createController</td><td>Sitecore.MVC.DeviceSimulator.config</td><td></td></tr>
-<tr><td>528</td><td>mvc.renderPageExtenders</td><td>Sitecore.MVC.DeviceSimulator.config</td><td></td></tr>
-<tr><td>529</td><td>executePageEditorAction</td><td>Sitecore.MVC.ExperienceEditor.config</td><td></td></tr>
-<tr><td>530</td><td>hasPresentation</td><td>Sitecore.MVC.ExperienceEditor.config</td><td></td></tr>
-<tr><td>531</td><td>mvc.getPageRendering</td><td>Sitecore.MVC.ExperienceEditor.config</td><td></td></tr>
-<tr><td>532</td><td>mvc.getXmlBasedLayoutDefinition</td><td>Sitecore.MVC.ExperienceEditor.config</td><td></td></tr>
-<tr><td>533</td><td>mvc.renderPageExtenders</td><td>Sitecore.MVC.ExperienceEditor.config</td><td></td></tr>
-<tr><td>534</td><td>mvc.renderPlaceholder</td><td>Sitecore.MVC.ExperienceEditor.config</td><td></td></tr>
-<tr><td>535</td><td>mvc.renderRendering</td><td>Sitecore.MVC.ExperienceEditor.config</td><td></td></tr>
-<tr><td>536</td><td>mvc.requestEnd</td><td>Sitecore.MVC.ExperienceEditor.config</td><td></td></tr>
-<tr><td>537</td><td>owin.initialize</td><td>Sitecore.Owin.Activation.config</td><td>  OWIN INITIALIZE Configures OWIN middlewares. The pipeline contains StageMarker processors that insert UseStageMarker middlewares with a corresponding PipelineStage value.  If "Owin.AssertStageMarkers" setting is set to "true" then an exception will be thrown if there is a middleware that is executed on a later stage than the following StageMarker processor specifies.  It may happen when a custom processor uses UseStageMarker with a PipelineStage value that is lower than the previous StageMarker processor. For example, default UseCookieAuthentication middleware uses UseStageMarker(PipelineStage.Authenticate) under the hood; therefore, a processor that contains such a middleware should be patched before the Authenticate StageMarker processor.  "Processors should derive from Sitecore.Owin.Pipelines.Initialize.InitializeProcessor"</td></tr>
-<tr><td>538</td><td>owin.globalExceptionHandler</td><td>Sitecore.Owin.Activation.config</td><td> OWIN GLOBAL EXCEPTION HANDLER Handles unhandled exceptions that occured in OWIN middlewares.  "Processors should derive from Sitecore.Owin.Pipelines.GlobalExceptionHandler.GlobalExceptionHandlerProcessor"</td></tr>
-<tr><td>539</td><td>httpRequestBegin</td><td>Sitecore.Owin.Authentication.config</td><td></td></tr>
-<tr><td>540</td><td>owin.initialize</td><td>Sitecore.Owin.Authentication.config</td><td></td></tr>
-<tr><td>541</td><td>owin.identityProviders</td><td>Sitecore.Owin.Authentication.config</td><td> "Processors should derive from Sitecore.Owin.Authentication.Pipelines.IdentityProviders.IdentityProvidersProcessor"</td></tr>
-<tr><td>542</td><td>owin.cookieAuthentication.validateIdentity</td><td>Sitecore.Owin.Authentication.config</td><td>Place the provider initialize class here. You can use the custom configuration file in the Include folder - just create a new file or use the existing file. For example: <processor type="Sitecore.Owin.Authentication.Samples.AzureAd.Pipelines.IdentityProviders.AzureAd, Sitecore.Owin.Authentication.Samples.AzureAd" resolve="true" / "Processors should derive from Sitecore.Owin.Authentication.Pipelines.CookieAuthentication.ValidateIdentity.ValidateIdentityProcessor"</td></tr>
-<tr><td>543</td><td>owin.cookieAuthentication.signIn</td><td>Sitecore.Owin.Authentication.config</td><td> "Processors should derive from Sitecore.Owin.Authentication.Pipelines.CookieAuthentication.SignIn.SignInProcessor"</td></tr>
-<tr><td>544</td><td>owin.cookieAuthentication.signedIn</td><td>Sitecore.Owin.Authentication.config</td><td> "Processors should derive from Sitecore.Owin.Authentication.Pipelines.CookieAuthentication.SignedIn.SignedInProcessor"</td></tr>
-<tr><td>545</td><td>owin.cookieAuthentication.applyRedirect</td><td>Sitecore.Owin.Authentication.config</td><td> "Processors should derive from Sitecore.Owin.Authentication.Pipelines.CookieAuthentication.ApplyRedirect.ApplyRedirectProcessor"</td></tr>
-<tr><td>546</td><td>owin.cookieAuthentication.signOut</td><td>Sitecore.Owin.Authentication.config</td><td> "Processors should derive from Sitecore.Owin.Authentication.Pipelines.CookieAuthentication.SignOut.SignOutProcessor"</td></tr>
-<tr><td>547</td><td>getSignInUrlInfo</td><td>Sitecore.Owin.Authentication.config</td><td></td></tr>
-<tr><td>548</td><td>fedauth.siteNameExpander</td><td>Sitecore.Owin.Authentication.config</td><td> "Processors should derive from Sitecore.Owin.Authentication.Pipelines.SiteNameExpander.SiteNameExpanderProcessor"</td></tr>
-<tr><td>549</td><td>owin.globalExceptionHandler</td><td>Sitecore.Owin.Authentication.config</td><td></td></tr>
-<tr><td>550</td><td>owin.globalLogFilter</td><td>Sitecore.Owin.Authentication.config</td><td></td></tr>
-<tr><td>551</td><td>owin.initialize</td><td>Sitecore.Owin.Cors.config</td><td></td></tr>
-<tr><td>552</td><td>owin.identityProviders</td><td>Sitecore.Owin.Authentication.IdentityServer.config</td><td></td></tr>
-<tr><td>553</td><td>owin.initialize</td><td>Sitecore.Owin.Authentication.IdentityServer.config</td><td></td></tr>
-<tr><td>554</td><td>getContentEditorWarnings</td><td>Sitecore.PathAnalyzer.Client.config</td><td> PIPELINES </td></tr>
-<tr><td>555</td><td>speak.client.resolveScript</td><td>Sitecore.PathAnalyzer.Client.config</td><td></td></tr>
-<tr><td>556</td><td>owin.cookieAuthentication.validateIdentity</td><td>Sitecore.PathAnalyzer.Client.config</td><td></td></tr>
-<tr><td>557</td><td>initialize</td><td>Sitecore.PathAnalyzer.config</td><td> PIPELINES </td></tr>
-<tr><td>558</td><td>evaluateContact</td><td>Sitecore.PathAnalyzer.config</td><td></td></tr>
-<tr><td>559</td><td>interactionsBatch</td><td>Sitecore.PathAnalyzer.Processing.config</td><td> Batch processor that is receiving more than one interaction at a time to speed up the aggregation process</td></tr>
-<tr><td>560</td><td>initialize</td><td>Sitecore.PathAnalyzer.Services.config</td><td> PIPELINES </td></tr>
-<tr><td>561</td><td>speak.client.resolveScript</td><td>Sitecore.Personalization.config</td><td></td></tr>
-<tr><td>562</td><td>getRenderingRules</td><td>Sitecore.Personalization.config</td><td></td></tr>
-<tr><td>563</td><td>insertRenderings</td><td>Sitecore.Personalization.config</td><td></td></tr>
-<tr><td>564</td><td>renderingRuleEvaluated</td><td>Sitecore.Personalization.config</td><td></td></tr>
-<tr><td>565</td><td>getPageModeCapabilities</td><td>Sitecore.Personalization.ExperienceEditor.config</td><td></td></tr>
-<tr><td>566</td><td>pageEditingScripts</td><td>Sitecore.Personalization.ExperienceEditor.config</td><td></td></tr>
-<tr><td>567</td><td>executePageEditorAction</td><td>Sitecore.Personalization.ExperienceEditor.config</td><td></td></tr>
-<tr><td>568</td><td>executePageEditorActionArgumentResolver</td><td>Sitecore.Personalization.ExperienceEditor.config</td><td></td></tr>
-<tr><td>569</td><td>mvc.getRenderer</td><td>Sitecore.Personalization.Mvc.config</td><td></td></tr>
-<tr><td>570</td><td>mvc.customizeRendering</td><td>Sitecore.Personalization.Mvc.config</td><td></td></tr>
-<tr><td>571</td><td>initialize</td><td>Sitecore.Services.Client.config</td><td></td></tr>
-<tr><td>572</td><td>ssc.apiKeyValidation</td><td>Sitecore.Services.Client.config</td><td></td></tr>
-<tr><td>573</td><td>initialize</td><td>Sitecore.Services.GraphQL.config</td><td></td></tr>
-<tr><td>574</td><td>httpRequestBegin</td><td>Sitecore.Services.GraphQL.config</td><td></td></tr>
-<tr><td>575</td><td>startAnalytics</td><td>Sitecore.Services.GraphQL.config</td><td></td></tr>
-<tr><td>576</td><td>initialize</td><td>Sitecore.Services.GraphQL.Core.config</td><td></td></tr>
-<tr><td>577</td><td>initializeManagers</td><td>Sitecore.Services.GraphQL.Serialization.config</td><td> Enables history engine over the master + core DBs (not enabled by default since 9.0) because we need it to watch changes to items to serialize them </td></tr>
-<tr><td>578</td><td>owin.cookieAuthentication.validateIdentity</td><td>Sitecore.Services.GraphQL.Serialization.config</td><td></td></tr>
-<tr><td>579</td><td>httpRequestBegin</td><td>Sitecore.GraphQL.config</td><td></td></tr>
-<tr><td>580</td><td>owin.initialize</td><td>Sitecore.GraphQL.config</td><td></td></tr>
-<tr><td>581</td><td>owin.initialize</td><td>Sitecore.GraphQL.Subscription.config</td><td></td></tr>
-<tr><td>582</td><td>preprocessRequest</td><td>Sitecore.Speak.config</td><td> Http Request </td></tr>
-<tr><td>583</td><td>mvc.buildPageDefinition</td><td>Sitecore.Speak.config</td><td></td></tr>
-<tr><td>584</td><td>itemWebApiRequest</td><td>Sitecore.Speak.ItemWebApi.config</td><td></td></tr>
-<tr><td>585</td><td>itemWebApiGetProperties</td><td>Sitecore.Speak.ItemWebApi.config</td><td></td></tr>
-<tr><td>586</td><td>itemWebApiSearch</td><td>Sitecore.Speak.ItemWebApi.config</td><td></td></tr>
-<tr><td>587</td><td>itemWebApiUpdate</td><td>Sitecore.Speak.ItemWebApi.config</td><td></td></tr>
-<tr><td>588</td><td>initialize</td><td>Sitecore.Speak.Mvc.config</td><td></td></tr>
-<tr><td>589</td><td>mvc.renderPlaceholder</td><td>Sitecore.Speak.Mvc.config</td><td></td></tr>
-<tr><td>590</td><td>speak.client.addBinding</td><td>Sitecore.Speak.Pipelines.config</td><td> Content of include config files is added to web.config in alphabetical order. SPEAK-dependent components may try to extend SPEAK configuration before it has been added to web.config. This file is created to be sure that its content is added to web.config before another SPEAK-dependent components. </td></tr>
-<tr><td>591</td><td>speak.client.getClick</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
-<tr><td>592</td><td>speak.client.getControlId</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
-<tr><td>593</td><td>speak.client.getOverlays</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
-<tr><td>594</td><td>speak.client.getPageScripts</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
-<tr><td>595</td><td>speak.client.getPageStylesheets</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
-<tr><td>596</td><td>speak.client.getStyle</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
-<tr><td>597</td><td>speak.client.initialize.layout</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
-<tr><td>598</td><td>speak.client.parseRenderingParameter</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
-<tr><td>599</td><td>speak.client.resolveRequire</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
-<tr><td>600</td><td>speak.client.resolveScript</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
-<tr><td>601</td><td>speak.client.buildMainJS</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
-<tr><td>602</td><td>speak.logout</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
-<tr><td>603</td><td>preprocessRequest</td><td>Sitecore.Speak.Applications.config</td><td> Http Request </td></tr>
-<tr><td>604</td><td>speak.client.resolveScript</td><td>Sitecore.Speak.Components.config</td><td> Enable this processor to precompile MVC views. This allows SPEAK applications to start up faster by precompiling the views at start up (in a separate thread). Paths: Pipe (|) separated list of folders to precompile (recursively). <initialize <processor type="Sitecore.Pipelines.Initialize.PrecompileSpeakViews, Sitecore.Speak.Client" <Paths/sitecore/shell/client/BCL2</Paths </processor </initialize </td></tr>
-<tr><td>605</td><td>speak.client.getPageStylesheets</td><td>Sitecore.Speak.Components.config</td><td></td></tr>
-<tr><td>606</td><td>speak.client.buildMainJS</td><td>Sitecore.Speak.Components.config</td><td></td></tr>
-<tr><td>607</td><td>preprocessRequest</td><td>Sitecore.Speak.Integration.Spa.config</td><td> Http Request </td></tr>
-<tr><td>608</td><td>mvc.requestBegin</td><td>Sitecore.MvcAnalytics.config</td><td></td></tr>
-<tr><td>609</td><td>initializeTracker</td><td>Sitecore.Analytics.Tracking.RobotDetection.config</td><td></td></tr>
-<tr><td>610</td><td>registerPageEvent</td><td>Sitecore.Analytics.Tracking.RobotDetection.config</td><td></td></tr>
+<tr><td>106</td><td>sites</td><td>Sitecore.config</td><td>  SITES Enable different web sites for different domains in the same Sitecore structure Supported attributes: mode: [on|off]. If set to 'off', the site will be disabled. Default value: 'on'. name: Name of the site. hostName: The host name of the incoming url. May include wildcards (ex. www.site.net, *.site.net, *.net, pda.*, print.*.net) It's possible to set more than one mask by using '|' symbol as a separator (ex. pda.*|print.*.net) targetHostName: The host name to use when generating URLs to items within this site from the context of another site. If the targetHostName attribute is absent, Sitecore uses the value of the hostName attribute instead. Used only when the value of the Rendering.SiteResolving setting is true. port: The port number of the incoming url. Default value: 80  externalPort: The port number that is used to generate links that can access the site from outside the network when the site is behind NAT. virtualFolder: The prefix to match for incoming URL's. This value will be removed from the URL and the remainder will be treated as the item path. physicalFolder: The physical location of files for the site. If the site is based on physical files, this is the path to the folder holding the files. For non-physical sites, this is the place where Sitecore looks for a default.aspx file (to start the pipelines). rootPath: The path to the root item of the site. The item path specified in the URL will be appended to this value to find the item. startItem: The path to the start item of the site. This is used as the default item path if no path is specified in the URL. It will be combined with rootPath to find the default item of the site. language: Default language for the site. database: Database containing items to be used for rendering the site. content: Database containing items to be edited. contentLanguage: The default editing language in the client. contentStartItem: The path to the start item when using the client. masterDatabase: The database containing the data to be shown in preview and web edit modes. device: The name of the device to use for the site. If not specified, the device resolver will find a 'best match device'. filterItems: If true, the site will always show the current version of an item (without publishing) filteredItemsCacheSize: The size of the cache used to store filtered items. Specify the value in bytes or append the value with KB, MB or GB cacheHtml: If true, HTML caching will be enabled. If false, no HTML will be cached for any rendering. Default value: false. htmlCacheSize: The size of the html cache. Specify the value in bytes or append the value with KB, MB or GB cacheMedia: If true, media caching will be enabled. If false, no media will be cached. Default value: true. mediaCachePath: The path to the folder where media data will be cached. Default value: {temp folder}/{site name}/mediacache. cacheRenderingParameters: Specifies whether the RenderingItem Parameters cache should be enabled. If false, caching is disabled and the value of the Parameters property of the RenderingItem object is recalculated every time it is accessed. To improve the performance of page rendering on content delivery servers, you should enable caching of the Parameters value. We recommend that you disable RenderingItem Parameters caching on content management servers. Default value: false renderingParametersCacheSize: The size of the RenderingItem Parameters cache. Specify the value in bytes or append the value with KB, MB or GB. domain: The security domain of the site. requireLogin: If true, login will be required to enter the site. loginPage: The path to the login page to use. Must point to a physical file or a page in a site that does NOT require login. enableDebugger: Indicates if the debugger is enabled on the site. Typically this is only the website. enablePreview: Indicates if preview is enabled on the site. Typically this is only the website. enableWebEdit: Indicates if WebEdit is enabled on the site. Typically this is only the website. enableWorkflow: Must be true to enable workflows for the site. enableTracking: Determines whether website tracking is enabled or not. Default value: true. explicitConsentForTrackingIsRequired: Determines whether explicit consent for tracking is required. Default value: false. isInternal: Indicates if a site is used for internal purposes. Default value: false. enforceVersionPresence: If set to true, '404 Not Found' error page will be shown if a context item does not have a requested version. Default value: false. allowDebug: Must be true to be able to debug the site. browserTitle: The title of the browser window when browsing the site. disableBrowserCaching: If set to true, browser caching is disabled for the site. If set to false, browser caching is enabled for the site. If absent, the value of the DisableBrowserCaching setting in the <settings section determines browser caching for the site. disableClientData: If set to true, the use of ClientDataStore will be disabled for the site. disableXmlControls: If set to true, loading Xml Controls as pages will be disabled. defaultDevice: The device to use if no specific device matches the request. This setting takes precedence over the default device as it is set by Default checkbox for Device item.  dictionaryDomain: The default domain to use when looking up dictionary phrases for the website. If a phrase does not exist in this dictionary domain, Sitecore attempts to locate that phrase in the default dictionary domain - /sitecore/system/Dictionary in the current database. If the phrase cannot be found in the default dictionary domain, Sitecore attempts to locate that phrase in the default dictionary domain in the Core database, if that database exists. You can override the site-specific dictionary domain by passing parameters to the Translate.Text() method. inherits: Indicates that the attributes should be inherited from another site. To enable inheritance, you must specify the name of the source site. Attributes that are explicitly specified overwrite the attributes that are inherited from the source site.  analyticsDefinitions: The database where the Analytics definition items for this site are stored. To use the content database for the site, specify "content". If this attribute is not specified, the current context database is used. If the context database is not set, for example, for code that runs in a background job, the value of the DefaultDefinitionDatabase setting in the Sitecore.Analytics.config file is used. previewUnpublishableItems: Allows users to preview items that cannot be published yet. Default value: false. disableTrailingWildcard: Disables the use of trailing wildcards when resolving the name of a website. For example, when set to true, 'test.com' is not be matched to '*test.c'. Default value: false. errorPageUrl: The URL to redirect to, if a generic error occurs. Default value: if not specified, the value of the ErrorPage setting in the <settings section is used. noAccessUrl: The URL to redirect to, if access to an item is denied. Default value: if not specified, the value of the NoAccessUrl setting in the <settings section is used. noLicenseUrl: The URL to redirect to, if a license is missing. Default value: if not specified, the value of the NoLicenseUrl setting in the <settings section is used. layoutNotFoundUrl: The URL to redirect to, if an items layout is not found. Default value: if not specified, the value of the LayoutNotFoundUrl setting in the <settings section is used. itemNotFoundUrl: The URL to redirect to, if an item is not found. Default value: if not specified, the value of the ItemNotFoundUrl setting in the <settings section is used. linkItemNotFoundUrl: The URL to redirect to, if an item being linked to is not found. Default value: if not specified, the value of the LinkItemNotFoundUrl setting in the <settings section is used. noPublishableUrl: The URL of the page that handles errors if no publishable item or version of an item can be found. Default value: if not specified, the value of the NoPublishableUrl setting in the <settings section is used. mediaLinkServerUrl: The URL to use when Sitecore generates media links and when Media.AlwaysIncludeServerUrl is set to true. This is typically used when all media is served from one or more dedicated instances or when your solution is configured to store Sitecore media on a content delivery network. The URL must use this format: <protocol://<hostname, for example http://example.com If not set a vlue from Media.MediaLinkServerUrl is used. If Media.MediaLinkServerUrl is empty as well URL of the current site is used. Default value empty. List of all default sites can be found in ./App_Config/Sitecore/CMS.Core/Sitecore.Sites.config. </td></tr>
+<tr><td>107</td><td>buckets.resolveUIDocumentMapperFactoryRules</td><td>Sitecore.Buckets.config</td><td> RESOLVE UI DOCUMENT MAPPER FACTORY RULES PIPELINE This pipeline is executed when you use the search UI. The default processor overrides the document mapper rules to ensure that the search results are instantiated as SitecoreUISearchResultItem objects. This is necessary for the default search views to display search results correctly. </td></tr>
+<tr><td>108</td><td>buckets.addSearchTabToItem</td><td>Sitecore.Buckets.config</td><td> ADD SEARCH TAB PIPELINE Pipeline for adding search tabs to items. Arguments : (Item) The item to add a search tab to. (bool) Whether the tab was added or not. </td></tr>
+<tr><td>109</td><td>buckets.cloneItemIntoBucket</td><td>Sitecore.Buckets.config</td><td> CLONE ITEM INTO BUCKET PIPELINE Pipeline for cloning items into an item bucket. Arguments : (Item) Source, (Item) Target, (bool) Whether or not cloning was successful, (bool) Deep check. </td></tr>
+<tr><td>110</td><td>buckets.copyItemIntoBucket</td><td>Sitecore.Buckets.config</td><td> COPY ITEM INTO BUCKET PIPELINE Pipeline for copying items into an item bucket. Arguments : (Item) The item to add a search tab to. (bool) Whether the tab was added or not. </td></tr>
+<tr><td>111</td><td>buckets.createBucket</td><td>Sitecore.Buckets.config</td><td> CREATE BUCKET PIPELINE Pipeline for creating an item bucket. Arguments : (Item) Bucket Item, (Action<Item) CallBack, (bool) Whether the item bucket was created or not. </td></tr>
+<tr><td>112</td><td>buckets.getFacets</td><td>Sitecore.Buckets.config</td><td> FETCH FACET PIPELINE Pipeline for getting facets (grouping and categorization of search results) from a search. Arguments : (Item) The item to add a search tab to. (bool) Whether the tab was added or not. </td></tr>
+<tr><td>113</td><td>buckets.isBucket</td><td>Sitecore.Buckets.config</td><td> IS ITEM A BUCKET PIPELINE Pipeline for determining whether or not an item is an item bucket. Arguments : (Item) The item to add a search tab to. (bool) Whether the tab was added or not. </td></tr>
+<tr><td>114</td><td>buckets.isItemContainedWithinBucket</td><td>Sitecore.Buckets.config</td><td> ITEM IN BUCKET CHECK PIPELINE Pipeline for checking whether or not an item is contained within an item bucket. Arguments : (Item) The item to add a search tab to. (bool) Whether the tab was added or not. </td></tr>
+<tr><td>115</td><td>buckets.isTemplateBucketable</td><td>Sitecore.Buckets.config</td><td> TEMPLATE BUCKETABLE PIPELINE Pipeline for determining whether or not an item is "bucketable". Arguments : (Item) The item to add a search tab to. (bool) Whether the tab was added or not. </td></tr>
+<tr><td>116</td><td>buckets.moveItemIntoBucket</td><td>Sitecore.Buckets.config</td><td> MOVE ITEM INTO BUCKET PIPELINE Pipeline for moving items into or out of an item bucket. This pipeline also makes sure that the item being moved is "bucketable". If it is bucketable, it is automatically bucketed after it has been moved. Arguments : (Item) The item being moved. (bool) Whether the item was moved successfully or not. </td></tr>
+<tr><td>117</td><td>buckets.removeBucket</td><td>Sitecore.Buckets.config</td><td> UNBUCKETING PROCESS PIPELINE Pipeline for converting an item bucket into a content item. Arguments : (Item) The item bucket being converted into an ordinary content item. (bool) Whether the conversion was successful or not. </td></tr>
+<tr><td>118</td><td>buckets.syncBucket</td><td>Sitecore.Buckets.config</td><td> BUCKET SYNCING PIPELINE Pipeline for syncing an item bucket. This updates an item bucket after changing the bucketable value of templates, or if the bucketing process was interrupted and needs to be resumed. Arguments : (Item) The item bucket being synced. (bool) Whether the item bucket was synced successfully or not. </td></tr>
+<tr><td>119</td><td>buckets.dialogSearchFilters</td><td>Sitecore.Buckets.config</td><td> SEARCH DIALOG GLOBAL FILTERS PIPELINE Pipeline for adding default search filters to built-in Sitecore dialog boxes that use the search tab, for example, the Insert From Template dialog box. This allows you to set default locations to search in, default templates to filter on, etc. </td></tr>
+<tr><td>120</td><td>buckets.expandIdBasedSearchFilters</td><td>Sitecore.Buckets.config</td><td> EXPAND ID-BASED SEARCH FILTERS Sitecore executes this pipeline for search filters when their Client Side Hook is set to "id". To display a user-friendly item name in the UI, the ExpandIds processor replaces "<ID" with "<Item Display Name|<ID" in these search filters. </td></tr>
+<tr><td>121</td><td>buckets.fillItem</td><td>Sitecore.Buckets.config</td><td> SEARCH RESULT DISPLAY PIPELINE Pipeline for dynamically setting the SearchResultItem properties </td></tr>
+<tr><td>122</td><td>getContentEditorWarnings</td><td>Sitecore.Buckets.config</td><td> EXTENDED GETCONTENTEDITORWARNINGS PIPELINE This allows for warnings related to item buckets </td></tr>
+<tr><td>123</td><td>getDatasourceExamples</td><td>Sitecore.Buckets.config</td><td> This allows the pipeline to return examples of the items that are returned by search-based datasources. </td></tr>
+<tr><td>124</td><td>getLookupSourceItems</td><td>Sitecore.Buckets.config</td><td> EXTENDED TEMPLATE FIELD SOURCE RESOLVERS This allows the custom Template Field sources to be resolved. </td></tr>
+<tr><td>125</td><td>buckets.dynamicFields</td><td>Sitecore.Buckets.config</td><td> DYNAMIC UI SEARCH FIELD PIPELINE Pipeline to Inject Dynamic Values into the SitecoreItem object. Useful for content authoring and delivery environment </td></tr>
+<tr><td>126</td><td>getQueryState</td><td>Sitecore.Buckets.config</td><td></td></tr>
+<tr><td>127</td><td>publish</td><td>Sitecore.Buckets.config</td><td></td></tr>
+<tr><td>128</td><td>publishItem</td><td>Sitecore.Buckets.config</td><td></td></tr>
+<tr><td>129</td><td>renderField</td><td>Sitecore.Buckets.config</td><td></td></tr>
+<tr><td>130</td><td>getRenderingDatasource</td><td>Sitecore.Buckets.config</td><td></td></tr>
+<tr><td>131</td><td>uiBucketItems</td><td>Sitecore.Buckets.config</td><td> ITEM BUCKET PIPELINES Pipeline for creating an item bucket from the UI. </td></tr>
+<tr><td>132</td><td>uiUnBucketItems</td><td>Sitecore.Buckets.config</td><td></td></tr>
+<tr><td>133</td><td>uiCloneItems</td><td>Sitecore.Buckets.config</td><td></td></tr>
+<tr><td>134</td><td>uiDragItemTo</td><td>Sitecore.Buckets.config</td><td></td></tr>
+<tr><td>135</td><td>uiCopyItems</td><td>Sitecore.Buckets.config</td><td></td></tr>
+<tr><td>136</td><td>uiMoveItems</td><td>Sitecore.Buckets.config</td><td></td></tr>
+<tr><td>137</td><td>uiDuplicateItem</td><td>Sitecore.Buckets.config</td><td></td></tr>
+<tr><td>138</td><td>uiDeleteItems</td><td>Sitecore.Buckets.config</td><td></td></tr>
+<tr><td>139</td><td>uiAddFromTemplate</td><td>Sitecore.Buckets.config</td><td></td></tr>
+<tr><td>140</td><td>speak.client.resolveScript</td><td>Sitecore.Marketing.Campaigns.Client.config</td><td> Configure JavaScript sources for Campaign Creator </td></tr>
+<tr><td>141</td><td>initialize</td><td>Sitecore.Diagnostics.config</td><td></td></tr>
+<tr><td>142</td><td>healthMonitor</td><td>Sitecore.Diagnostics.config</td><td></td></tr>
+<tr><td>143</td><td>initialize</td><td>Sitecore.Eventing.config</td><td></td></tr>
+<tr><td>144</td><td>initialize</td><td>Sitecore.JSNLog.config</td><td></td></tr>
+<tr><td>145</td><td>getFieldValue</td><td>Sitecore.LanguageFallback.config</td><td>  Extending the getFieldValue pipeline allows to enable the field based language fallback functionality </td></tr>
+<tr><td>146</td><td>getItem</td><td>Sitecore.LanguageFallback.config</td><td></td></tr>
+<tr><td>147</td><td>getVersions</td><td>Sitecore.LanguageFallback.config</td><td></td></tr>
+<tr><td>148</td><td>renderField</td><td>Sitecore.Media.RequestProtection.config</td><td></td></tr>
+<tr><td>149</td><td>saveItem</td><td>Sitecore.PipelineBased.ItemProvider.config</td><td> "Processors should derive from Sitecore.Pipelines.ItemProvider.SaveItem.SaveItemProcessor."</td></tr>
+<tr><td>150</td><td>copyItem</td><td>Sitecore.PipelineBased.ItemProvider.config</td><td> "Processors should derive from Sitecore.Pipelines.ItemProvider.CopyItem.CopyItemProcessor."</td></tr>
+<tr><td>151</td><td>httpRequestBegin</td><td>Sitecore.ThumbnailGenerator.config</td><td></td></tr>
+<tr><td>152</td><td>initialize</td><td>Sitecore.Webhooks.config</td><td></td></tr>
+<tr><td>153</td><td>getContentEditorWarnings</td><td>Sitecore.Webhooks.config</td><td></td></tr>
+<tr><td>154</td><td>contentSearch.stripQueryStringParameters</td><td>Sitecore.ContentSearch.config</td><td> SEARCH PIPELINES </td></tr>
+<tr><td>155</td><td>contentSearch.getContextIndex</td><td>Sitecore.ContentSearch.config</td><td> CONTENT SEARCH GET CONTEXT INDEX This pipeline retrieves the index that should be queried based on the context item or the location that the search was initiated from. Arguments    : (Item) The item used to determine the context index. Example Usage: If you need some custom logic to determine which index should be queried and written to based on the context item, you can create it here. For example, if the context item contains a field that links to another item that determines the context index. </td></tr>
+<tr><td>156</td><td>contentSearch.getGlobalSearchFilters</td><td>Sitecore.ContentSearch.config</td><td> CONTENT SEARCH GET GLOBAL SEARCH FILTERS This pipeline sets the global search filters for every query that is run through the UI. Example: You don't want anyone to be able to globally search for a particular template. Arguments    : (IQueryable) An open session to the index. Example Usage: If you want every query that goes through the UI to use a filter, such as Security, or Templates, place this filter here. Best Practice: The Filter predicate is a good replacement for the Where predicate, when the predicate in the Where statement is repeated in a lot of your code. For example, if you find that your code is always putting the same Where predicate in all your LINQ statements, the Filter predicate is a good replacement. When you build your predicates for IQueryable, use the Filter predicate instead of e.g. the Where predicate. The Filter predicate caches itself in memory and the Search Provider does not have to keep re-running this part of the query. This results in search queries that consistently take the same time to run. </td></tr>
+<tr><td>157</td><td>contentSearch.getGlobalLinqFilters</td><td>Sitecore.ContentSearch.config</td><td> GET GLOBAL LINQ FILTERS This pipeline allows you to apply global search filters to every query that is executed through the Linq layer or the search UI. For example, this pipeline could be used to apply a filter that globally limits search results based on security or templates. Arguments: (object) Query, (Type) QueryElementType, (List<IExecutionContext) ExecutionContext </td></tr>
+<tr><td>158</td><td>contentSearch.getFacets</td><td>Sitecore.ContentSearch.config</td><td> CONTENT SEARCH GET FACETS This pipeline pre-processes facets. Arguments : (IDictionary<string, ICollection<KeyValuePair<string, int) Facet values </td></tr>
+<tr><td>159</td><td>contentSearch.processFacets</td><td>Sitecore.ContentSearch.config</td><td> CONTENT SEARCH PROCESS FACETS This pipeline post processes facets. Arguments : (IDictionary<string, ICollection<KeyValuePair<string, int) Facet values </td></tr>
+<tr><td>160</td><td>contentSearch.queryWarmup</td><td>Sitecore.ContentSearch.config</td><td> CONTENT SEARCH QUERY WARMUP This pipeline runs search queries that warm up the index caches when Sitecore is initialized. Only enable this in a production environment. Arguments : (IQueryable) Open session to the search index. </td></tr>
+<tr><td>161</td><td>contentSearch.translateQuery</td><td>Sitecore.ContentSearch.config</td><td> CONTENT SEARCH TRANSLATE QUERY This pipeline takes a search query and manipulates the search terms before passing it to the Linq layer. Example usage: When the Solr search provider runs date searches, it must use a different format than Lucene. If other providers are integrated, this gives the ability to modify field names, values, and boolean operations before translation to the Linq layer. </td></tr>
+<tr><td>162</td><td>contentSearch.cleanUp</td><td>Sitecore.ContentSearch.config</td><td> CONTENT SEARCH - CLEAN UP This pipeline allows you to modify the data of an IIndexable before the document builder processes it. For example, you can use this pipeline to de-duplicate, merge, or override data. Arguments : (IIndexable) The document being indexed, (IProviderUpdateContext) The open update context for the index, (bool) A flag that indicates if the IIndexable was modified during the process </td></tr>
+<tr><td>163</td><td>getQueryState</td><td>Sitecore.ContentSearch.config</td><td></td></tr>
+<tr><td>164</td><td>indexing.filterIndex.inbound</td><td>Sitecore.ContentSearch.config</td><td> INDEX INTBOUND FILTER This pipeline filters out items so that they are not added to a search index. By default this pipeline does not filter out any items. </td></tr>
+<tr><td>165</td><td>indexing.getDependencies</td><td>Sitecore.ContentSearch.config</td><td> INDEXING GET DEPENDENCIES This pipeline fetches dependant items when one item is being index. Useful for fetching related or connected items that also need to be updated in the indexes. Arguments: (IQueryable) Open session to the search index, (Item) The item being indexed. Examples: Update clone references. Update the data sources that are used in the presentation components for the item being indexed.  "Processors should derive from Sitecore.ContentSearch.Pipelines.GetDependencies.BaseProcessor"</td></tr>
+<tr><td>166</td><td>indexing.getChildrenToIndex</td><td>Sitecore.ContentSearch.config</td><td> GET CHILDREN TO INDEX Pipeline to allow for overriding the getting of children of an item for indexing. Arguments: (IIndexable) The document being indexed, (ISearchIndex) The search index. Examples: Do not allow for indexing children of a certain template type  "Processors should derive from Sitecore.ContentSearch.Pipelines.GetChildrenToIndex.GetChildrenToIndexProcessor"</td></tr>
+<tr><td>167</td><td>indexing.resolveFieldBoost</td><td>Sitecore.ContentSearch.config</td><td> RESOLVE FIELD LEVEL BOOSTING Pipeline for resolving boosting rules on fields. Arguments: (Item) Item being indexed Example : Boost search results by a field value.  "Processors should derive from Sitecore.ContentSearch.Pipelines.ResolveBoost.ResolveFieldBoost.BaseResolveFieldBoostPipelineProcessor"</td></tr>
+<tr><td>168</td><td>indexing.resolveItemBoost</td><td>Sitecore.ContentSearch.config</td><td> RESOLVE ITEM LEVEL BOOSTING Pipeline for resolving boosting rules on items. Arguments: (Item) Item being indexed Example : Boost search results by a Item Template.  "Processors should derive from Sitecore.ContentSearch.Pipelines.ResolveBoost.ResolveItemBoost.BaseResolveItemBoostPipelineProcessor"</td></tr>
+<tr><td>169</td><td>parseDataSource</td><td>Sitecore.ContentSearch.config</td><td></td></tr>
+<tr><td>170</td><td>search</td><td>Sitecore.ContentSearch.config</td><td></td></tr>
+<tr><td>171</td><td>initialize</td><td>Sitecore.ContentSearch.Solr.DefaultIndexConfiguration.config</td><td></td></tr>
+<tr><td>172</td><td>contentSearch.translateQuery</td><td>Sitecore.ContentSearch.Solr.DefaultIndexConfiguration.config</td><td></td></tr>
+<tr><td>173</td><td>contentSearch.formatQueryFieldValue</td><td>Sitecore.ContentSearch.Solr.DefaultIndexConfiguration.config</td><td> The 'contentSearch.formatQueryFieldValue' pipeline has been obsoleted. It will be removed in a future release. </td></tr>
+<tr><td>174</td><td>contentSearch.PopulateSolrSchema</td><td>Sitecore.ContentSearch.Solr.DefaultIndexConfiguration.config</td><td></td></tr>
+<tr><td>175</td><td>getTaggingConfiguration</td><td>Sitecore.ContentTagging.config</td><td></td></tr>
+<tr><td>176</td><td>tagContent</td><td>Sitecore.ContentTagging.config</td><td></td></tr>
+<tr><td>177</td><td>normalizeContent</td><td>Sitecore.ContentTagging.config</td><td></td></tr>
+<tr><td>178</td><td>tagContent</td><td>Sitecore.ContentTagging.OpenCalais.config</td><td></td></tr>
+<tr><td>179</td><td>renderRulePlaceholder.afterAction</td><td>Sitecore.ContentTesting.Client.RulePerformance.config</td><td></td></tr>
+<tr><td>180</td><td>addPersonalizationVariables</td><td>Sitecore.ContentTesting.config</td><td> ADD PERSONALIZATION VARIABLES Loads and filters the personalization test variables in the test set </td></tr>
+<tr><td>181</td><td>AddSuggestedPersonalizations</td><td>Sitecore.ContentTesting.config</td><td> ADD SUGGESTED PERSONALIZATION Apply suggested personalization to item </td></tr>
+<tr><td>182</td><td>calculateTestScore</td><td>Sitecore.ContentTesting.config</td><td> CALCULATE TEST SCORE Calculates the score for the test </td></tr>
+<tr><td>183</td><td>canCancelTest</td><td>Sitecore.ContentTesting.config</td><td> CAN CANCEL TEST Determine if a test can be cancelled </td></tr>
+<tr><td>184</td><td>cancelTest</td><td>Sitecore.ContentTesting.config</td><td> CANCEL TEST Cancels a test and reverts test candidates back to their original state </td></tr>
+<tr><td>185</td><td>canStopTest</td><td>Sitecore.ContentTesting.config</td><td> CAN STOP TEST Determine if a test can be stopped </td></tr>
+<tr><td>186</td><td>determineTestExposure</td><td>Sitecore.ContentTesting.config</td><td> DETERMINE TEST EXPOSURE Determine if a user should be exposed to a test </td></tr>
+<tr><td>187</td><td>generateVariantDescription</td><td>Sitecore.ContentTesting.config</td><td> GENERATE VARIANT DESCRIPTION Generate a user friendly description for the variant in the experience. </td></tr>
+<tr><td>188</td><td>getChromeData</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
+<tr><td>189</td><td>getContentEditorWarnings</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
+<tr><td>190</td><td>getCurrentTestCombination</td><td>Sitecore.ContentTesting.config</td><td> GET CURRENT TEST COMBINATION Returns a test combination to expose to the current visitor. </td></tr>
+<tr><td>191</td><td>getDatasourceWarningsForTest</td><td>Sitecore.ContentTesting.config</td><td> GET DATASOURCE WARNINGS FOR TEST Inspect an item being used as a datsource in a test and raise issues that could prevent it from acting within the test </td></tr>
+<tr><td>192</td><td>getItemWarningsForTest</td><td>Sitecore.ContentTesting.config</td><td> GET ITEM WARNINGS FOR TEST Inspect an item being added to a page version test and raise issues that could prevent it from acting within the test </td></tr>
+<tr><td>193</td><td>getNonVersionedTestCandidates</td><td>Sitecore.ContentTesting.config</td><td> GET VERSIONED TEST CANDIDATES Inspect an item without workflow and identify test candidates for it </td></tr>
+<tr><td>194</td><td>getRenderingRules</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
+<tr><td>195</td><td>getScreenshot</td><td>Sitecore.ContentTesting.config</td><td> GET SCEENSHOT Generate and scale screenshots </td></tr>
+<tr><td>196</td><td>getScreenShotForURL</td><td>Sitecore.ContentTesting.config</td><td> GET SCREEN SHOT FOR URL Generate a screenshot for a page </td></tr>
+<tr><td>197</td><td>getTests</td><td>Sitecore.ContentTesting.config</td><td> GET TESTS Inspect an item and identify all tests for it </td></tr>
+<tr><td>198</td><td>getTestCandidateVariantDescription</td><td>Sitecore.ContentTesting.config</td><td> GET TEST CANDIDATE VARIANT DESCRIPTION Generate a user friendly description for a test candidate variant </td></tr>
+<tr><td>199</td><td>getTestObjectives</td><td>Sitecore.ContentTesting.config</td><td> GET TEST OBJECTIVES Locate options to list as objectives of a test </td></tr>
+<tr><td>200</td><td>getTestToRun</td><td>Sitecore.ContentTesting.config</td><td> GET TEST TO RUN Inspect an item for a test to run </td></tr>
+<tr><td>201</td><td>getVersionedTestCandidates</td><td>Sitecore.ContentTesting.config</td><td> GET VERSIONED TEST CANDIDATES Inspect an item with workflow and identify test candidates for it </td></tr>
+<tr><td>202</td><td>httpRequestBegin</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
+<tr><td>203</td><td>initialize</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
+<tr><td>204</td><td>insertRenderings</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
+<tr><td>205</td><td>publishVersion</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
+<tr><td>206</td><td>renderDeviceEditorRendering</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
+<tr><td>207</td><td>renderField</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
+<tr><td>208</td><td>renderLayout</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
+<tr><td>209</td><td>renderLayoutGridRendering</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
+<tr><td>210</td><td>renderingRuleEvaluated</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
+<tr><td>211</td><td>parseDataSource</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
+<tr><td>212</td><td>revertContent</td><td>Sitecore.ContentTesting.config</td><td> REVERT CONTENT Remove a test from an item and revert content to its original state </td></tr>
+<tr><td>213</td><td>saveTestOutcome</td><td>Sitecore.ContentTesting.config</td><td> SAVE TEST OUTCOME Process and save outcome data of the test </td></tr>
+<tr><td>214</td><td>sessionEnd</td><td>Sitecore.ContentTesting.config</td><td> SESSIOND END Performs cleanup on session end </td></tr>
+<tr><td>215</td><td>speak.client.initialize.layout</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
+<tr><td>216</td><td>startPageTest</td><td>Sitecore.ContentTesting.config</td><td> START PAGE TEST Starts the page test </td></tr>
+<tr><td>217</td><td>startTest</td><td>Sitecore.ContentTesting.config</td><td> START TEST Starts a test </td></tr>
+<tr><td>218</td><td>stopTest</td><td>Sitecore.ContentTesting.config</td><td> STOP TEST Stops the test </td></tr>
+<tr><td>219</td><td>suggestTests</td><td>Sitecore.ContentTesting.config</td><td> SUGGEST TESTS Inspect an item and suggest tests which may be run against it </td></tr>
+<tr><td>220</td><td>suspendTest</td><td>Sitecore.ContentTesting.config</td><td> SUSPEND TEST Suspend the test. </td></tr>
+<tr><td>221</td><td>registerMLWorkers</td><td>Sitecore.ContentTesting.config</td><td> REGISTER MACHINE LEARNING WORKERS Register Machine Learning Workers into Processing Engine. </td></tr>
+<tr><td>222</td><td>validateModelTrainingRequirements</td><td>Sitecore.ContentTesting.config</td><td> VALIDATE MODEL TRAINING REQUIREMENTS Validates whether the test fulfills the requirements to start machine learning model training. </td></tr>
+<tr><td>223</td><td>validateDataSourceConfiguration</td><td>Sitecore.ContentTesting.config</td><td> VALIDATE DATA SOURCE CONFIGURATION Validates whethr data source for specified Test Value Item is not corrupted. </td></tr>
+<tr><td>224</td><td>validateStopAction</td><td>Sitecore.ContentTesting.config</td><td> VALIDATE STOP ACTION Validates whether it's possible to stop the test. </td></tr>
+<tr><td>225</td><td>speak.client.resolveScript</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
+<tr><td>226</td><td>getItem</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
+<tr><td>227</td><td>getPageEditorNotifications</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
+<tr><td>228</td><td>convertToXConnectInteraction</td><td>Sitecore.ContentTesting.config</td><td> CONVERT TO XCONNECT INTERACTION Convert to MVTestEvent Convert to PersonalizationEvent </td></tr>
+<tr><td>229</td><td>convertFromXConnectContact</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
+<tr><td>230</td><td>uiDeleteItems</td><td>Sitecore.ContentTesting.config</td><td></td></tr>
+<tr><td>231</td><td>getRibbonControlState</td><td>Sitecore.ContentTesting.ExperienceEditor.config</td><td></td></tr>
+<tr><td>232</td><td>ribbonStylesheets</td><td>Sitecore.ContentTesting.ExperienceEditor.config</td><td></td></tr>
+<tr><td>233</td><td>pageEditingStyleSheets</td><td>Sitecore.ContentTesting.ExperienceEditor.config</td><td></td></tr>
+<tr><td>234</td><td>pageEditingScripts</td><td>Sitecore.ContentTesting.ExperienceEditor.config</td><td></td></tr>
+<tr><td>235</td><td>getPageModeCapabilities</td><td>Sitecore.ContentTesting.ExperienceEditor.config</td><td></td></tr>
+<tr><td>236</td><td>executePageEditorAction</td><td>Sitecore.ContentTesting.ExperienceEditor.config</td><td></td></tr>
+<tr><td>237</td><td>executePageEditorActionArgumentResolver</td><td>Sitecore.ContentTesting.ExperienceEditor.config</td><td></td></tr>
+<tr><td>238</td><td>getTestingClusters</td><td>Sitecore.ContentTesting.Intelligence.config</td><td> GET TESTING CLUSTERS Performs segmention across sessions for a test. </td></tr>
+<tr><td>239</td><td>calculateStatisticalRelevancy</td><td>Sitecore.ContentTesting.Intelligence.config</td><td> CALCULATE STATISTICAL RELEVANCY Determines whether a content test has been exposed to enough visitors to successfully determine the winning variant. </td></tr>
+<tr><td>240</td><td>forecastTestDuration</td><td>Sitecore.ContentTesting.Intelligence.config</td><td> TEST DURATION FORECAST Forecasts the number of sessions required for a successful content test and the number of days required to reach statistical relevancy. </td></tr>
+<tr><td>241</td><td>savePersonalizationRules</td><td>Sitecore.ContentTesting.Intelligence.config</td><td> SAVE PERSONALIZATION RULES Save personalization rules into reporting database </td></tr>
+<tr><td>242</td><td>mvc.getPageItem</td><td>Sitecore.ContentTesting.Mvc.config</td><td></td></tr>
+<tr><td>243</td><td>mvc.requestBegin</td><td>Sitecore.ContentTesting.Mvc.config</td><td></td></tr>
+<tr><td>244</td><td>mvc.customizeRendering</td><td>Sitecore.ContentTesting.Mvc.config</td><td></td></tr>
+<tr><td>245</td><td>interactions</td><td>Sitecore.ContentTesting.Processing.Aggregation.config</td><td></td></tr>
+<tr><td>246</td><td>itemWebApiSearch</td><td>Sitecore.ContentTesting.Search.config</td><td></td></tr>
+<tr><td>247</td><td>ces.geoIp.handleLookupError</td><td>Sitecore.CES.GeoIp.config</td><td>  HANDLE LOOKUP ERROR Handles exceptions happened when look up for IP geo information. </td></tr>
+<tr><td>248</td><td>ces.geoIp.parseResponse</td><td>Sitecore.CES.GeoIp.config</td><td>  PARSE RESPONSE Parses the response from the Sitecore IP Geolocation service. </td></tr>
+<tr><td>249</td><td>initialize</td><td>Sitecore.CES.GeoIp.config</td><td></td></tr>
+<tr><td>250</td><td>initialize</td><td>Sitecore.CES.DeviceDetection.CheckInitialization.config</td><td></td></tr>
+<tr><td>251</td><td>getFallbackUserAgent</td><td>Sitecore.CES.DeviceDetection.config</td><td></td></tr>
+<tr><td>252</td><td>redirectUrl</td><td>Sitecore.EmailExperience.ContentDelivery.config</td><td> REDIRECT URL PIPELINE This pipeline is executed when Email Experience Manager receives a request to redirect a page request from an email link to the correct destination page. </td></tr>
+<tr><td>253</td><td>registerEmailOpened</td><td>Sitecore.EmailExperience.ContentDelivery.config</td><td> REGISTER EMAIL OPENED PIPELINE This pipeline is executed when Email Experience Manager receives a request to RegisterEmailOpened Web Handler. </td></tr>
+<tr><td>254</td><td>convertToXConnectEvent</td><td>Sitecore.EmailExperience.ContentDelivery.config</td><td></td></tr>
+<tr><td>255</td><td>createContact</td><td>Sitecore.EmailExperience.ContentDelivery.config</td><td> The create contact pipeline is called by the send email submit actions to create a new contact and save it to the collection database. This pipline populates the email address list facet and the consent information facet according to the values supplied in the form. </td></tr>
+<tr><td>256</td><td>transformFormsCustomToken</td><td>Sitecore.EmailExperience.ContentDelivery.config</td><td> The transform forms custom token pipeline is called for each custom token that is configured in the send email submit action. Add processors to this pipeline in order to transform the form original value that is resolved from the form field to the desirable form (e.g. traforming the value that is obtained from a CheckBoxListViewModel field from a List<string to a string). Processors of this pipeline implements the ITransformFormsCustomTokenProcessor interface. </td></tr>
+<tr><td>257</td><td>emailOpened</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td> EMAIL OPENED PIPELINE This pipeline is executed when Email Experience Manager processes a email opened task. The pipeline creates an interaction with a "Email Opened" and a "Email Opened First Time" page event The pipeline will be aborted if: - The message item cannot be found - The campaign cannot be found </td></tr>
+<tr><td>258</td><td>exm.recipientListManagement.add</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td> RECIPIENT LIST MANAGEMENT PIPELINE This pipeline is executed when a recipient list management task from the recipientListManagementTaskPool task pool is processed. The pipeline is executed for each task individually and adds the corresponding contact to the global opt out list. </td></tr>
+<tr><td>259</td><td>exm.recipientListManagement.remove</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td> RECIPIENT LIST MANAGEMENT PIPELINE This pipeline is executed when a recipient list management task from the recipientListManagementTaskPool task pool is processed. The pipeline is executed for each task individually and removes the contact from any include lists on the message. </td></tr>
+<tr><td>260</td><td>handleUndeliveredMessage</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td> HANDLE UNDELIVERED MESSAGE PIPELINE This pipeline is executed when a bounced message task from the bounced messages task pool is processed. The pipeline is executed for each task individually and updates the number of undelivered emails on the recipient's profile. Furthermore an interaction is created with a "Email Bounced" page event in xDB. </td></tr>
+<tr><td>261</td><td>handleSpamComplaint</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td> HANDLE SPAM COMPLAINT PIPELINE This pipeline is executed when a spam complaint task from the spam complaints task pool is processed. An interaction is created with a "Email Spam Reported" page event in xDB. </td></tr>
+<tr><td>262</td><td>handleListUnsubscribe</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td> HANDLE LIST UNSUBSCRIBE PIPELINE This pipeline is executed when a task from the list unsubscribe task pool is processed. An interaction is created with an "Unsubscribe from email" page event in xDB. </td></tr>
+<tr><td>263</td><td>handleSentMessage</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td> HANDLE SENT MESSAGE PIPELINE This pipeline is executed when a sent message task from the sent messages task pool is processed. An interaction is created with a "Email Sent" page event in xDB. </td></tr>
+<tr><td>264</td><td>SendEmail</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td> SEND EMAIL PIPELINE This pipeline dispatches a single email through the SMTP server. </td></tr>
+<tr><td>265</td><td>handleDispatchFailed</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td> HANDLE DISPATCH FAILED PIPELINE This pipeline is executed when a dispatch failed task from the dispatch failed task pool is processed. An interaction is created with a "Dispatch Failed" page event in xDB. </td></tr>
+<tr><td>266</td><td>owin.cookieAuthentication.validateIdentity</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td></td></tr>
+<tr><td>267</td><td>DispatchNewsletter</td><td>Sitecore.EmailExperience.ContentManagementPrimary.config</td><td> DISPATCH NEWSLETTER PIPELINE This pipeline defines the message dispatch process in the Email Experience Manager. For regular messages the pipeline is executed once. For automated messages it is executed every time a message is triggered. </td></tr>
+<tr><td>268</td><td>UnsubscribeFromList</td><td>Sitecore.EmailExperience.ContentManagementPrimary.config</td><td> UNSUBSCRIBE FROM LIST PIPELINE This pipeline is executed for each subscribed list of a contact whose unsubscribing from a message. </td></tr>
+<tr><td>269</td><td>SubscribeEvent</td><td>Sitecore.EmailExperience.ContentManagementPrimary.config</td><td> SUBSCRIBE EVENT PIPELINE This pipeline is executed when a recipient subscribes to a message. </td></tr>
+<tr><td>270</td><td>UnsubscribeFromAllEvent</td><td>Sitecore.EmailExperience.ContentManagementPrimary.config</td><td> UNSUBSCRIBE FROM ALL EVENT PIPELINE This pipeline is executed when a recipient unsubscribes from all messages. </td></tr>
+<tr><td>271</td><td>transformQueryString</td><td>Sitecore.EmailExperience.Core.config</td><td> TRANSFORM QUERY STRING PIPELINE This pipeline is executed when a message event page is requested. It can be used to reformat the query string prior to the event handling. E.g. decrypting encrypted content, adding support for legacy formats, etc. </td></tr>
+<tr><td>272</td><td>getContact</td><td>Sitecore.EmailExperience.Core.config</td><td></td></tr>
+<tr><td>273</td><td>generateBodyLink</td><td>Sitecore.EmailExperience.Core.config</td><td> GENERATE BODY LINK PIPELINE This pipeline is executed during dispatch when EXM generates the link to download the email campaign contents from </td></tr>
+<tr><td>274</td><td>getContentEditorFields</td><td>Sitecore.EmailExperience.Core.config</td><td></td></tr>
+<tr><td>275</td><td>httpRequestBegin</td><td>Sitecore.EmailExperience.Core.config</td><td></td></tr>
+<tr><td>276</td><td>ensureSessionContext</td><td>Sitecore.EmailExperience.Core.config</td><td></td></tr>
+<tr><td>277</td><td>initializeTracker</td><td>Sitecore.EmailExperience.Core.config</td><td></td></tr>
+<tr><td>278</td><td>renderField</td><td>Sitecore.EmailExperience.Core.config</td><td></td></tr>
+<tr><td>279</td><td>modifyHyperlink</td><td>Sitecore.EmailExperience.Core.config</td><td></td></tr>
+<tr><td>280</td><td>modifyImageLink</td><td>Sitecore.EmailExperience.Core.config</td><td></td></tr>
+<tr><td>281</td><td>DispatchNewsletter</td><td>Sitecore.EmailExperience.EmailProcessing.config</td><td> DISPATCH NEWSLETTER PIPELINE This is a customization of the DispatchNewsletter pipeline specific for dedicated dispatch servers. </td></tr>
+<tr><td>282</td><td>journey</td><td>Sitecore.EmailExperience.ExperienceProfile.config</td><td></td></tr>
+<tr><td>283</td><td>getExperienceEditorRibbon</td><td>Sitecore.EmailExperience.UI.config</td><td></td></tr>
+<tr><td>284</td><td>speak.client.resolveScript</td><td>Sitecore.EmailExperience.UI.config</td><td></td></tr>
+<tr><td>285</td><td>getQueryState</td><td>Sitecore.EmailExperience.UI.config</td><td></td></tr>
+<tr><td>286</td><td>saveUI</td><td>Sitecore.EmailExperience.UI.config</td><td></td></tr>
+<tr><td>287</td><td>initialize</td><td>Sitecore.ExM.Framework.ContentManagement.config</td><td></td></tr>
+<tr><td>288</td><td>getRibbonControlState</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
+<tr><td>289</td><td>canShowEditor</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
+<tr><td>290</td><td>prepareEditorResources</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
+<tr><td>291</td><td>preLoadImages</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
+<tr><td>292</td><td>resourceItemResolver</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
+<tr><td>293</td><td>ribbonStylesheets</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
+<tr><td>294</td><td>pageEditingStyleSheets</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
+<tr><td>295</td><td>getPageModeCapabilities</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
+<tr><td>296</td><td>getExperienceEditorRibbon</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
+<tr><td>297</td><td>executePageEditorAction</td><td>Sitecore.ExperienceEditor.config</td><td>  Controls actions performed on presentation components in Experience Editor </td></tr>
+<tr><td>298</td><td>executePageEditorActionArgumentResolver</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
+<tr><td>299</td><td>getPageEditorNotifications</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
+<tr><td>300</td><td>getPageEditorValidators</td><td>Sitecore.ExperienceEditor.config</td><td> Gets the validators, that will be executed when saving page in Experience Editor</td></tr>
+<tr><td>301</td><td>pageEditingScripts</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
+<tr><td>302</td><td>getLayoutSourceFields</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
+<tr><td>303</td><td>injectExperienceEditorRibbonComponents</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
+<tr><td>304</td><td>changeEditorResourcesToInclude</td><td>Sitecore.ExperienceEditor.config</td><td> changeEditorResourcesToInclude pipeline is no longer supported please use pageEditingScripts pipeline instead </td></tr>
+<tr><td>305</td><td>httpRequestBegin</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
+<tr><td>306</td><td>renderField</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
+<tr><td>307</td><td>getChromeData</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
+<tr><td>308</td><td>getPlaceholderRenderings</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
+<tr><td>309</td><td>speak.client.resolveScript</td><td>Sitecore.ExperienceEditor.config</td><td></td></tr>
+<tr><td>310</td><td>dimensions</td><td>Sitecore.ExperienceAnalytics.Aggregation.Processing.config</td><td></td></tr>
+<tr><td>311</td><td>interactions</td><td>Sitecore.ExperienceAnalytics.Aggregation.Processing.config</td><td></td></tr>
+<tr><td>312</td><td>processSegments</td><td>Sitecore.ExperienceAnalytics.Aggregation.Processing.config</td><td></td></tr>
+<tr><td>313</td><td>initialize</td><td>Sitecore.ExperienceAnalytics.Client.config</td><td></td></tr>
+<tr><td>314</td><td>httpRequestBegin</td><td>Sitecore.ExperienceAnalytics.Client.config</td><td></td></tr>
+<tr><td>315</td><td>owin.cookieAuthentication.validateIdentity</td><td>Sitecore.ExperienceAnalytics.Client.config</td><td></td></tr>
+<tr><td>316</td><td>experienceAnalytics.syncSegments</td><td>Sitecore.ExperienceAnalytics.Client.config</td><td></td></tr>
+<tr><td>317</td><td>initialize</td><td>Sitecore.ExperienceAnalytics.WebAPI.config</td><td></td></tr>
+<tr><td>318</td><td>initialize</td><td>Sitecore.ExperienceAnalytics.WebAPI.Processing.config</td><td></td></tr>
+<tr><td>319</td><td>httpRequestBegin</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
+<tr><td>320</td><td>renderLayout</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
+<tr><td>321</td><td>mvc.renderPageExtenders</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
+<tr><td>322</td><td>startTracking</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
+<tr><td>323</td><td>commitSession</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
+<tr><td>324</td><td>ensureSessionContext</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
+<tr><td>325</td><td>sessionEnd</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
+<tr><td>326</td><td>getItemPersonalizationVisibility</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
+<tr><td>327</td><td>resolveExplorerDatabase</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
+<tr><td>328</td><td>initializeModel</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
+<tr><td>329</td><td>applyModelToTracker</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
+<tr><td>330</td><td>resolveExplorerMode</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
+<tr><td>331</td><td>cleanupAnalytics</td><td>Sitecore.ExperienceExplorer.config</td><td></td></tr>
+<tr><td>332</td><td>initialize</td><td>Sitecore.ExperienceExplorer.Services.config</td><td></td></tr>
+<tr><td>333</td><td>interactions</td><td>Sitecore.ExperienceForms.Analytics.Aggregation.config</td><td></td></tr>
+<tr><td>334</td><td>sessionEnd</td><td>Sitecore.ExperienceForms.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>335</td><td>initialize</td><td>Sitecore.ExperienceForms.Mvc.config</td><td></td></tr>
+<tr><td>336</td><td>forms.renderForm</td><td>Sitecore.ExperienceForms.Mvc.config</td><td></td></tr>
+<tr><td>337</td><td>forms.renderFields</td><td>Sitecore.ExperienceForms.Mvc.config</td><td></td></tr>
+<tr><td>338</td><td>forms.renderField</td><td>Sitecore.ExperienceForms.Mvc.config</td><td></td></tr>
+<tr><td>339</td><td>forms.getModel</td><td>Sitecore.ExperienceForms.Mvc.config</td><td></td></tr>
+<tr><td>340</td><td>forms.validateSubmit</td><td>Sitecore.ExperienceForms.Mvc.config</td><td></td></tr>
+<tr><td>341</td><td>forms.executeSubmit</td><td>Sitecore.ExperienceForms.Mvc.config</td><td></td></tr>
+<tr><td>342</td><td>forms.sessionEnd</td><td>Sitecore.ExperienceForms.Mvc.config</td><td></td></tr>
+<tr><td>343</td><td>initialize</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
+<tr><td>344</td><td>speak.client.resolveScript</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
+<tr><td>345</td><td>forms.renderForm</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
+<tr><td>346</td><td>forms.renderFields</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
+<tr><td>347</td><td>forms.renderField</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
+<tr><td>348</td><td>forms.getModel</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
+<tr><td>349</td><td>forms.saveForm</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
+<tr><td>350</td><td>forms.deleteForms</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
+<tr><td>351</td><td>forms.renameForm</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
+<tr><td>352</td><td>forms.formDetails</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
+<tr><td>353</td><td>forms.getLanguages</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
+<tr><td>354</td><td>forms.removeFormVersion</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
+<tr><td>355</td><td>forms.moveForm</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
+<tr><td>356</td><td>forms.getImportantNotes</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
+<tr><td>357</td><td>forms.getPublishingTargets</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
+<tr><td>358</td><td>forms.getFormFields</td><td>Sitecore.ExperienceForms.Pipelines.Client.config</td><td></td></tr>
+<tr><td>359</td><td>initialize</td><td>Sitecore.ExperienceProfile.Client.config</td><td></td></tr>
+<tr><td>360</td><td>speak.client.resolveScript</td><td>Sitecore.ExperienceProfile.Client.config</td><td></td></tr>
+<tr><td>361</td><td>owin.cookieAuthentication.validateIdentity</td><td>Sitecore.ExperienceProfile.Client.config</td><td></td></tr>
+<tr><td>362</td><td>initialize</td><td>Sitecore.ExperienceProfile.config</td><td></td></tr>
+<tr><td>363</td><td>registerReportingDataSource</td><td>Sitecore.ExperienceProfile.config</td><td> Adds a reporting data source which is specific to Experience Profile. Datasource receives a name of query pipeline which is then executed on the reporting server. </td></tr>
+<tr><td>364</td><td>visits</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>365</td><td>journey</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>366</td><td>journey-detail-outcome</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>367</td><td>journey-detail-online-interaction</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>368</td><td>journey-detail-offline-interaction</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>369</td><td>channel-summary</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>370</td><td>channel-goal-distribution</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>371</td><td>channel-interaction-distribution</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>372</td><td>visit-summary</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>373</td><td>latest-statistics</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>374</td><td>visit-pages</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>375</td><td>visit-goals</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>376</td><td>internal-keyword-summary</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>377</td><td>internal-keyword-detail</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>378</td><td>visit-internal-searches</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>379</td><td>paid-keyword-summary</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>380</td><td>external-keyword-summary</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>381</td><td>paid-keyword-detail</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>382</td><td>external-keyword-detail</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>383</td><td>campaigns</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>384</td><td>recent-campaigns</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>385</td><td>goals</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>386</td><td>profile-pattern-matches</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>387</td><td>profile-info</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>388</td><td>best-pattern-matches</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>389</td><td>profiling-profile-key-values</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>390</td><td>automations</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>391</td><td>latest-events</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>392</td><td>events</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>393</td><td>outcome-detail</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>394</td><td>contact-query</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>395</td><td>visit-pattern-scores</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>396</td><td>visit-scoring-profiles</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>397</td><td>visit-events-query</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>398</td><td>visits-query</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>399</td><td>campaigns-query</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>400</td><td>pages-by-visit-query</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>401</td><td>goals-query</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>402</td><td>visit-channel</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>403</td><td>latest-visitors</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td></td></tr>
+<tr><td>404</td><td>preprocessRequest</td><td>Sitecore.FXM.Bundle.config</td><td></td></tr>
+<tr><td>405</td><td>bundle.beacon</td><td>Sitecore.FXM.Bundle.config</td><td> **** Bundle Registration Pipelines **** </td></tr>
+<tr><td>406</td><td>saveUI</td><td>Sitecore.FXM.config</td><td></td></tr>
+<tr><td>407</td><td>initialize</td><td>Sitecore.FXM.config</td><td> **** Kernel integration pipeline customizations **** </td></tr>
+<tr><td>408</td><td>getPlaceholderRenderings</td><td>Sitecore.FXM.config</td><td></td></tr>
+<tr><td>409</td><td>getItemPersonalizationVisibility</td><td>Sitecore.FXM.config</td><td></td></tr>
+<tr><td>410</td><td>getChromeData</td><td>Sitecore.FXM.config</td><td></td></tr>
+<tr><td>411</td><td>mvc.renderPlaceholder</td><td>Sitecore.FXM.config</td><td></td></tr>
+<tr><td>412</td><td>getSessionIdManager</td><td>Sitecore.FXM.config</td><td></td></tr>
+<tr><td>413</td><td>convertToXConnectEvent</td><td>Sitecore.FXM.config</td><td></td></tr>
+<tr><td>414</td><td>tryResolveFxmContext</td><td>Sitecore.FXM.config</td><td> Try to resolve Fxm context for the current request. Context is resolved only if request is for a configured site. </td></tr>
+<tr><td>415</td><td>tracking.initializeContext</td><td>Sitecore.FXM.config</td><td> **** Tracking Request Pipelines **** </td></tr>
+<tr><td>416</td><td>tracking.resolveMatchingElements</td><td>Sitecore.FXM.config</td><td> Run when a page visit occurs on an tracked external site. Finds all page filters that match the visit and any sub-page level matchers belonging to them. </td></tr>
+<tr><td>417</td><td>tracking.triggerPageMatchers</td><td>Sitecore.FXM.config</td><td></td></tr>
+<tr><td>418</td><td>tracking.trackpagevisit</td><td>Sitecore.FXM.config</td><td></td></tr>
+<tr><td>419</td><td>tracking.triggerpageevent</td><td>Sitecore.FXM.config</td><td></td></tr>
+<tr><td>420</td><td>tracking.getitemrenderedcontent</td><td>Sitecore.FXM.config</td><td></td></tr>
+<tr><td>421</td><td>externalsiteproxy.buildrequest</td><td>Sitecore.FXM.config</td><td> **** External Site Proxy Pipelines - used in the Experience Editor UI **** </td></tr>
+<tr><td>422</td><td>externalsiteproxy.processresponse</td><td>Sitecore.FXM.config</td><td></td></tr>
+<tr><td>423</td><td>externalsiteproxy.processhtmlresponse</td><td>Sitecore.FXM.config</td><td></td></tr>
+<tr><td>424</td><td>content.experienceeditor</td><td>Sitecore.FXM.config</td><td> **** Experience Editor Integration **** </td></tr>
+<tr><td>425</td><td>executePageEditorAction</td><td>Sitecore.FXM.config</td><td></td></tr>
+<tr><td>426</td><td>getExperienceEditorRibbon</td><td>Sitecore.FXM.Speak.config</td><td></td></tr>
+<tr><td>427</td><td>speak.client.resolveScript</td><td>Sitecore.FXM.Speak.config</td><td></td></tr>
+<tr><td>428</td><td>httpRequestBegin</td><td>Sitecore.ItemWebApi.config</td><td></td></tr>
+<tr><td>429</td><td>httpRequestEnd</td><td>Sitecore.ItemWebApi.config</td><td></td></tr>
+<tr><td>430</td><td>preprocessRequest</td><td>Sitecore.ItemWebApi.config</td><td></td></tr>
+<tr><td>431</td><td>itemWebApiDelete</td><td>Sitecore.ItemWebApi.config</td><td>Handles the item delete operation. </td></tr>
+<tr><td>432</td><td>itemWebApiGetFields</td><td>Sitecore.ItemWebApi.config</td><td>Determines which item fields should are included in response. </td></tr>
+<tr><td>433</td><td>itemWebApiGetProperties</td><td>Sitecore.ItemWebApi.config</td><td>Determines which item properties (display name, ID etc.) are included in response. </td></tr>
+<tr><td>434</td><td>itemWebApiCreate</td><td>Sitecore.ItemWebApi.config</td><td>Handles the item create operation. </td></tr>
+<tr><td>435</td><td>itemWebApiRead</td><td>Sitecore.ItemWebApi.config</td><td>Handles the item read operation. </td></tr>
+<tr><td>436</td><td>itemWebApiRequest</td><td>Sitecore.ItemWebApi.config</td><td>Processes Item Web API requests. </td></tr>
+<tr><td>437</td><td>itemWebApiUpdate</td><td>Sitecore.ItemWebApi.config</td><td>Handles the item update operation. </td></tr>
+<tr><td>438</td><td>getStartUrl</td><td>Sitecore.Speak.LaunchPad.config</td><td></td></tr>
+<tr><td>439</td><td>httpRequestBegin</td><td>Sitecore.Speak.LaunchPad.XMCloud.config</td><td></td></tr>
+<tr><td>440</td><td>speak.client.resolveScript</td><td>Sitecore.ListManagement.Client.config</td><td></td></tr>
+<tr><td>441</td><td>owin.cookieAuthentication.validateIdentity</td><td>Sitecore.ListManagement.Client.config</td><td></td></tr>
+<tr><td>442</td><td>listManagement.importMediaContacts</td><td>Sitecore.ListManagement.config</td><td>  IMPORT MEDIA CONTACTS The pipeline is responsible for importing of the contacts from file stored in media library into the xDB. </td></tr>
+<tr><td>443</td><td>getMediaUrlOptions</td><td>Sitecore.Marketing.Definitions.MarketingAssets.Repositories.config</td><td></td></tr>
+<tr><td>444</td><td>getResponseCacheHeaders</td><td>Sitecore.Marketing.Definitions.MarketingAssets.Repositories.config</td><td></td></tr>
+<tr><td>445</td><td>isMarketingDefinition</td><td>Sitecore.Marketing.Definitions.MarketingAssets.Repositories.config</td><td></td></tr>
+<tr><td>446</td><td>speak.client.resolveScript</td><td>Sitecore.Marketing.Automation.Client.config</td><td></td></tr>
+<tr><td>447</td><td>Marketing.Automation.ExportCampaignContacts</td><td>Sitecore.Marketing.Automation.Client.config</td><td></td></tr>
+<tr><td>448</td><td>owin.cookieAuthentication.validateIdentity</td><td>Sitecore.Marketing.Automation.Client.config</td><td></td></tr>
+<tr><td>449</td><td>deployDefinition</td><td>Sitecore.Marketing.Automation.Client.config</td><td></td></tr>
+<tr><td>450</td><td>speak.client.resolveScript</td><td>Sitecore.Marketing.Client.config</td><td></td></tr>
+<tr><td>451</td><td>speak.client.initialize.layout</td><td>Sitecore.Marketing.Client.config</td><td></td></tr>
+<tr><td>452</td><td>initialize</td><td>Sitecore.Marketing.config</td><td></td></tr>
+<tr><td>453</td><td>deployDefinition</td><td>Sitecore.Marketing.config</td><td></td></tr>
+<tr><td>454</td><td>isMarketingDefinition</td><td>Sitecore.Marketing.config</td><td></td></tr>
+<tr><td>455</td><td>validateJsonFieldLinks</td><td>Sitecore.Marketing.config</td><td></td></tr>
+<tr><td>456</td><td>validateJsonPropertyLink</td><td>Sitecore.Marketing.config</td><td></td></tr>
+<tr><td>457</td><td>deployDefinition</td><td>Sitecore.MarketingCD.config</td><td></td></tr>
+<tr><td>458</td><td>classificationStrategy</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>459</td><td>commitSession</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>460</td><td>convertFromXConnectContact</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>461</td><td>convertToXConnectInteraction</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>462</td><td>convertToXConnectEvent</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>463</td><td>createItemChangeTest</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>464</td><td>createTracker</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>465</td><td>createVisit</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>466</td><td>endAnalytics</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>467</td><td>ensureClassification</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>468</td><td>ensureSessionContext</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>469</td><td>excludeRobots</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>470</td><td>findVisitorEmailAddress</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>471</td><td>getContentEditorWarnings</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>472</td><td>getItemPersonalizationVisibility</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>473</td><td>handlePageError</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>474</td><td>handlePageNotFound</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>475</td><td>httpRequestBegin</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>476</td><td>httpRequestEnd</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>477</td><td>httpRequestProcessed</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>478</td><td>initialize</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>479</td><td>initializeInteractionProfile</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>480</td><td>initializeTracker</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>481</td><td>mergeContacts</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>482</td><td>parseReferrer</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>483</td><td>processItem</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>484</td><td>registerOutcome</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>485</td><td>registerPageEvent</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>486</td><td>renderContentEditorHeader</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>487</td><td>renderLayout</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>488</td><td>sessionEnd</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>489</td><td>startAnalytics</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>490</td><td>startTracking</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>491</td><td>submitSessionContext</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>492</td><td>triggerCampaign</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>493</td><td>visitEnd</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>494</td><td>getFallbackUserAgent</td><td>Sitecore.Analytics.Tracking.config</td><td></td></tr>
+<tr><td>495</td><td>siteSettings</td><td>Sitecore.Analytics.Tracking.config</td><td> TRACKING SITE SETTINGS Specify tracking settings per site. Supported attributes: name: The name of the site. autoDetectBots: Enable or disable the automatic bot detection feature for a site if the global Analytics.AutoDetectBots setting is set to 'true'. Note: if the global Analytics.AutoDetectBots setting is set to 'false' the automatic bot detection feature is disabled for every site. Default value: true EXAMPLE: The following example disables automatic robot detection for the 'mysite' site: <siteSettings <site name="mysite" autoDetectBots="false" / </siteSettings </td></tr>
+<tr><td>496</td><td>commitSession</td><td>Sitecore.Analytics.Tracking.Database.config</td><td></td></tr>
+<tr><td>497</td><td>postSessionEnd</td><td>Sitecore.Analytics.Tracking.Database.config</td><td></td></tr>
+<tr><td>498</td><td>submitSessionContext</td><td>Sitecore.Analytics.Tracking.Database.config</td><td></td></tr>
+<tr><td>499</td><td>determineInteractionChannel</td><td>Sitecore.Analytics.Channel.config</td><td> Determines the initial channel for the interaction. </td></tr>
+<tr><td>500</td><td>createVisit</td><td>Sitecore.Analytics.Channel.config</td><td></td></tr>
+<tr><td>501</td><td>triggerCampaign</td><td>Sitecore.Analytics.Channel.config</td><td></td></tr>
+<tr><td>502</td><td>initialize</td><td>Sitecore.Analytics.Processing.Aggregation.config</td><td></td></tr>
+<tr><td>503</td><td>interactionsBatch</td><td>Sitecore.Analytics.Processing.Aggregation.config</td><td></td></tr>
+<tr><td>504</td><td>interactions</td><td>Sitecore.Analytics.Processing.Aggregation.config</td><td></td></tr>
+<tr><td>505</td><td>registerReportingDataSource</td><td>Sitecore.Analytics.Reporting.config</td><td></td></tr>
+<tr><td>506</td><td>initialize</td><td>Sitecore.Xdb.config</td><td></td></tr>
+<tr><td>507</td><td>registerOutcome</td><td>Sitecore.Xdb.MarketingAutomation.Tracking.config</td><td></td></tr>
+<tr><td>508</td><td>registerPageEvent</td><td>Sitecore.Xdb.MarketingAutomation.Tracking.config</td><td></td></tr>
+<tr><td>509</td><td>submitLiveAutomationEvent</td><td>Sitecore.Xdb.MarketingAutomation.Tracking.config</td><td>- Pipeline that submits live automation event to Marketing Automation engine. </td></tr>
+<tr><td>510</td><td>initialize</td><td>Sitecore.Messaging.config</td><td></td></tr>
+<tr><td>511</td><td>initialize</td><td>Sitecore.Mvc.config</td><td> Loader </td></tr>
+<tr><td>512</td><td>httpRequestBegin</td><td>Sitecore.Mvc.config</td><td> Http Request Begin </td></tr>
+<tr><td>513</td><td>normalizePlaceholderKey</td><td>Sitecore.Mvc.config</td><td> Normalize Placeholder Key</td></tr>
+<tr><td>514</td><td>mvc.actionExecuting</td><td>Sitecore.Mvc.config</td><td> Mvc Events </td></tr>
+<tr><td>515</td><td>mvc.actionExecuted</td><td>Sitecore.Mvc.config</td><td></td></tr>
+<tr><td>516</td><td>mvc.exception</td><td>Sitecore.Mvc.config</td><td></td></tr>
+<tr><td>517</td><td>mvc.resultExecuting</td><td>Sitecore.Mvc.config</td><td></td></tr>
+<tr><td>518</td><td>mvc.resultExecuted</td><td>Sitecore.Mvc.config</td><td></td></tr>
+<tr><td>519</td><td>mvc.requestBegin</td><td>Sitecore.Mvc.config</td><td> Mvc Request </td></tr>
+<tr><td>520</td><td>mvc.requestEnd</td><td>Sitecore.Mvc.config</td><td></td></tr>
+<tr><td>521</td><td>mvc.createController</td><td>Sitecore.Mvc.config</td><td></td></tr>
+<tr><td>522</td><td>mvc.getModel</td><td>Sitecore.Mvc.config</td><td></td></tr>
+<tr><td>523</td><td>mvc.getPageItem</td><td>Sitecore.Mvc.config</td><td> Mvc Response </td></tr>
+<tr><td>524</td><td>mvc.buildPageDefinition</td><td>Sitecore.Mvc.config</td><td></td></tr>
+<tr><td>525</td><td>mvc.getPageRendering</td><td>Sitecore.Mvc.config</td><td></td></tr>
+<tr><td>526</td><td>mvc.getXmlBasedLayoutDefinition</td><td>Sitecore.Mvc.config</td><td></td></tr>
+<tr><td>527</td><td>mvc.renderPlaceholder</td><td>Sitecore.Mvc.config</td><td></td></tr>
+<tr><td>528</td><td>mvc.renderRendering</td><td>Sitecore.Mvc.config</td><td></td></tr>
+<tr><td>529</td><td>mvc.getRenderer</td><td>Sitecore.Mvc.config</td><td></td></tr>
+<tr><td>530</td><td>mvc.getDynamicPlaceholderKeys</td><td>Sitecore.Mvc.config</td><td></td></tr>
+<tr><td>531</td><td>mvc.getDynamicPlaceholderInitialKey</td><td>Sitecore.Mvc.config</td><td></td></tr>
+<tr><td>532</td><td>httpRequestBegin</td><td>Sitecore.MVC.DeviceSimulator.config</td><td></td></tr>
+<tr><td>533</td><td>mvc.createController</td><td>Sitecore.MVC.DeviceSimulator.config</td><td></td></tr>
+<tr><td>534</td><td>mvc.renderPageExtenders</td><td>Sitecore.MVC.DeviceSimulator.config</td><td></td></tr>
+<tr><td>535</td><td>executePageEditorAction</td><td>Sitecore.MVC.ExperienceEditor.config</td><td></td></tr>
+<tr><td>536</td><td>hasPresentation</td><td>Sitecore.MVC.ExperienceEditor.config</td><td></td></tr>
+<tr><td>537</td><td>mvc.getPageRendering</td><td>Sitecore.MVC.ExperienceEditor.config</td><td></td></tr>
+<tr><td>538</td><td>mvc.getXmlBasedLayoutDefinition</td><td>Sitecore.MVC.ExperienceEditor.config</td><td></td></tr>
+<tr><td>539</td><td>mvc.renderPageExtenders</td><td>Sitecore.MVC.ExperienceEditor.config</td><td></td></tr>
+<tr><td>540</td><td>mvc.renderPlaceholder</td><td>Sitecore.MVC.ExperienceEditor.config</td><td></td></tr>
+<tr><td>541</td><td>mvc.renderRendering</td><td>Sitecore.MVC.ExperienceEditor.config</td><td></td></tr>
+<tr><td>542</td><td>mvc.requestEnd</td><td>Sitecore.MVC.ExperienceEditor.config</td><td></td></tr>
+<tr><td>543</td><td>owin.initialize</td><td>Sitecore.Owin.Activation.config</td><td>  OWIN INITIALIZE Configures OWIN middlewares. The pipeline contains StageMarker processors that insert UseStageMarker middlewares with a corresponding PipelineStage value.  If "Owin.AssertStageMarkers" setting is set to "true" then an exception will be thrown if there is a middleware that is executed on a later stage than the following StageMarker processor specifies.  It may happen when a custom processor uses UseStageMarker with a PipelineStage value that is lower than the previous StageMarker processor. For example, default UseCookieAuthentication middleware uses UseStageMarker(PipelineStage.Authenticate) under the hood; therefore, a processor that contains such a middleware should be patched before the Authenticate StageMarker processor.  "Processors should derive from Sitecore.Owin.Pipelines.Initialize.InitializeProcessor"</td></tr>
+<tr><td>544</td><td>owin.globalExceptionHandler</td><td>Sitecore.Owin.Activation.config</td><td> OWIN GLOBAL EXCEPTION HANDLER Handles unhandled exceptions that occured in OWIN middlewares.  "Processors should derive from Sitecore.Owin.Pipelines.GlobalExceptionHandler.GlobalExceptionHandlerProcessor"</td></tr>
+<tr><td>545</td><td>httpRequestBegin</td><td>Sitecore.Owin.Authentication.config</td><td></td></tr>
+<tr><td>546</td><td>owin.initialize</td><td>Sitecore.Owin.Authentication.config</td><td></td></tr>
+<tr><td>547</td><td>owin.identityProviders</td><td>Sitecore.Owin.Authentication.config</td><td> "Processors should derive from Sitecore.Owin.Authentication.Pipelines.IdentityProviders.IdentityProvidersProcessor"</td></tr>
+<tr><td>548</td><td>owin.cookieAuthentication.validateIdentity</td><td>Sitecore.Owin.Authentication.config</td><td>Place the provider initialize class here. You can use the custom configuration file in the Include folder - just create a new file or use the existing file. For example: <processor type="Sitecore.Owin.Authentication.Samples.AzureAd.Pipelines.IdentityProviders.AzureAd, Sitecore.Owin.Authentication.Samples.AzureAd" resolve="true" / "Processors should derive from Sitecore.Owin.Authentication.Pipelines.CookieAuthentication.ValidateIdentity.ValidateIdentityProcessor"</td></tr>
+<tr><td>549</td><td>owin.cookieAuthentication.signIn</td><td>Sitecore.Owin.Authentication.config</td><td> "Processors should derive from Sitecore.Owin.Authentication.Pipelines.CookieAuthentication.SignIn.SignInProcessor"</td></tr>
+<tr><td>550</td><td>owin.cookieAuthentication.signedIn</td><td>Sitecore.Owin.Authentication.config</td><td> "Processors should derive from Sitecore.Owin.Authentication.Pipelines.CookieAuthentication.SignedIn.SignedInProcessor"</td></tr>
+<tr><td>551</td><td>owin.cookieAuthentication.applyRedirect</td><td>Sitecore.Owin.Authentication.config</td><td> "Processors should derive from Sitecore.Owin.Authentication.Pipelines.CookieAuthentication.ApplyRedirect.ApplyRedirectProcessor"</td></tr>
+<tr><td>552</td><td>owin.cookieAuthentication.signOut</td><td>Sitecore.Owin.Authentication.config</td><td> "Processors should derive from Sitecore.Owin.Authentication.Pipelines.CookieAuthentication.SignOut.SignOutProcessor"</td></tr>
+<tr><td>553</td><td>getSignInUrlInfo</td><td>Sitecore.Owin.Authentication.config</td><td></td></tr>
+<tr><td>554</td><td>fedauth.siteNameExpander</td><td>Sitecore.Owin.Authentication.config</td><td> "Processors should derive from Sitecore.Owin.Authentication.Pipelines.SiteNameExpander.SiteNameExpanderProcessor"</td></tr>
+<tr><td>555</td><td>owin.globalExceptionHandler</td><td>Sitecore.Owin.Authentication.config</td><td></td></tr>
+<tr><td>556</td><td>owin.globalLogFilter</td><td>Sitecore.Owin.Authentication.config</td><td></td></tr>
+<tr><td>557</td><td>owin.initialize</td><td>Sitecore.Owin.Cors.config</td><td></td></tr>
+<tr><td>558</td><td>owin.identityProviders</td><td>Sitecore.Owin.Authentication.IdentityServer.config</td><td></td></tr>
+<tr><td>559</td><td>owin.initialize</td><td>Sitecore.Owin.Authentication.IdentityServer.config</td><td></td></tr>
+<tr><td>560</td><td>getContentEditorWarnings</td><td>Sitecore.PathAnalyzer.Client.config</td><td> PIPELINES </td></tr>
+<tr><td>561</td><td>speak.client.resolveScript</td><td>Sitecore.PathAnalyzer.Client.config</td><td></td></tr>
+<tr><td>562</td><td>owin.cookieAuthentication.validateIdentity</td><td>Sitecore.PathAnalyzer.Client.config</td><td></td></tr>
+<tr><td>563</td><td>uiDeleteItems</td><td>Sitecore.PathAnalyzer.Client.config</td><td></td></tr>
+<tr><td>564</td><td>initialize</td><td>Sitecore.PathAnalyzer.config</td><td> PIPELINES </td></tr>
+<tr><td>565</td><td>evaluateContact</td><td>Sitecore.PathAnalyzer.config</td><td></td></tr>
+<tr><td>566</td><td>interactionsBatch</td><td>Sitecore.PathAnalyzer.Processing.config</td><td> Batch processor that is receiving more than one interaction at a time to speed up the aggregation process</td></tr>
+<tr><td>567</td><td>initialize</td><td>Sitecore.PathAnalyzer.Services.config</td><td> PIPELINES </td></tr>
+<tr><td>568</td><td>speak.client.resolveScript</td><td>Sitecore.Personalization.config</td><td></td></tr>
+<tr><td>569</td><td>getRenderingRules</td><td>Sitecore.Personalization.config</td><td></td></tr>
+<tr><td>570</td><td>insertRenderings</td><td>Sitecore.Personalization.config</td><td></td></tr>
+<tr><td>571</td><td>renderingRuleEvaluated</td><td>Sitecore.Personalization.config</td><td></td></tr>
+<tr><td>572</td><td>getPageModeCapabilities</td><td>Sitecore.Personalization.ExperienceEditor.config</td><td></td></tr>
+<tr><td>573</td><td>pageEditingScripts</td><td>Sitecore.Personalization.ExperienceEditor.config</td><td></td></tr>
+<tr><td>574</td><td>executePageEditorAction</td><td>Sitecore.Personalization.ExperienceEditor.config</td><td></td></tr>
+<tr><td>575</td><td>executePageEditorActionArgumentResolver</td><td>Sitecore.Personalization.ExperienceEditor.config</td><td></td></tr>
+<tr><td>576</td><td>mvc.getRenderer</td><td>Sitecore.Personalization.Mvc.config</td><td></td></tr>
+<tr><td>577</td><td>mvc.customizeRendering</td><td>Sitecore.Personalization.Mvc.config</td><td></td></tr>
+<tr><td>578</td><td>initialize</td><td>Sitecore.Services.Client.config</td><td></td></tr>
+<tr><td>579</td><td>ssc.apiKeyValidation</td><td>Sitecore.Services.Client.config</td><td></td></tr>
+<tr><td>580</td><td>initialize</td><td>Sitecore.Services.GraphQL.config</td><td></td></tr>
+<tr><td>581</td><td>httpRequestBegin</td><td>Sitecore.Services.GraphQL.config</td><td></td></tr>
+<tr><td>582</td><td>startAnalytics</td><td>Sitecore.Services.GraphQL.config</td><td></td></tr>
+<tr><td>583</td><td>initialize</td><td>Sitecore.Services.GraphQL.Core.config</td><td></td></tr>
+<tr><td>584</td><td>initializeManagers</td><td>Sitecore.Services.GraphQL.Serialization.config</td><td> Enables history engine over the master + core DBs (not enabled by default since 9.0) because we need it to watch changes to items to serialize them </td></tr>
+<tr><td>585</td><td>owin.cookieAuthentication.validateIdentity</td><td>Sitecore.Services.GraphQL.Serialization.config</td><td></td></tr>
+<tr><td>586</td><td>httpRequestBegin</td><td>Sitecore.GraphQL.config</td><td></td></tr>
+<tr><td>587</td><td>owin.initialize</td><td>Sitecore.GraphQL.config</td><td></td></tr>
+<tr><td>588</td><td>owin.initialize</td><td>Sitecore.GraphQL.Subscription.config</td><td></td></tr>
+<tr><td>589</td><td>preprocessRequest</td><td>Sitecore.Speak.config</td><td> Http Request </td></tr>
+<tr><td>590</td><td>mvc.buildPageDefinition</td><td>Sitecore.Speak.config</td><td></td></tr>
+<tr><td>591</td><td>speak</td><td>Sitecore.Speak.config</td><td></td></tr>
+<tr><td>592</td><td>itemWebApiRequest</td><td>Sitecore.Speak.ItemWebApi.config</td><td></td></tr>
+<tr><td>593</td><td>itemWebApiGetProperties</td><td>Sitecore.Speak.ItemWebApi.config</td><td></td></tr>
+<tr><td>594</td><td>itemWebApiSearch</td><td>Sitecore.Speak.ItemWebApi.config</td><td></td></tr>
+<tr><td>595</td><td>itemWebApiUpdate</td><td>Sitecore.Speak.ItemWebApi.config</td><td></td></tr>
+<tr><td>596</td><td>initialize</td><td>Sitecore.Speak.Mvc.config</td><td></td></tr>
+<tr><td>597</td><td>mvc.renderPlaceholder</td><td>Sitecore.Speak.Mvc.config</td><td></td></tr>
+<tr><td>598</td><td>speak.client.addBinding</td><td>Sitecore.Speak.Pipelines.config</td><td> Content of include config files is added to web.config in alphabetical order. SPEAK-dependent components may try to extend SPEAK configuration before it has been added to web.config. This file is created to be sure that its content is added to web.config before another SPEAK-dependent components. </td></tr>
+<tr><td>599</td><td>speak.client.getClick</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
+<tr><td>600</td><td>speak.client.getControlId</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
+<tr><td>601</td><td>speak.client.getOverlays</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
+<tr><td>602</td><td>speak.client.getPageScripts</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
+<tr><td>603</td><td>speak.client.getPageStylesheets</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
+<tr><td>604</td><td>speak.client.getStyle</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
+<tr><td>605</td><td>speak.client.initialize.layout</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
+<tr><td>606</td><td>speak.client.parseRenderingParameter</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
+<tr><td>607</td><td>speak.client.resolveRequire</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
+<tr><td>608</td><td>speak.client.resolveScript</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
+<tr><td>609</td><td>speak.client.buildMainJS</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
+<tr><td>610</td><td>speak.logout</td><td>Sitecore.Speak.Pipelines.config</td><td></td></tr>
+<tr><td>611</td><td>preprocessRequest</td><td>Sitecore.Speak.Applications.config</td><td> Http Request </td></tr>
+<tr><td>612</td><td>appDependencies</td><td>Sitecore.Speak.Applications.config</td><td></td></tr>
+<tr><td>613</td><td>speak.client.resolveScript</td><td>Sitecore.Speak.Components.config</td><td> Enable this processor to precompile MVC views. This allows SPEAK applications to start up faster by precompiling the views at start up (in a separate thread). Paths: Pipe (|) separated list of folders to precompile (recursively). <initialize <processor type="Sitecore.Pipelines.Initialize.PrecompileSpeakViews, Sitecore.Speak.Client" <Paths/sitecore/shell/client/BCL2</Paths </processor </initialize </td></tr>
+<tr><td>614</td><td>speak.client.getPageStylesheets</td><td>Sitecore.Speak.Components.config</td><td></td></tr>
+<tr><td>615</td><td>speak.client.buildMainJS</td><td>Sitecore.Speak.Components.config</td><td></td></tr>
+<tr><td>616</td><td>preprocessRequest</td><td>Sitecore.Speak.Integration.Spa.config</td><td> Http Request </td></tr>
+<tr><td>617</td><td>mvc.requestBegin</td><td>Sitecore.MvcAnalytics.config</td><td></td></tr>
+<tr><td>618</td><td>initializeTracker</td><td>Sitecore.Analytics.Tracking.RobotDetection.config</td><td></td></tr>
+<tr><td>619</td><td>registerPageEvent</td><td>Sitecore.Analytics.Tracking.RobotDetection.config</td><td></td></tr>
 		  
   </table>
 <script language="JavaScript">
