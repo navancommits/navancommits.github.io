@@ -174,8 +174,8 @@
 <script language="JavaScript">
 
 var oRows = document.getElementById('settings').getElementsByTagName('tr');
-var iRowCount = oRows.length;
-document.getElementById("count").innerHTML = 'No. of rows ' + iRowCount;
+var iRowCount = oRows.length-=1;
+document.getElementById("count").innerHTML =  iRowCount + ' event handlers';
 
 </script>
 </body>
