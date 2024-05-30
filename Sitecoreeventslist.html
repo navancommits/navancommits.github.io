@@ -41,7 +41,7 @@
 <table width=100% >
 <h2 align=center>Sitecore Event list</h2>
 <tr><td><label id="count"></label></td><td align=right>v10.4.0 / xp0</td></tr>
-<tr><td colspan=2>Lists all the events irrespective of if they have handlers or not.</td></tr>
+<tr><td colspan=2>Lists all the Sitecore events irrespective of if they have handlers or not.</td></tr>
 </table>
   <table  id="settings">
 
@@ -86,8 +86,8 @@
 <tr><td>38</td><td>Sitecore.config</td><td>publish:end</td><td></td></tr>
 <tr><td>39</td><td>Sitecore.config</td><td>publish:end:remote</td><td></td></tr>
 <tr><td>40</td><td>Sitecore.config</td><td>publish:fail </td><td></td></tr>
-<tr><td>41</td><td>Sitecore.config</td><td>publish:itemProcessing help=Receives an argument of type ItemProcessingEventArgs (namespace: Sitecore.Publishing.Pipelines.PublishItem) </td><td>Receives an argument of type ItemProcessingEventArgs (namespace: Sitecore.Publishing.Pipelines.PublishItem) /</td></tr>
-<tr><td>42</td><td>Sitecore.config</td><td>publish:itemProcessed help=Receives an argument of type ItemProcessedEventArgs (namespace: Sitecore.Publishing.Pipelines.PublishItem) </td><td>Receives an argument of type ItemProcessedEventArgs (namespace: Sitecore.Publishing.Pipelines.PublishItem) /</td></tr>
+<tr><td>41</td><td>Sitecore.config</td><td>publish:itemProcessing</td><td>Receives an argument of type ItemProcessingEventArgs (namespace: Sitecore.Publishing.Pipelines.PublishItem) /</td></tr>
+<tr><td>42</td><td>Sitecore.config</td><td>publish:itemProcessed</td><td>Receives an argument of type ItemProcessedEventArgs (namespace: Sitecore.Publishing.Pipelines.PublishItem) /</td></tr>
 <tr><td>43</td><td>Sitecore.config</td><td>publish:startPublishing</td><td></td></tr>
 <tr><td>44</td><td>Sitecore.config</td><td>publish:statusUpdated</td><td></td></tr>
 <tr><td>45</td><td>Sitecore.config</td><td>security:loggingIn </td><td></td></tr>
@@ -240,37 +240,34 @@
 <tr><td>192</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:cleanup:remote</td><td></td></tr>
 <tr><td>193</td><td>Sitecore.ExperienceForms.config</td><td>form:saved </td><td></td></tr>
 <tr><td>194</td><td>Sitecore.ExperienceForms.config</td><td>forms:deleted </td><td></td></tr>
-<tr><td>195</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td>processor</td><td></td></tr>
-<tr><td>196</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td>processor</td><td></td></tr>
-<tr><td>197</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td>processor</td><td></td></tr>
-<tr><td>198</td><td>Sitecore.Marketing.config</td><td>item:saved</td><td></td></tr>
-<tr><td>199</td><td>Sitecore.Marketing.config</td><td>item:saved:remote</td><td></td></tr>
-<tr><td>200</td><td>Sitecore.Marketing.config</td><td>item:saving</td><td></td></tr>
-<tr><td>201</td><td>Sitecore.Marketing.config</td><td>item:creating</td><td></td></tr>
-<tr><td>202</td><td>Sitecore.Marketing.config</td><td>item:copying</td><td></td></tr>
-<tr><td>203</td><td>Sitecore.Marketing.config</td><td>item:copied</td><td></td></tr>
-<tr><td>204</td><td>Sitecore.Marketing.config</td><td>item:moved</td><td></td></tr>
-<tr><td>205</td><td>Sitecore.Marketing.config</td><td>item:deleted</td><td></td></tr>
-<tr><td>206</td><td>Sitecore.Marketing.config</td><td>item:deleted:remote</td><td></td></tr>
-<tr><td>207</td><td>Sitecore.Analytics.Tracking.config</td><td>sessionEnd:starting</td><td></td></tr>
-<tr><td>208</td><td>Sitecore.Analytics.Tracking.config</td><td>sessionEnd:batch:starting</td><td></td></tr>
-<tr><td>209</td><td>Sitecore.Analytics.Tracking.config</td><td>sessionEnd:batch:ended</td><td></td></tr>
-<tr><td>210</td><td>Sitecore.Analytics.Tracking.config</td><td>item:saved</td><td></td></tr>
-<tr><td>211</td><td>Sitecore.Analytics.Tracking.config</td><td>item:saved:remote</td><td></td></tr>
-<tr><td>212</td><td>Sitecore.Analytics.Tracking.config</td><td>item:deleted</td><td></td></tr>
-<tr><td>213</td><td>Sitecore.Analytics.Tracking.config</td><td>item:deleted:remote</td><td></td></tr>
-<tr><td>214</td><td>Sitecore.Analytics.Tracking.config</td><td>publish:end</td><td></td></tr>
-<tr><td>215</td><td>Sitecore.Analytics.Tracking.config</td><td>publish:end:remote</td><td></td></tr>
-<tr><td>216</td><td>Sitecore.Messaging.config</td><td>messaging:businitialized</td><td>Raised when each message bus has been started, whether it succeeded or failed.</td></tr>
-<tr><td>217</td><td>Sitecore.Messaging.config</td><td>messaging:allBusesInitialized</td><td>Raised when all message buses have been started (whether any failed or not).</td></tr>
-<tr><td>218</td><td>Sitecore.Mvc.config</td><td>publish:end</td><td></td></tr>
-<tr><td>219</td><td>Sitecore.Mvc.config</td><td>publish:end:remote</td><td></td></tr>
-<tr><td>220</td><td>Sitecore.Analytics.Tracking.RobotDetection.config</td><td>media:request</td><td></td></tr>
+<tr><td>195</td><td>Sitecore.Marketing.config</td><td>item:saved</td><td></td></tr>
+<tr><td>196</td><td>Sitecore.Marketing.config</td><td>item:saved:remote</td><td></td></tr>
+<tr><td>197</td><td>Sitecore.Marketing.config</td><td>item:saving</td><td></td></tr>
+<tr><td>198</td><td>Sitecore.Marketing.config</td><td>item:creating</td><td></td></tr>
+<tr><td>199</td><td>Sitecore.Marketing.config</td><td>item:copying</td><td></td></tr>
+<tr><td>200</td><td>Sitecore.Marketing.config</td><td>item:copied</td><td></td></tr>
+<tr><td>201</td><td>Sitecore.Marketing.config</td><td>item:moved</td><td></td></tr>
+<tr><td>202</td><td>Sitecore.Marketing.config</td><td>item:deleted</td><td></td></tr>
+<tr><td>203</td><td>Sitecore.Marketing.config</td><td>item:deleted:remote</td><td></td></tr>
+<tr><td>204</td><td>Sitecore.Analytics.Tracking.config</td><td>sessionEnd:starting</td><td></td></tr>
+<tr><td>205</td><td>Sitecore.Analytics.Tracking.config</td><td>sessionEnd:batch:starting</td><td></td></tr>
+<tr><td>206</td><td>Sitecore.Analytics.Tracking.config</td><td>sessionEnd:batch:ended</td><td></td></tr>
+<tr><td>207</td><td>Sitecore.Analytics.Tracking.config</td><td>item:saved</td><td></td></tr>
+<tr><td>208</td><td>Sitecore.Analytics.Tracking.config</td><td>item:saved:remote</td><td></td></tr>
+<tr><td>209</td><td>Sitecore.Analytics.Tracking.config</td><td>item:deleted</td><td></td></tr>
+<tr><td>210</td><td>Sitecore.Analytics.Tracking.config</td><td>item:deleted:remote</td><td></td></tr>
+<tr><td>211</td><td>Sitecore.Analytics.Tracking.config</td><td>publish:end</td><td></td></tr>
+<tr><td>212</td><td>Sitecore.Analytics.Tracking.config</td><td>publish:end:remote</td><td></td></tr>
+<tr><td>213</td><td>Sitecore.Messaging.config</td><td>messaging:businitialized</td><td>Raised when each message bus has been started, whether it succeeded or failed.</td></tr>
+<tr><td>214</td><td>Sitecore.Messaging.config</td><td>messaging:allBusesInitialized</td><td>Raised when all message buses have been started (whether any failed or not).</td></tr>
+<tr><td>215</td><td>Sitecore.Mvc.config</td><td>publish:end</td><td></td></tr>
+<tr><td>216</td><td>Sitecore.Mvc.config</td><td>publish:end:remote</td><td></td></tr>
+<tr><td>217</td><td>Sitecore.Analytics.Tracking.RobotDetection.config</td><td>media:request</td><td></td></tr>
   </table>
 <script language="JavaScript">
 
 var oRows = document.getElementById('settings').getElementsByTagName('tr');
-var iRowCount = oRows.length;
+var iRowCount = oRows.length-=2;
 document.getElementById("count").innerHTML = 'No. of rows ' + iRowCount;
 
 </script>
