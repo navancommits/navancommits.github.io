@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Sitecore Event List</title>
+<style>
+#settings {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#settings td, #settings th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#settings tr:nth-child(even){background-color: #f2f2f2;}
+
+#settings tr:hover {background-color: #ddd;}
+
+#settings th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #790501;
+  color: white;
+}
+
+#settings2 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #EB1F1F;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+<table width=100% >
+<h2 align=center>Sitecore Event list</h2>
+<tr><td><label id="count"></label></td><td align=right>v10.4.0 / xp0</td></tr>
+<tr><td colspan=2>Lists all the events irrespective of if they have handlers or not.</td></tr>
+</table>
+  <table  id="settings">
+
+	<tr><th>S.No.</th><th>File Name</th><th>Event Name</th><th>Description</th><tr>  
+     <tr><td>1</td><td>Sitecore.config</td><td>data:updated </td><td></td></tr>
+<tr><td>2</td><td>Sitecore.config</td><td>item:added</td><td></td></tr>
+<tr><td>3</td><td>Sitecore.config</td><td>item:added:remote</td><td></td></tr>
+<tr><td>4</td><td>Sitecore.config</td><td>item:copied</td><td></td></tr>
+<tr><td>5</td><td>Sitecore.config</td><td>item:copied:remote </td><td></td></tr>
+<tr><td>6</td><td>Sitecore.config</td><td>item:copying </td><td></td></tr>
+<tr><td>7</td><td>Sitecore.config</td><td>item:created </td><td></td></tr>
+<tr><td>8</td><td>Sitecore.config</td><td>item:created:remote </td><td></td></tr>
+<tr><td>9</td><td>Sitecore.config</td><td>item:cloneAdded </td><td></td></tr>
+<tr><td>10</td><td>Sitecore.config</td><td>item:cloneAdded:remote </td><td></td></tr>
+<tr><td>11</td><td>Sitecore.config</td><td>item:creating </td><td></td></tr>
+<tr><td>12</td><td>Sitecore.config</td><td>item:deleted</td><td></td></tr>
+<tr><td>13</td><td>Sitecore.config</td><td>item:deleted:remote</td><td></td></tr>
+<tr><td>14</td><td>Sitecore.config</td><td>item:deleting </td><td></td></tr>
+<tr><td>15</td><td>Sitecore.config</td><td>item:locked </td><td></td></tr>
+<tr><td>16</td><td>Sitecore.config</td><td>item:moved</td><td></td></tr>
+<tr><td>17</td><td>Sitecore.config</td><td>item:moved:remote</td><td></td></tr>
+<tr><td>18</td><td>Sitecore.config</td><td>item:moving </td><td></td></tr>
+<tr><td>19</td><td>Sitecore.config</td><td>item:renamed </td><td></td></tr>
+<tr><td>20</td><td>Sitecore.config</td><td>item:renamed:remote </td><td></td></tr>
+<tr><td>21</td><td>Sitecore.config</td><td>item:saved</td><td></td></tr>
+<tr><td>22</td><td>Sitecore.config</td><td>item:saved:remote</td><td></td></tr>
+<tr><td>23</td><td>Sitecore.config</td><td>item:saving</td><td></td></tr>
+<tr><td>24</td><td>Sitecore.config</td><td>item:sortorderchanged </td><td></td></tr>
+<tr><td>25</td><td>Sitecore.config</td><td>item:sortorderchanged:remote </td><td></td></tr>
+<tr><td>26</td><td>Sitecore.config</td><td>item:templateChanged </td><td></td></tr>
+<tr><td>27</td><td>Sitecore.config</td><td>item:transferred </td><td></td></tr>
+<tr><td>28</td><td>Sitecore.config</td><td>item:unlocked </td><td></td></tr>
+<tr><td>29</td><td>Sitecore.config</td><td>item:versionAdded </td><td></td></tr>
+<tr><td>30</td><td>Sitecore.config</td><td>item:versionAdded:remote </td><td></td></tr>
+<tr><td>31</td><td>Sitecore.config</td><td>item:versionAdding </td><td></td></tr>
+<tr><td>32</td><td>Sitecore.config</td><td>item:versionRemoved</td><td></td></tr>
+<tr><td>33</td><td>Sitecore.config</td><td>item:versionRemoved:remote</td><td></td></tr>
+<tr><td>34</td><td>Sitecore.config</td><td>item:versionRemoving </td><td></td></tr>
+<tr><td>35</td><td>Sitecore.config</td><td>publish:begin </td><td></td></tr>
+<tr><td>36</td><td>Sitecore.config</td><td>publish:complete </td><td>publish:complete Raised when publishing for all languages and targets (i.e. publish options) is complete.</td></tr>
+<tr><td>37</td><td>Sitecore.config</td><td>publish:complete:remote </td><td>publish:complete:remote Raised when publishing for all languages and targets (i.e. publish options) is complete on a remote Sitecore instance.</td></tr>
+<tr><td>38</td><td>Sitecore.config</td><td>publish:end</td><td></td></tr>
+<tr><td>39</td><td>Sitecore.config</td><td>publish:end:remote</td><td></td></tr>
+<tr><td>40</td><td>Sitecore.config</td><td>publish:fail </td><td></td></tr>
+<tr><td>41</td><td>Sitecore.config</td><td>publish:itemProcessing help=Receives an argument of type ItemProcessingEventArgs (namespace: Sitecore.Publishing.Pipelines.PublishItem) </td><td>Receives an argument of type ItemProcessingEventArgs (namespace: Sitecore.Publishing.Pipelines.PublishItem) /</td></tr>
+<tr><td>42</td><td>Sitecore.config</td><td>publish:itemProcessed help=Receives an argument of type ItemProcessedEventArgs (namespace: Sitecore.Publishing.Pipelines.PublishItem) </td><td>Receives an argument of type ItemProcessedEventArgs (namespace: Sitecore.Publishing.Pipelines.PublishItem) /</td></tr>
+<tr><td>43</td><td>Sitecore.config</td><td>publish:startPublishing</td><td></td></tr>
+<tr><td>44</td><td>Sitecore.config</td><td>publish:statusUpdated</td><td></td></tr>
+<tr><td>45</td><td>Sitecore.config</td><td>security:loggingIn </td><td></td></tr>
+<tr><td>46</td><td>Sitecore.config</td><td>security:loggedIn </td><td></td></tr>
+<tr><td>47</td><td>Sitecore.config</td><td>security:loggingOut </td><td></td></tr>
+<tr><td>48</td><td>Sitecore.config</td><td>security:loggedOut</td><td></td></tr>
+<tr><td>49</td><td>Sitecore.config</td><td>template:updated </td><td></td></tr>
+<tr><td>50</td><td>Sitecore.config</td><td>user:created </td><td>user:created(System.Web.Security.MembershipUser user) Raised when a new membership user has been created.</td></tr>
+<tr><td>51</td><td>Sitecore.config</td><td>user:created:remote </td><td>user:created:remote(UserCreatedRemoteEventArgs args) Raised when a new membership user has been created on a remote Sitecore instance.</td></tr>
+<tr><td>52</td><td>Sitecore.config</td><td>user:deleted </td><td>user:deleted(string userName) Raised when a new membership user has been deleted.</td></tr>
+<tr><td>53</td><td>Sitecore.config</td><td>user:deleted:remote </td><td>user:deleted:remote(UserDeletedRemoteEventArgs args) Raised when a new membership user has been deleted on a remote Sitecore instance.</td></tr>
+<tr><td>54</td><td>Sitecore.config</td><td>user:runtimerolesupdated </td><td>user:runtimerolesupdated(string userName) Raised when runtime roles have been added or removed for a user, typically for a virtual user.</td></tr>
+<tr><td>55</td><td>Sitecore.config</td><td>user:runtimerolesupdated:remote </td><td>user:runtimerolesupdated:remote(UserUpdatedRemoteEventArgs args) Raised when runtime roles have been added or removed for a user on a remote Sitecore instance, typically for a virtual user.</td></tr>
+<tr><td>56</td><td>Sitecore.config</td><td>user:updated </td><td>user:updated(System.Web.Security.MembershipUser user) Raised when a new membership user has been updated.</td></tr>
+<tr><td>57</td><td>Sitecore.config</td><td>user:updated:remote </td><td>user:updated:remote(UserUpdatedRemoteEventArgs args) Raised when a new membership user has been updated on a remote Sitecore instance.</td></tr>
+<tr><td>58</td><td>Sitecore.config</td><td>role:created </td><td>role:created(string roleName) Raised when a new membership role has been created.</td></tr>
+<tr><td>59</td><td>Sitecore.config</td><td>role:created:remote </td><td>role:created:remote(RoleCreatedRemoteEventArgs args) Raised when a new membership role has been created on a remote Sitecore instance.</td></tr>
+<tr><td>60</td><td>Sitecore.config</td><td>role:deleted </td><td>role:deleted(string roleName) Raised when a new membership role has been deleted.</td></tr>
+<tr><td>61</td><td>Sitecore.config</td><td>role:deleted:remote </td><td>role:deleted:remote(RoleDeletedRemoteEventArgs args) Raised when a new membership role has been deleted on a remote Sitecore instance.</td></tr>
+<tr><td>62</td><td>Sitecore.config</td><td>roles:relationsRemoved </td><td>roles:relationsRemoved(string roleName) Raised when all relations have been removed for a role.</td></tr>
+<tr><td>63</td><td>Sitecore.config</td><td>roles:relationsRemoved:remote </td><td>roles:relationsRemoved:remote(RoleRelationsRemovedRemoteEventArgs args) Raised when all relations have been removed for a role on a remote Sitecore instance.</td></tr>
+<tr><td>64</td><td>Sitecore.config</td><td>roles:rolesAdded </td><td>roles:rolesAdded(IEnumerable<Role memberRoles, IEnumerable<Role targetRoles) Raised when roles have been added to one or more roles.</td></tr>
+<tr><td>65</td><td>Sitecore.config</td><td>roles:rolesAdded:remote </td><td>roles:rolesAdded:remote(RolesAddedToRolesRemoteEventArgs args) Raised when roles have been added to one or more roles on a remote Sitecore instance.</td></tr>
+<tr><td>66</td><td>Sitecore.config</td><td>roles:rolesRemoved </td><td>roles:rolesRemoved(IEnumerable<Role memberRoles, IEnumerable<Role targetRoles) Raised when roles have been removed from one or more roles.</td></tr>
+<tr><td>67</td><td>Sitecore.config</td><td>roles:rolesRemoved:remote </td><td>roles:rolesRemoved:remote(RolesRemovedFromRolesRemoteEventArgs args) Raised when roles have been removed from one or more roles on a remote Sitecore instance.</td></tr>
+<tr><td>68</td><td>Sitecore.config</td><td>roles:usersAdded </td><td>roles:usersAdded(string[] userNames, string[] roleNames) Raised when users have been added to one or more roles.</td></tr>
+<tr><td>69</td><td>Sitecore.config</td><td>roles:usersAdded:remote </td><td>roles:usersAdded:remote(UsersAddedToRolesRemoteEventArgs args) Raised when users have been added to one or more roles on a remote Sitecore instance.</td></tr>
+<tr><td>70</td><td>Sitecore.config</td><td>roles:usersRemoved </td><td>roles:usersRemoved(string[] userNames, string[] roleNames) Raised when users have been removed from one or more roles.</td></tr>
+<tr><td>71</td><td>Sitecore.config</td><td>roles:usersRemoved:remote </td><td>roles:usersRemoved:remote(UsersRemovedFromRolesRemoteEventArgs args) Raised when users have been removed from one or more roles on a remote Sitecore instance.</td></tr>
+<tr><td>72</td><td>Sitecore.config</td><td>database:propertychanged </td><td>database:propertychanged(string parameterName) Raised when database property was changed. Deprecated</td></tr>
+<tr><td>73</td><td>Sitecore.config</td><td>property:changed </td><td>property:changed(string parameterName) Raised when property was changed.</td></tr>
+<tr><td>74</td><td>Sitecore.config</td><td>property:removed </td><td>property:deleted(string parameterName) Raised when property was removed.</td></tr>
+<tr><td>75</td><td>Sitecore.config</td><td>idtable:added </td><td>idtable:added(string parameterName) Raised when property was added to idtable.</td></tr>
+<tr><td>76</td><td>Sitecore.config</td><td>idtable:removed </td><td>idtable:removed(string parameterName) Raised when property was removed from idtable.</td></tr>
+<tr><td>77</td><td>Sitecore.config</td><td>sessionEnd:batch:starting </td><td>Example (note: method must be compatible with the EventHandler delegate) <event name=example <handler type=Sitecore.Example, Sitecore.Kernel method=OnExample/ </event   sessionEnd:batch:starting Raised before the sessionEnd batch processing is executed.</td></tr>
+<tr><td>78</td><td>Sitecore.config</td><td>sessionEnd:starting </td><td>sessionEnd:starting Raised before the sessionEnd pipeline is executed.</td></tr>
+<tr><td>79</td><td>Sitecore.config</td><td>sessionEnd:postSessionEnd:starting </td><td>sessionEnd:postSessionEnd:starting Raised before the postSessionEnd pipeline is executed.</td></tr>
+<tr><td>80</td><td>Sitecore.config</td><td>sessionEnd:batch:ended </td><td>sessionEnd:batch:ended Raised after the sessionEnd batch processing is executed.</td></tr>
+<tr><td>81</td><td>Sitecore.config</td><td>sessionEnd:ended </td><td>sessionEnd:ended Raised after the sessionEnd pipeline has been executed.</td></tr>
+<tr><td>82</td><td>Sitecore.config</td><td>job:starting </td><td>job:starting Raised before a Job is placed into the ThreadPool</td></tr>
+<tr><td>83</td><td>Sitecore.config</td><td>job:started </td><td>job:started Raised after a Job is placed into the ThreadPool and has been started</td></tr>
+<tr><td>84</td><td>Sitecore.config</td><td>job:ended </td><td>job:ended Raised during the Job_Finished event</td></tr>
+<tr><td>85</td><td>Sitecore.config</td><td>packageinstall:starting </td><td></td></tr>
+<tr><td>86</td><td>Sitecore.config</td><td>packageinstall:starting:remote </td><td></td></tr>
+<tr><td>87</td><td>Sitecore.config</td><td>packageinstall:items:starting </td><td></td></tr>
+<tr><td>88</td><td>Sitecore.config</td><td>packageinstall:items:starting:remote </td><td></td></tr>
+<tr><td>89</td><td>Sitecore.config</td><td>packageinstall:items:ended </td><td></td></tr>
+<tr><td>90</td><td>Sitecore.config</td><td>packageinstall:items:ended:remote </td><td></td></tr>
+<tr><td>91</td><td>Sitecore.config</td><td>packageinstall:files:starting </td><td></td></tr>
+<tr><td>92</td><td>Sitecore.config</td><td>packageinstall:files:starting:remote </td><td></td></tr>
+<tr><td>93</td><td>Sitecore.config</td><td>packageinstall:files:ended </td><td></td></tr>
+<tr><td>94</td><td>Sitecore.config</td><td>packageinstall:files:ended:remote </td><td></td></tr>
+<tr><td>95</td><td>Sitecore.config</td><td>packageinstall:poststep:starting </td><td></td></tr>
+<tr><td>96</td><td>Sitecore.config</td><td>packageinstall:poststep:starting:remote </td><td></td></tr>
+<tr><td>97</td><td>Sitecore.config</td><td>packageinstall:poststep:ended </td><td></td></tr>
+<tr><td>98</td><td>Sitecore.config</td><td>packageinstall:poststep:ended:remote </td><td></td></tr>
+<tr><td>99</td><td>Sitecore.config</td><td>packageinstall:ended </td><td></td></tr>
+<tr><td>100</td><td>Sitecore.config</td><td>packageinstall:ended:remote </td><td></td></tr>
+<tr><td>101</td><td>XamlSharp.config</td><td>activate</td><td></td></tr>
+<tr><td>102</td><td>XamlSharp.config</td><td>change</td><td></td></tr>
+<tr><td>103</td><td>XamlSharp.config</td><td>click</td><td></td></tr>
+<tr><td>104</td><td>XamlSharp.config</td><td>contextmenu</td><td></td></tr>
+<tr><td>105</td><td>XamlSharp.config</td><td>dblclick</td><td></td></tr>
+<tr><td>106</td><td>XamlSharp.config</td><td>deactivate</td><td></td></tr>
+<tr><td>107</td><td>XamlSharp.config</td><td>drag</td><td></td></tr>
+<tr><td>108</td><td>XamlSharp.config</td><td>dragend</td><td></td></tr>
+<tr><td>109</td><td>XamlSharp.config</td><td>dragenter</td><td></td></tr>
+<tr><td>110</td><td>XamlSharp.config</td><td>dragleave</td><td></td></tr>
+<tr><td>111</td><td>XamlSharp.config</td><td>dragover</td><td></td></tr>
+<tr><td>112</td><td>XamlSharp.config</td><td>dragstart</td><td></td></tr>
+<tr><td>113</td><td>XamlSharp.config</td><td>drop</td><td></td></tr>
+<tr><td>114</td><td>XamlSharp.config</td><td>gotfocus</td><td></td></tr>
+<tr><td>115</td><td>XamlSharp.config</td><td>keydown</td><td></td></tr>
+<tr><td>116</td><td>XamlSharp.config</td><td>keypress</td><td></td></tr>
+<tr><td>117</td><td>XamlSharp.config</td><td>keyup</td><td></td></tr>
+<tr><td>118</td><td>XamlSharp.config</td><td>lostfocus</td><td></td></tr>
+<tr><td>119</td><td>XamlSharp.config</td><td>loaded</td><td></td></tr>
+<tr><td>120</td><td>XamlSharp.config</td><td>mousedown</td><td></td></tr>
+<tr><td>121</td><td>XamlSharp.config</td><td>mouseenter</td><td></td></tr>
+<tr><td>122</td><td>XamlSharp.config</td><td>mouseleave</td><td></td></tr>
+<tr><td>123</td><td>XamlSharp.config</td><td>mouseout</td><td></td></tr>
+<tr><td>124</td><td>XamlSharp.config</td><td>mouseover</td><td></td></tr>
+<tr><td>125</td><td>XamlSharp.config</td><td>mouseup</td><td></td></tr>
+<tr><td>126</td><td>XamlSharp.config</td><td>sizechanged</td><td></td></tr>
+<tr><td>127</td><td>XamlSharp.config</td><td>unloaded</td><td></td></tr>
+<tr><td>128</td><td>Sitecore.Buckets.config</td><td>item:bucketing:adding </td><td>Uncomment the below item:added event if you want Sitecore to automatically create item buckets when the number of children under an item gets too many. <event name=item:added <handler type=Sitecore.Buckets.Events.AutoBucket, Sitecore.Buckets method=Execute/ </event  Event hook before a item is getting bucketed Args: (ID) NewId, (string) ItemName, (ID) TemplateId, (Item) NewDestination</td></tr>
+<tr><td>129</td><td>Sitecore.Buckets.config</td><td>item:bucketing:added </td><td>Event hook after a item is getting bucketed Args: (Item) Item</td></tr>
+<tr><td>130</td><td>Sitecore.Buckets.config</td><td>item:bucketing:cloning</td><td>Event hook before a cloned item is placed in an item bucket. Args: (CopyItemArgs) Args - (Item[]) Copies</td></tr>
+<tr><td>131</td><td>Sitecore.Buckets.config</td><td>item:bucketing:cloned</td><td>Event hook after a cloned item is placed in an item bucket. Args: (CopyItemArgs) Args - (Item[]) Copies</td></tr>
+<tr><td>132</td><td>Sitecore.Buckets.config</td><td>item:bucketing:copying</td><td>Event hook before copying an item into an item bucket. Args: (CopyItemArgs) Args - (Item[])Copies</td></tr>
+<tr><td>133</td><td>Sitecore.Buckets.config</td><td>item:bucketing:copied</td><td>Event hook after copying an item into an item bucket. Args: (CopyItemArgs) Args - (Item[])Copies</td></tr>
+<tr><td>134</td><td>Sitecore.Buckets.config</td><td>item:bucketing:duplicating</td><td>Event hook after duplicating an item into an item bucket. Args: (ClientPipelineArgs) Args -</td></tr>
+<tr><td>135</td><td>Sitecore.Buckets.config</td><td>item:bucketing:duplicated</td><td>Event hook after duplicating an item into an item bucket. Args: (ClientPipelineArgs) Args -</td></tr>
+<tr><td>136</td><td>Sitecore.Buckets.config</td><td>item:bucketing:moving</td><td>Event hook before moving an item into an item bucket. Args: (ClientPipelineArgs) Args -</td></tr>
+<tr><td>137</td><td>Sitecore.Buckets.config</td><td>item:bucketing:moved</td><td>Event hook after moving an item into an item bucket. Args: (ClientPipelineArgs) Args -</td></tr>
+<tr><td>138</td><td>Sitecore.Buckets.config</td><td>item:bucketing:starting</td><td>Event hook before converting an item into an item bucket starts. Args: (BucketArgs) Args - (Item) Item, (string) DatabaseName</td></tr>
+<tr><td>139</td><td>Sitecore.Buckets.config</td><td>item:bucketing:ending</td><td>Event hook after converting an item into an item bucket finishes. Args: (BucketArgs) Args - (Item) Item, (string) DatabaseName</td></tr>
+<tr><td>140</td><td>Sitecore.Buckets.config</td><td>item:unbucketing:starting</td><td>Event hook before converting an item bucket into an ordinary content item starts. Args: (BucketArgs) Args - (Item) Item, (string) DatabaseName</td></tr>
+<tr><td>141</td><td>Sitecore.Buckets.config</td><td>item:unbucketing:ending</td><td>Event hook after converting an item bucket into an ordinary content item finishes. Args: (BucketArgs) Args - (Item) Item, (string) DatabaseName</td></tr>
+<tr><td>142</td><td>Sitecore.Buckets.config</td><td>item:transferred</td><td></td></tr>
+<tr><td>143</td><td>Sitecore.EventHandler.ItemCopied.config</td><td>item:copied</td><td></td></tr>
+<tr><td>144</td><td>Sitecore.ThumbnailGenerator.config</td><td>item:saving</td><td></td></tr>
+<tr><td>145</td><td>Sitecore.ThumbnailGenerator.config</td><td>item:saved</td><td></td></tr>
+<tr><td>146</td><td>Sitecore.Webhooks.config</td><td>item:saved</td><td></td></tr>
+<tr><td>147</td><td>Sitecore.Webhooks.config</td><td>item:deleted</td><td></td></tr>
+<tr><td>148</td><td>Sitecore.ContentSearch.config</td><td>indexing:start</td><td></td></tr>
+<tr><td>149</td><td>Sitecore.ContentSearch.config</td><td>indexing:start:remote </td><td></td></tr>
+<tr><td>150</td><td>Sitecore.ContentSearch.config</td><td>indexing:end</td><td></td></tr>
+<tr><td>151</td><td>Sitecore.ContentSearch.config</td><td>indexing:end:remote </td><td></td></tr>
+<tr><td>152</td><td>Sitecore.ContentSearch.config</td><td>publish:end:remote</td><td></td></tr>
+<tr><td>153</td><td>Sitecore.ContentSearch.config</td><td>publish:end</td><td></td></tr>
+<tr><td>154</td><td>Sitecore.ContentSearch.config</td><td>publish:end</td><td></td></tr>
+<tr><td>155</td><td>Sitecore.ContentSearch.config</td><td>publish:end:remote</td><td></td></tr>
+<tr><td>156</td><td>Sitecore.ContentSearch.config</td><td>indexing:updateditem</td><td></td></tr>
+<tr><td>157</td><td>Sitecore.ContentSearch.config</td><td>indexing:deleteitem</td><td></td></tr>
+<tr><td>158</td><td>Sitecore.ContentSearch.config</td><td>indexing:deletegroup</td><td></td></tr>
+<tr><td>159</td><td>Sitecore.ContentSearch.config</td><td>indexing:end</td><td></td></tr>
+<tr><td>160</td><td>Sitecore.ContentSearch.config</td><td>indexing:committed</td><td></td></tr>
+<tr><td>161</td><td>Sitecore.ContentSearch.config</td><td>indexing:end:remote</td><td></td></tr>
+<tr><td>162</td><td>Sitecore.ContentSearch.config</td><td>indexing:end:remote</td><td></td></tr>
+<tr><td>163</td><td>Sitecore.ContentSearch.config</td><td>packageinstall:starting</td><td></td></tr>
+<tr><td>164</td><td>Sitecore.ContentSearch.config</td><td>packageinstall:poststep:starting</td><td></td></tr>
+<tr><td>165</td><td>Sitecore.ContentSearch.config</td><td>packageinstall:items:ended</td><td></td></tr>
+<tr><td>166</td><td>Sitecore.ContentSearch.config</td><td>packageinstall:ended</td><td></td></tr>
+<tr><td>167</td><td>Sitecore.ContentSearch.config</td><td>packageinstall:starting:remote</td><td></td></tr>
+<tr><td>168</td><td>Sitecore.ContentSearch.config</td><td>packageinstall:poststep:starting:remote</td><td></td></tr>
+<tr><td>169</td><td>Sitecore.ContentSearch.config</td><td>packageinstall:items:ended:remote</td><td></td></tr>
+<tr><td>170</td><td>Sitecore.ContentSearch.config</td><td>packageinstall:ended:remote</td><td></td></tr>
+<tr><td>171</td><td>Sitecore.ContentTesting.config</td><td>item:saved</td><td></td></tr>
+<tr><td>172</td><td>Sitecore.ContentTesting.PreemptiveScreenshot.config</td><td>item:saved</td><td></td></tr>
+<tr><td>173</td><td>Sitecore.ContentTesting.PreemptiveScreenshot.config</td><td>item:saved:remote</td><td></td></tr>
+<tr><td>174</td><td>Sitecore.ContentTesting.Search.config</td><td>item:bucketing:starting</td><td></td></tr>
+<tr><td>175</td><td>Sitecore.ContentTesting.Search.config</td><td>item:bucketing:ending</td><td></td></tr>
+<tr><td>176</td><td>Sitecore.ContentTesting.Search.config</td><td>item:unbucketing:starting</td><td></td></tr>
+<tr><td>177</td><td>Sitecore.ContentTesting.Search.config</td><td>item:unbucketing:ending</td><td></td></tr>
+<tr><td>178</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td>item:added</td><td></td></tr>
+<tr><td>179</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td>item:copied</td><td></td></tr>
+<tr><td>180</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td>item:created</td><td></td></tr>
+<tr><td>181</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td>item:deleted</td><td></td></tr>
+<tr><td>182</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td>subscriber:assigned </td><td></td></tr>
+<tr><td>183</td><td>Sitecore.ExperienceAnalytics.Client.config</td><td>item:saved</td><td></td></tr>
+<tr><td>184</td><td>Sitecore.ExperienceAnalytics.Client.config</td><td>item:deleted</td><td></td></tr>
+<tr><td>185</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:requested</td><td></td></tr>
+<tr><td>186</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:requested:remote</td><td></td></tr>
+<tr><td>187</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:generating</td><td></td></tr>
+<tr><td>188</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:generating:remote</td><td></td></tr>
+<tr><td>189</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:generated</td><td></td></tr>
+<tr><td>190</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:generated:remote</td><td></td></tr>
+<tr><td>191</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:cleanup</td><td></td></tr>
+<tr><td>192</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:cleanup:remote</td><td></td></tr>
+<tr><td>193</td><td>Sitecore.ExperienceForms.config</td><td>form:saved </td><td></td></tr>
+<tr><td>194</td><td>Sitecore.ExperienceForms.config</td><td>forms:deleted </td><td></td></tr>
+<tr><td>195</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td>processor</td><td></td></tr>
+<tr><td>196</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td>processor</td><td></td></tr>
+<tr><td>197</td><td>Sitecore.ExperienceProfile.Reporting.config</td><td>processor</td><td></td></tr>
+<tr><td>198</td><td>Sitecore.Marketing.config</td><td>item:saved</td><td></td></tr>
+<tr><td>199</td><td>Sitecore.Marketing.config</td><td>item:saved:remote</td><td></td></tr>
+<tr><td>200</td><td>Sitecore.Marketing.config</td><td>item:saving</td><td></td></tr>
+<tr><td>201</td><td>Sitecore.Marketing.config</td><td>item:creating</td><td></td></tr>
+<tr><td>202</td><td>Sitecore.Marketing.config</td><td>item:copying</td><td></td></tr>
+<tr><td>203</td><td>Sitecore.Marketing.config</td><td>item:copied</td><td></td></tr>
+<tr><td>204</td><td>Sitecore.Marketing.config</td><td>item:moved</td><td></td></tr>
+<tr><td>205</td><td>Sitecore.Marketing.config</td><td>item:deleted</td><td></td></tr>
+<tr><td>206</td><td>Sitecore.Marketing.config</td><td>item:deleted:remote</td><td></td></tr>
+<tr><td>207</td><td>Sitecore.Analytics.Tracking.config</td><td>sessionEnd:starting</td><td></td></tr>
+<tr><td>208</td><td>Sitecore.Analytics.Tracking.config</td><td>sessionEnd:batch:starting</td><td></td></tr>
+<tr><td>209</td><td>Sitecore.Analytics.Tracking.config</td><td>sessionEnd:batch:ended</td><td></td></tr>
+<tr><td>210</td><td>Sitecore.Analytics.Tracking.config</td><td>item:saved</td><td></td></tr>
+<tr><td>211</td><td>Sitecore.Analytics.Tracking.config</td><td>item:saved:remote</td><td></td></tr>
+<tr><td>212</td><td>Sitecore.Analytics.Tracking.config</td><td>item:deleted</td><td></td></tr>
+<tr><td>213</td><td>Sitecore.Analytics.Tracking.config</td><td>item:deleted:remote</td><td></td></tr>
+<tr><td>214</td><td>Sitecore.Analytics.Tracking.config</td><td>publish:end</td><td></td></tr>
+<tr><td>215</td><td>Sitecore.Analytics.Tracking.config</td><td>publish:end:remote</td><td></td></tr>
+<tr><td>216</td><td>Sitecore.Messaging.config</td><td>messaging:businitialized</td><td>Raised when each message bus has been started, whether it succeeded or failed.</td></tr>
+<tr><td>217</td><td>Sitecore.Messaging.config</td><td>messaging:allBusesInitialized</td><td>Raised when all message buses have been started (whether any failed or not).</td></tr>
+<tr><td>218</td><td>Sitecore.Mvc.config</td><td>publish:end</td><td></td></tr>
+<tr><td>219</td><td>Sitecore.Mvc.config</td><td>publish:end:remote</td><td></td></tr>
+<tr><td>220</td><td>Sitecore.Analytics.Tracking.RobotDetection.config</td><td>media:request</td><td></td></tr>
+  </table>
+<script language="JavaScript">
+
+var oRows = document.getElementById('settings').getElementsByTagName('tr');
+var iRowCount = oRows.length;
+document.getElementById("count").innerHTML = 'No. of rows ' + iRowCount;
+
+</script>
+</body>
+</html>
+
