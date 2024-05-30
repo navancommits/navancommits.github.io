@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Sitecore Event Handler List</title>
+<style>
+#settings {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#settings td, #settings th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#settings tr:nth-child(even){background-color: #f2f2f2;}
+
+#settings tr:hover {background-color: #ddd;}
+
+#settings th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #790501;
+  color: white;
+}
+
+#settings2 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #EB1F1F;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+<table width=100% >
+<h2 align=center>Sitecore Event Handler list</h2>
+<tr><td><label id="count"></label></td><td align=right>v10.4.0 / xp0</td></tr>
+</table>
+  <table  id="settings">
+  <tr><th>S.No.</th><th>File Name</th><th>Event Name</th><th>Handler Type</th><th>Method</th><th>Comment</th></tr>
+     <tr><td>1</td><td>Sitecore.config</td><td>item:added</td><td>Sitecore.Data.Fields.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemAdded"</td><td></td></tr>
+<tr><td>2</td><td>Sitecore.config</td><td>item:added</td><td>Sitecore.Caching.Placeholders.PlaceholderCacheEventHandler, Sitecore.Kernel</td><td>"UpdateCaches"</td><td></td></tr>
+<tr><td>3</td><td>Sitecore.config</td><td>item:added:remote</td><td>Sitecore.Data.Fields.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemAddedRemote"</td><td></td></tr>
+<tr><td>4</td><td>Sitecore.config</td><td>item:added:remote</td><td>Sitecore.Caching.Placeholders.PlaceholderCacheEventHandler, Sitecore.Kernel</td><td>"UpdateCachesRemote"</td><td></td></tr>
+<tr><td>5</td><td>Sitecore.config</td><td>item:copied</td><td>Sitecore.Links.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemCopied"</td><td></td></tr>
+<tr><td>6</td><td>Sitecore.config</td><td>item:copied</td><td>Sitecore.Tasks.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemCopied"</td><td></td></tr>
+<tr><td>7</td><td>Sitecore.config</td><td>item:deleted</td><td>Sitecore.Links.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemDeleted"</td><td></td></tr>
+<tr><td>8</td><td>Sitecore.config</td><td>item:deleted</td><td>Sitecore.Tasks.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemDeleted"</td><td></td></tr>
+<tr><td>9</td><td>Sitecore.config</td><td>item:deleted</td><td>Sitecore.Globalization.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemDeleted"</td><td></td></tr>
+<tr><td>10</td><td>Sitecore.config</td><td>item:deleted</td><td>Sitecore.Data.Fields.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemDeleted"</td><td></td></tr>
+<tr><td>11</td><td>Sitecore.config</td><td>item:deleted</td><td>Sitecore.Rules.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemDeleted"</td><td></td></tr>
+<tr><td>12</td><td>Sitecore.config</td><td>item:deleted</td><td>Sitecore.Caching.Placeholders.PlaceholderCacheEventHandler, Sitecore.Kernel</td><td>"UpdateCaches"</td><td></td></tr>
+<tr><td>13</td><td>Sitecore.config</td><td>item:deleted</td><td>Sitecore.Publishing.PartialHtmlCacheClearer, Sitecore.Kernel</td><td>"OnItemEvent"</td><td></td></tr>
+<tr><td>14</td><td>Sitecore.config</td><td>item:deleted</td><td>Sitecore.Data.AliasesEventHandler, Sitecore.Kernel</td><td>"OnItemDeleted"</td><td></td></tr>
+<tr><td>15</td><td>Sitecore.config</td><td>item:deleted:remote</td><td>Sitecore.Globalization.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemDeletedRemote"</td><td></td></tr>
+<tr><td>16</td><td>Sitecore.config</td><td>item:deleted:remote</td><td>Sitecore.Data.Fields.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemDeletedRemote"</td><td></td></tr>
+<tr><td>17</td><td>Sitecore.config</td><td>item:deleted:remote</td><td>Sitecore.Rules.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemDeletedRemote"</td><td></td></tr>
+<tr><td>18</td><td>Sitecore.config</td><td>item:deleted:remote</td><td>Sitecore.Caching.Placeholders.PlaceholderCacheEventHandler, Sitecore.Kernel</td><td>"UpdateCachesRemote"</td><td></td></tr>
+<tr><td>19</td><td>Sitecore.config</td><td>item:deleted:remote</td><td>Sitecore.Publishing.PartialHtmlCacheClearer, Sitecore.Kernel</td><td>"OnItemEvent"</td><td></td></tr>
+<tr><td>20</td><td>Sitecore.config</td><td>item:moved</td><td>Sitecore.Globalization.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemMoved"</td><td></td></tr>
+<tr><td>21</td><td>Sitecore.config</td><td>item:moved:remote</td><td>Sitecore.Globalization.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemMovedRemote"</td><td></td></tr>
+<tr><td>22</td><td>Sitecore.config</td><td>item:saved</td><td>Sitecore.Links.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemSaved"</td><td></td></tr>
+<tr><td>23</td><td>Sitecore.config</td><td>item:saved</td><td>Sitecore.Globalization.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemSaved"</td><td></td></tr>
+<tr><td>24</td><td>Sitecore.config</td><td>item:saved</td><td>Sitecore.Rules.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemSaved"</td><td></td></tr>
+<tr><td>25</td><td>Sitecore.config</td><td>item:saved</td><td>Sitecore.Caching.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemSaved"</td><td></td></tr>
+<tr><td>26</td><td>Sitecore.config</td><td>item:saved</td><td>Sitecore.Caching.Placeholders.PlaceholderCacheEventHandler, Sitecore.Kernel</td><td>"UpdateCaches"</td><td></td></tr>
+<tr><td>27</td><td>Sitecore.config</td><td>item:saved</td><td>Sitecore.Publishing.PartialHtmlCacheClearer, Sitecore.Kernel</td><td>"OnItemEvent"</td><td></td></tr>
+<tr><td>28</td><td>Sitecore.config</td><td>item:saved:remote</td><td>Sitecore.Globalization.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemSavedRemote"</td><td></td></tr>
+<tr><td>29</td><td>Sitecore.config</td><td>item:saved:remote</td><td>Sitecore.Rules.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemSavedRemote"</td><td></td></tr>
+<tr><td>30</td><td>Sitecore.config</td><td>item:saved:remote</td><td>Sitecore.Caching.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemSavedRemote"</td><td></td></tr>
+<tr><td>31</td><td>Sitecore.config</td><td>item:saved:remote</td><td>Sitecore.Caching.Placeholders.PlaceholderCacheEventHandler, Sitecore.Kernel</td><td>"UpdateCachesRemote"</td><td></td></tr>
+<tr><td>32</td><td>Sitecore.config</td><td>item:saved:remote</td><td>Sitecore.Publishing.PartialHtmlCacheClearer, Sitecore.Kernel</td><td>"OnItemEvent"</td><td></td></tr>
+<tr><td>33</td><td>Sitecore.config</td><td>item:saving</td><td>Sitecore.Tasks.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemSaving"</td><td></td></tr>
+<tr><td>34</td><td>Sitecore.config</td><td>item:versionRemoved</td><td>Sitecore.Globalization.ItemEventHandler, Sitecore.Kernel</td><td>"OnVersionRemoved"</td><td></td></tr>
+<tr><td>35</td><td>Sitecore.config</td><td>item:versionRemoved</td><td>Sitecore.Links.ItemEventHandler, Sitecore.Kernel</td><td>"OnVersionRemoved"</td><td></td></tr>
+<tr><td>36</td><td>Sitecore.config</td><td>item:versionRemoved</td><td>Sitecore.Rules.ItemEventHandler, Sitecore.Kernel</td><td>"OnVersionRemoved"</td><td></td></tr>
+<tr><td>37</td><td>Sitecore.config</td><td>item:versionRemoved:remote</td><td>Sitecore.Globalization.ItemEventHandler, Sitecore.Kernel</td><td>"OnVersionRemovedRemote"</td><td></td></tr>
+<tr><td>38</td><td>Sitecore.config</td><td>item:versionRemoved:remote</td><td>Sitecore.Rules.ItemEventHandler, Sitecore.Kernel</td><td>"OnVersionRemovedRemote"</td><td></td></tr>
+<tr><td>39</td><td>Sitecore.config</td><td>publish:end</td><td>Sitecore.Publishing.SmartHtmlCacheClearer, Sitecore.Kernel</td><td>"ClearCache"</td><td></td></tr>
+<tr><td>40</td><td>Sitecore.config</td><td>publish:end</td><td>Sitecore.Publishing.RenderingParametersCacheClearer, Sitecore.Kernel</td><td>"ClearCache"</td><td></td></tr>
+<tr><td>41</td><td>Sitecore.config</td><td>publish:end:remote</td><td>Sitecore.Publishing.SmartHtmlCacheClearer, Sitecore.Kernel</td><td>"ClearCache"</td><td></td></tr>
+<tr><td>42</td><td>Sitecore.config</td><td>publish:end:remote</td><td>Sitecore.Publishing.RenderingParametersCacheClearer, Sitecore.Kernel</td><td>"ClearCache"</td><td></td></tr>
+<tr><td>43</td><td>Sitecore.config</td><td>publish:startPublishing</td><td>Sitecore.Publishing.RemotePublishingEventHandler, Sitecore.Kernel</td><td>"OnStartPublishing"</td><td></td></tr>
+<tr><td>44</td><td>Sitecore.config</td><td>publish:statusUpdated</td><td>Sitecore.Publishing.RemotePublishingEventHandler, Sitecore.Kernel</td><td>"OnStatusUpdated"</td><td></td></tr>
+<tr><td>45</td><td>Sitecore.config</td><td>security:loggedOut</td><td>Sitecore.Sites.SiteContext, Sitecore.Kernel</td><td>"OnLoggedOut"</td><td></td></tr>
+<tr><td>46</td><td>Sitecore.Buckets.config</td><td>item:transferred</td><td>Sitecore.Buckets.Events.ItemTransferredEventHandler, Sitecore.Buckets</td><td>"Execute"/></td><td></td></tr>
+<tr><td>47</td><td>Sitecore.EventHandler.ItemCopied.config</td><td>item:copied</td><td>Sitecore.Data.Fields.ItemEventHandler, Sitecore.Kernel</td><td>"OnItemCopied"</td><td></td></tr>
+<tr><td>48</td><td>Sitecore.ThumbnailGenerator.config</td><td>item:saving</td><td>Sitecore.Thumbnails.ThumbnailsEventHandler, Sitecore.Kernel</td><td>"OnSaving"</td><td></td></tr>
+<tr><td>49</td><td>Sitecore.ThumbnailGenerator.config</td><td>item:saved</td><td>Sitecore.Thumbnails.ThumbnailsEventHandler, Sitecore.Kernel</td><td>"OnSaved"</td><td></td></tr>
+<tr><td>50</td><td>Sitecore.Webhooks.config</td><td>item:saved</td><td>Sitecore.Events.Webhooks.WebhookSubscriber, Sitecore.Kernel</td><td>"OnWebhookItemSaved"</td><td></td></tr>
+<tr><td>51</td><td>Sitecore.Webhooks.config</td><td>item:deleted</td><td>Sitecore.Events.Webhooks.WebhookSubscriber, Sitecore.Kernel</td><td>"OnWebhookItemDeleted"</td><td></td></tr>
+<tr><td>52</td><td>Sitecore.ContentSearch.config</td><td>indexing:start</td><td>Sitecore.ContentSearch.Events.IndexingEventHandler, Sitecore.ContentSearch</td><td>"IndexingStartedHandler"</td><td></td></tr>
+<tr><td>53</td><td>Sitecore.ContentSearch.config</td><td>indexing:end</td><td>Sitecore.ContentSearch.Maintenance.IndexDependentHtmlCacheManager, Sitecore.ContentSearch</td><td>"Clear"</td><td></td></tr>
+<tr><td>54</td><td>Sitecore.ContentSearch.config</td><td>indexing:end</td><td>Sitecore.ContentSearch.Events.IndexingEventHandler, Sitecore.ContentSearch</td><td>"IndexingEndedHandler"</td><td></td></tr>
+<tr><td>55</td><td>Sitecore.ContentSearch.config</td><td>publish:end:remote</td><td>Sitecore.ContentSearch.Events.PublishingEventHandler, Sitecore.ContentSearch</td><td>"OnFullPublishEndRemoteHandler"/></td><td></td></tr>
+<tr><td>56</td><td>Sitecore.ContentSearch.config</td><td>publish:end</td><td>Sitecore.ContentSearch.Events.PublishingEventHandler, Sitecore.ContentSearch</td><td>"OnFullPublishEndHandler"/></td><td></td></tr>
+<tr><td>57</td><td>Sitecore.ContentSearch.config</td><td>publish:end</td><td>Sitecore.ContentSearch.Events.PublishingEventHandler, Sitecore.ContentSearch</td><td>"OnPublishHandler"/></td><td></td></tr>
+<tr><td>58</td><td>Sitecore.ContentSearch.config</td><td>publish:end:remote</td><td>Sitecore.ContentSearch.Events.PublishingEventHandler, Sitecore.ContentSearch</td><td>"OnPublishRemoteHandler"/></td><td></td></tr>
+<tr><td>59</td><td>Sitecore.ContentSearch.config</td><td>indexing:updateditem</td><td>Sitecore.ContentSearch.Events.IndexingEventHandler, Sitecore.ContentSearch</td><td>"UpdateIndexTimestampHandler"/></td><td></td></tr>
+<tr><td>60</td><td>Sitecore.ContentSearch.config</td><td>indexing:deleteitem</td><td>Sitecore.ContentSearch.Events.IndexingEventHandler, Sitecore.ContentSearch</td><td>"UpdateIndexTimestampHandler"/></td><td></td></tr>
+<tr><td>61</td><td>Sitecore.ContentSearch.config</td><td>indexing:deletegroup</td><td>Sitecore.ContentSearch.Events.IndexingEventHandler, Sitecore.ContentSearch</td><td>"UpdateIndexTimestampHandler"/></td><td></td></tr>
+<tr><td>62</td><td>Sitecore.ContentSearch.config</td><td>indexing:end</td><td>Sitecore.ContentSearch.Events.IndexingEventHandler, Sitecore.ContentSearch</td><td>"UpdateIndexTimestampDirectHandler"/></td><td></td></tr>
+<tr><td>63</td><td>Sitecore.ContentSearch.config</td><td>indexing:committed</td><td>Sitecore.ContentSearch.Events.IndexingEventHandler, Sitecore.ContentSearch</td><td>"UpdateIndexTimestampDirectHandler"/></td><td></td></tr>
+<tr><td>64</td><td>Sitecore.ContentSearch.config</td><td>indexing:end:remote</td><td>Sitecore.ContentSearch.Events.IndexingEventHandler, Sitecore.ContentSearch</td><td>"IndexEndedRemoteHandler"/></td><td></td></tr>
+<tr><td>65</td><td>Sitecore.ContentSearch.config</td><td>indexing:end:remote</td><td>Sitecore.ContentSearch.Events.IndexingEventHandler, Sitecore.ContentSearch</td><td>"UpdateIndexTimestampDirectHandler"/></td><td></td></tr>
+<tr><td>66</td><td>Sitecore.ContentSearch.config</td><td>packageinstall:starting</td><td>Sitecore.ContentSearch.Events.PackagingEventHandler, Sitecore.ContentSearch</td><td>"OnPackageInstallStartingHandler"/></td><td></td></tr>
+<tr><td>67</td><td>Sitecore.ContentSearch.config</td><td>packageinstall:poststep:starting</td><td>Sitecore.ContentSearch.Events.PackagingEventHandler, Sitecore.ContentSearch</td><td>"OnPackagePostStepInstallStartingHandler"/></td><td></td></tr>
+<tr><td>68</td><td>Sitecore.ContentSearch.config</td><td>packageinstall:items:ended</td><td>Sitecore.ContentSearch.Events.PackagingEventHandler, Sitecore.ContentSearch</td><td>"OnPackageInstallItemsEndHandler"/></td><td></td></tr>
+<tr><td>69</td><td>Sitecore.ContentSearch.config</td><td>packageinstall:ended</td><td>Sitecore.ContentSearch.Events.PackagingEventHandler, Sitecore.ContentSearch</td><td>"OnPackageInstallerEndHandler"/></td><td></td></tr>
+<tr><td>70</td><td>Sitecore.ContentSearch.config</td><td>packageinstall:starting:remote</td><td>Sitecore.ContentSearch.Events.PackagingEventHandler, Sitecore.ContentSearch</td><td>"OnPackageInstallStartingRemoteHandler"/></td><td></td></tr>
+<tr><td>71</td><td>Sitecore.ContentSearch.config</td><td>packageinstall:poststep:starting:remote</td><td>Sitecore.ContentSearch.Events.PackagingEventHandler, Sitecore.ContentSearch</td><td>"OnPackagePostStepInstallStartingRemoteHandler"/></td><td></td></tr>
+<tr><td>72</td><td>Sitecore.ContentSearch.config</td><td>packageinstall:items:ended:remote</td><td>Sitecore.ContentSearch.Events.PackagingEventHandler, Sitecore.ContentSearch</td><td>"OnPackageInstallItemsEndRemoteHandler"/></td><td></td></tr>
+<tr><td>73</td><td>Sitecore.ContentSearch.config</td><td>packageinstall:ended:remote</td><td>Sitecore.ContentSearch.Events.PackagingEventHandler, Sitecore.ContentSearch</td><td>"OnPackageInstallerEndRemoteHandler"/></td><td></td></tr>
+<tr><td>74</td><td>Sitecore.ContentTesting.config</td><td>item:saved</td><td>Sitecore.ContentTesting.Events.PersonalizationTrackingHandler, Sitecore.ContentTesting</td><td>"OnItemSaved"</td><td></td></tr>
+<tr><td>75</td><td>Sitecore.ContentTesting.PreemptiveScreenshot.config</td><td>item:saved</td><td>Sitecore.ContentTesting.Events.GenerateScreenshot, Sitecore.ContentTesting</td><td>"OnItemSaved"></td><td></td></tr>
+<tr><td>76</td><td>Sitecore.ContentTesting.PreemptiveScreenshot.config</td><td>item:saved:remote</td><td>Sitecore.ContentTesting.Events.GenerateScreenshot, Sitecore.ContentTesting</td><td>"OnRemoteItemSaved"></td><td></td></tr>
+<tr><td>77</td><td>Sitecore.ContentTesting.Search.config</td><td>item:bucketing:starting</td><td>Sitecore.ContentTesting.Events.PauseIndexingOnBucketing, Sitecore.ContentTesting</td><td>"PauseIndexing"/></td><td></td></tr>
+<tr><td>78</td><td>Sitecore.ContentTesting.Search.config</td><td>item:bucketing:ending</td><td>Sitecore.ContentTesting.Events.PauseIndexingOnBucketing, Sitecore.ContentTesting</td><td>"ResumeIndexing"/></td><td></td></tr>
+<tr><td>79</td><td>Sitecore.ContentTesting.Search.config</td><td>item:unbucketing:starting</td><td>Sitecore.ContentTesting.Events.PauseIndexingOnBucketing, Sitecore.ContentTesting</td><td>"PauseIndexing"/></td><td></td></tr>
+<tr><td>80</td><td>Sitecore.ContentTesting.Search.config</td><td>item:unbucketing:ending</td><td>Sitecore.ContentTesting.Events.PauseIndexingOnBucketing, Sitecore.ContentTesting</td><td>"ResumeIndexing"/></td><td></td></tr>
+<tr><td>81</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td>item:added</td><td>Sitecore.Modules.EmailCampaign.Core.ItemEventHandler, Sitecore.EmailCampaign</td><td>"OnItemAdded"</td><td></td></tr>
+<tr><td>82</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td>item:copied</td><td>Sitecore.Modules.EmailCampaign.Core.ItemEventHandler, Sitecore.EmailCampaign</td><td>"OnMessageCopied"</td><td></td></tr>
+<tr><td>83</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td>item:created</td><td>Sitecore.Modules.EmailCampaign.Core.RootItemEventHandler, Sitecore.EmailCampaign</td><td>"OnRootCreated"</td><td></td></tr>
+<tr><td>84</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td>item:deleted</td><td>Sitecore.Modules.EmailCampaign.Core.RootItemEventHandler, Sitecore.EmailCampaign</td><td>"OnRootDeleted"</td><td></td></tr>
+<tr><td>85</td><td>Sitecore.EmailExperience.ContentManagement.config</td><td>item:deleted</td><td>Sitecore.Modules.EmailCampaign.Core.ItemEventHandler, Sitecore.EmailCampaign</td><td>"OnItemDeleted"</td><td></td></tr>
+<tr><td>86</td><td>Sitecore.ExperienceAnalytics.Client.config</td><td>item:saved</td><td></td><td>"OnItemSaved"/></td><td></td></tr>
+<tr><td>87</td><td>Sitecore.ExperienceAnalytics.Client.config</td><td>item:deleted</td><td></td><td>"OnItemDeleted"/></td><td></td></tr>
+<tr><td>88</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:requested</td><td>Sitecore.ExperienceContentManagement.Administration.ValidateInstanceName, Sitecore.ExperienceContentManagement.Administration static=true</td><td>"OnSupportPackageRequested"</td><td></td></tr>
+<tr><td>89</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:requested</td><td>Sitecore.ExperienceContentManagement.Administration.Logging.AzureFallbackAppender, Sitecore.ExperienceContentManagement.Administration static=true</td><td>"OnSupportPackageRequested"</td><td></td></tr>
+<tr><td>90</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:requested</td><td>Sitecore.ExperienceContentManagement.Administration.SupportPackageEventHandler, Sitecore.ExperienceContentManagement.Administration</td><td>"OnRequested"</td><td></td></tr>
+<tr><td>91</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:requested:remote</td><td>Sitecore.ExperienceContentManagement.Administration.ValidateInstanceName, Sitecore.ExperienceContentManagement.Administration static=true</td><td>"OnSupportPackageRequested"</td><td></td></tr>
+<tr><td>92</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:requested:remote</td><td>Sitecore.ExperienceContentManagement.Administration.Logging.AzureFallbackAppender, Sitecore.ExperienceContentManagement.Administration static=true</td><td>"OnSupportPackageRequested"</td><td></td></tr>
+<tr><td>93</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:requested:remote</td><td>Sitecore.ExperienceContentManagement.Administration.SupportPackageEventHandler, Sitecore.ExperienceContentManagement.Administration</td><td>"OnRequested"</td><td></td></tr>
+<tr><td>94</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:generating</td><td>Sitecore.ExperienceContentManagement.Administration.SupportPackageEventHandler, Sitecore.ExperienceContentManagement.Administration</td><td>"OnGenerating"</td><td></td></tr>
+<tr><td>95</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:generating:remote</td><td>Sitecore.ExperienceContentManagement.Administration.SupportPackageEventHandler, Sitecore.ExperienceContentManagement.Administration</td><td>"OnGenerating"</td><td></td></tr>
+<tr><td>96</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:generated</td><td>Sitecore.ExperienceContentManagement.Administration.SupportPackageEventHandler, Sitecore.ExperienceContentManagement.Administration</td><td>"OnGenerated"</td><td></td></tr>
+<tr><td>97</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:generated:remote</td><td>Sitecore.ExperienceContentManagement.Administration.SupportPackageEventHandler, Sitecore.ExperienceContentManagement.Administration</td><td>"OnGenerated"</td><td></td></tr>
+<tr><td>98</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:cleanup</td><td>Sitecore.ExperienceContentManagement.Administration.SupportPackageEventHandler, Sitecore.ExperienceContentManagement.Administration</td><td>"OnCleanup"</td><td></td></tr>
+<tr><td>99</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>support:package:cleanup:remote</td><td>Sitecore.ExperienceContentManagement.Administration.SupportPackageEventHandler, Sitecore.ExperienceContentManagement.Administration</td><td>"OnCleanup"</td><td></td></tr>
+<tr><td>100</td><td>Sitecore.Marketing.config</td><td>item:saved</td><td>Sitecore.Marketing.xMgmt.Caching.IdsByAliasesCacheClearer, Sitecore.Marketing.xMgmt</td><td>"OnItemSaved"</td><td></td></tr>
+<tr><td>101</td><td>Sitecore.Marketing.config</td><td>item:saved</td><td>Sitecore.Marketing.xMgmt.Definitions.ItemEventHandler, Sitecore.Marketing.xMgmt</td><td>"OnItemSaved"/></td><td></td></tr>
+<tr><td>102</td><td>Sitecore.Marketing.config</td><td>item:saved:remote</td><td>Sitecore.Marketing.xMgmt.Caching.IdsByAliasesCacheClearer, Sitecore.Marketing.xMgmt</td><td>"OnItemSavedRemote"</td><td></td></tr>
+<tr><td>103</td><td>Sitecore.Marketing.config</td><td>item:saving</td><td>Sitecore.Marketing.xMgmt.Definitions.ItemEventHandler, Sitecore.Marketing.xMgmt</td><td>"OnItemSaving"/></td><td></td></tr>
+<tr><td>104</td><td>Sitecore.Marketing.config</td><td>item:creating</td><td>Sitecore.Marketing.xMgmt.Definitions.ItemEventHandler, Sitecore.Marketing.xMgmt</td><td>"OnItemCreating"/></td><td></td></tr>
+<tr><td>105</td><td>Sitecore.Marketing.config</td><td>item:copying</td><td>Sitecore.Marketing.xMgmt.Definitions.ItemEventHandler, Sitecore.Marketing.xMgmt</td><td>"OnItemCopying"/></td><td></td></tr>
+<tr><td>106</td><td>Sitecore.Marketing.config</td><td>item:copied</td><td>Sitecore.Marketing.xMgmt.Definitions.ItemEventHandler, Sitecore.Marketing.xMgmt</td><td>"OnItemCopied"/></td><td></td></tr>
+<tr><td>107</td><td>Sitecore.Marketing.config</td><td>item:moved</td><td>Sitecore.Marketing.xMgmt.Definitions.ItemEventHandler, Sitecore.Marketing.xMgmt</td><td>"OnItemMoved"/></td><td></td></tr>
+<tr><td>108</td><td>Sitecore.Marketing.config</td><td>item:deleted</td><td>Sitecore.Marketing.xMgmt.Caching.IdsByAliasesCacheClearer, Sitecore.Marketing.xMgmt</td><td>"OnItemDeleted"</td><td></td></tr>
+<tr><td>109</td><td>Sitecore.Marketing.config</td><td>item:deleted</td><td>Sitecore.Marketing.xMgmt.Definitions.ItemEventHandler, Sitecore.Marketing.xMgmt</td><td>"OnItemDeleted"/></td><td></td></tr>
+<tr><td>110</td><td>Sitecore.Marketing.config</td><td>item:deleted:remote</td><td>Sitecore.Marketing.xMgmt.Caching.IdsByAliasesCacheClearer, Sitecore.Marketing.xMgmt</td><td>"OnItemDeletedRemote"</td><td></td></tr>
+<tr><td>111</td><td>Sitecore.Analytics.Tracking.config</td><td>sessionEnd:starting</td><td>Sitecore.Analytics.Events.DiagnosticsEventHandler, Sitecore.Analytics</td><td>"OnSessionEndStarting"</td><td></td></tr>
+<tr><td>112</td><td>Sitecore.Analytics.Tracking.config</td><td>sessionEnd:batch:starting</td><td>Sitecore.Analytics.Events.DiagnosticsEventHandler, Sitecore.Analytics</td><td>"OnBatchStarting"</td><td></td></tr>
+<tr><td>113</td><td>Sitecore.Analytics.Tracking.config</td><td>sessionEnd:batch:starting</td><td>Sitecore.Analytics.Events.BatchEventHandler, Sitecore.Analytics</td><td>"OnBatchStarting"</td><td></td></tr>
+<tr><td>114</td><td>Sitecore.Analytics.Tracking.config</td><td>sessionEnd:batch:ended</td><td>Sitecore.Analytics.Events.BatchEventHandler, Sitecore.Analytics</td><td>"OnBatchEnded"</td><td></td></tr>
+<tr><td>115</td><td>Sitecore.Analytics.Tracking.config</td><td>sessionEnd:batch:ended</td><td>Sitecore.Analytics.Events.DiagnosticsEventHandler, Sitecore.Analytics</td><td>"OnBatchEnded"</td><td></td></tr>
+<tr><td>116</td><td>Sitecore.Analytics.Tracking.config</td><td>item:saved</td><td>Sitecore.Analytics.Data.ItemEventHandler, Sitecore.Analytics</td><td>"OnItemSaved"</td><td></td></tr>
+<tr><td>117</td><td>Sitecore.Analytics.Tracking.config</td><td>item:saved</td><td>Sitecore.Analytics.Data.Caches.ProfilesWithDefaultValuesCacheHandler, Sitecore.Analytics</td><td>"OnItemSaved"</td><td></td></tr>
+<tr><td>118</td><td>Sitecore.Analytics.Tracking.config</td><td>item:saved:remote</td><td>Sitecore.Analytics.Data.Caches.ProfilesWithDefaultValuesCacheHandler, Sitecore.Analytics</td><td>"OnItemSavedRemote"</td><td></td></tr>
+<tr><td>119</td><td>Sitecore.Analytics.Tracking.config</td><td>item:deleted</td><td>Sitecore.Analytics.Data.Caches.ProfilesWithDefaultValuesCacheHandler, Sitecore.Analytics</td><td>"OnItemDeleted"</td><td></td></tr>
+<tr><td>120</td><td>Sitecore.Analytics.Tracking.config</td><td>item:deleted:remote</td><td>Sitecore.Analytics.Data.Caches.ProfilesWithDefaultValuesCacheHandler, Sitecore.Analytics</td><td>"OnItemDeletedRemote"</td><td></td></tr>
+<tr><td>121</td><td>Sitecore.Analytics.Tracking.config</td><td>publish:end</td><td>Sitecore.Analytics.Data.Items.ClearItemRecordsIDCacheOnPublishEndHandler, Sitecore.Analytics</td><td>"ClearCache"</td><td></td></tr>
+<tr><td>122</td><td>Sitecore.Analytics.Tracking.config</td><td>publish:end:remote</td><td>Sitecore.Analytics.Data.Items.ClearItemRecordsIDCacheOnPublishEndHandler, Sitecore.Analytics</td><td>"ClearCache"</td><td></td></tr>
+<tr><td>123</td><td>Sitecore.Mvc.config</td><td>publish:end</td><td>Sitecore.Mvc.MvcCacheCleaner, Sitecore.Mvc</td><td>"OnPublishEnd"</td><td></td></tr>
+<tr><td>124</td><td>Sitecore.Mvc.config</td><td>publish:end:remote</td><td>Sitecore.Mvc.MvcCacheCleaner, Sitecore.Mvc</td><td>"OnPublishEnd"</td><td></td></tr>
+<tr><td>125</td><td>Sitecore.Analytics.Tracking.RobotDetection.config</td><td>media:request</td><td>Sitecore.Analytics.RobotDetection.Media.MediaRequestEventHandler, Sitecore.Analytics.RobotDetection</td><td>"OnMediaRequest"</td><td></td></tr>
+  
+  </table>
+<script language="JavaScript">
+
+var oRows = document.getElementById('settings').getElementsByTagName('tr');
+var iRowCount = oRows.length;
+document.getElementById("count").innerHTML = 'No. of rows ' + iRowCount;
+
+</script>
+</body>
+</html>
+
