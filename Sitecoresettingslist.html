@@ -743,8 +743,8 @@
 <script language="JavaScript">
 
 var oRows = document.getElementById('settings').getElementsByTagName('tr');
-var iRowCount = oRows.length;
-document.getElementById("count").innerHTML = 'No. of rows ' + iRowCount;
+var iRowCount = oRows.length-=2;
+document.getElementById("count").innerHTML = iRowCount + ' settings';
 
 </script>
 </body>
