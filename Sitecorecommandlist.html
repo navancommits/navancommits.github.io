@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Sitecore Command List</title>
+<style>
+#settings {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#settings td, #settings th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#settings tr:nth-child(even){background-color: #f2f2f2;}
+
+#settings tr:hover {background-color: #ddd;}
+
+#settings th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #790501;
+  color: white;
+}
+
+#settings2 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #EB1F1F;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+<table width=100% >
+<h2 align=center>Sitecore Command list</h2>
+<tr><td><label id="count"></label></td><td align=right>v10.4.0 / xp0</td></tr>
+</table>
+  <table  id="settings">
+
+	<tr><th>S.No.</th><th>File Name</th><th>Command</th><th>Type</th><tr>  
+<tr><td>1</td><td>Sitecore.Buckets.config</td><td>item:addmaster</td><td></td></tr>
+<tr><td>2</td><td>Sitecore.Buckets.config</td><td>bucket:addtag                             </td><td>Sitecore.Buckets.Search.SearchOperations.AddTag, Sitecore.Buckets</td></tr>
+<tr><td>3</td><td>Sitecore.Buckets.config</td><td>bucket:applycampaignsgoalseventstoallitems</td><td>Sitecore.Buckets.Search.SearchOperations.ApplyCampaignsGoalsEventsToAllItems, Sitecore.Buckets</td></tr>
+<tr><td>4</td><td>Sitecore.Buckets.config</td><td>bucket:applyfieldvaluechangetoallitems    </td><td>Sitecore.Buckets.Search.SearchOperations.ApplyFieldValueChangeToAllItems, Sitecore.Buckets</td></tr>
+<tr><td>5</td><td>Sitecore.Buckets.config</td><td>bucket:applypresentationtoallitems        </td><td>Sitecore.Buckets.Search.SearchOperations.ApplyPresentationToItems, Sitecore.Buckets</td></tr>
+<tr><td>6</td><td>Sitecore.Buckets.config</td><td>bucket:applyprofilescoretoallitems        </td><td>Sitecore.Buckets.Search.SearchOperations.ApplyProfileCardsToAllItems, Sitecore.Buckets</td></tr>
+<tr><td>7</td><td>Sitecore.Buckets.config</td><td>bucket:applysecurityrule                  </td><td>Sitecore.Buckets.Search.SearchOperations.ApplySecurityRule, Sitecore.Buckets</td></tr>
+<tr><td>8</td><td>Sitecore.Buckets.config</td><td>bucket:cloneresultsto                     </td><td>Sitecore.Buckets.Search.SearchOperations.CloneToCommand, Sitecore.Buckets</td></tr>
+<tr><td>9</td><td>Sitecore.Buckets.config</td><td>bucket:copyresultsto                      </td><td>Sitecore.Buckets.Search.SearchOperations.CopyToCommand, Sitecore.Buckets</td></tr>
+<tr><td>10</td><td>Sitecore.Buckets.config</td><td>bucket:copytodatasourcequery              </td><td>Sitecore.Buckets.Search.SearchOperations.CopyToDatasourceQuery, Sitecore.Buckets</td></tr>
+<tr><td>11</td><td>Sitecore.Buckets.config</td><td>bucket:deleteresults                      </td><td>Sitecore.Buckets.Search.SearchOperations.DeleteCommand, Sitecore.Buckets</td></tr>
+<tr><td>12</td><td>Sitecore.Buckets.config</td><td>bucket:moveresultsto                      </td><td>Sitecore.Buckets.Search.SearchOperations.MoveToCommand, Sitecore.Buckets</td></tr>
+<tr><td>13</td><td>Sitecore.Buckets.config</td><td>bucket:publishitems                       </td><td>Sitecore.Buckets.Search.SearchOperations.PublishItems, Sitecore.Buckets</td></tr>
+<tr><td>14</td><td>Sitecore.Buckets.config</td><td>bucket:runconditionalrule                 </td><td>Sitecore.Buckets.Search.SearchOperations.RunConditionalRule, Sitecore.Buckets</td></tr>
+<tr><td>15</td><td>Sitecore.Buckets.config</td><td>bucket:searchandreplace                   </td><td>Sitecore.Buckets.Search.SearchOperations.Replace, Sitecore.Buckets</td></tr>
+<tr><td>16</td><td>Sitecore.Buckets.config</td><td>bucket:serializeitems                     </td><td>Sitecore.Buckets.Search.SearchOperations.SerializeItems, Sitecore.Buckets resolve=true</td></tr>
+<tr><td>17</td><td>Sitecore.Buckets.config</td><td>contenteditor:launchblanktab              </td><td>Sitecore.Buckets.Commands.AddBlankSearch, Sitecore.Buckets</td></tr>
+<tr><td>18</td><td>Sitecore.Buckets.config</td><td>contenteditor:launchsilenttab             </td><td>Sitecore.Buckets.Commands.AddSilentTab, Sitecore.Buckets</td></tr>
+<tr><td>19</td><td>Sitecore.Buckets.config</td><td>contenteditor:launchtab                   </td><td>Sitecore.Buckets.Commands.AddTab, Sitecore.Buckets</td></tr>
+<tr><td>20</td><td>Sitecore.Buckets.config</td><td>contenteditor:togglebucketitems           </td><td>Sitecore.Buckets.Commands.ToggleBucket, Sitecore.Buckets</td></tr>
+<tr><td>21</td><td>Sitecore.Buckets.config</td><td>field:setastag                            </td><td>Sitecore.Buckets.Commands.SetFieldAsTag, Sitecore.Buckets</td></tr>
+<tr><td>22</td><td>Sitecore.Buckets.config</td><td>field:setsearchimagefield                 </td><td>Sitecore.Buckets.Commands.MarkImageFieldAsSearchResultsImage, Sitecore.Buckets</td></tr>
+<tr><td>23</td><td>Sitecore.Buckets.config</td><td>item:bucket                               </td><td>Sitecore.Buckets.Commands.MakeBucket, Sitecore.Buckets</td></tr>
+<tr><td>24</td><td>Sitecore.Buckets.config</td><td>item:bucketable                           </td><td>Sitecore.Buckets.Commands.MakeItemBucketable, Sitecore.Buckets</td></tr>
+<tr><td>25</td><td>Sitecore.Buckets.config</td><td>item:bucketsearch                         </td><td>Sitecore.Buckets.Commands.Search, Sitecore.Buckets</td></tr>
+<tr><td>26</td><td>Sitecore.Buckets.config</td><td>item:gobacktoclosestparentbucket          </td><td>Sitecore.Buckets.Commands.GoToClosestBucketParent, Sitecore.Buckets</td></tr>
+<tr><td>27</td><td>Sitecore.Buckets.config</td><td>item:pastefromclipboard</td><td></td></tr>
+<tr><td>28</td><td>Sitecore.Buckets.config</td><td>item:resetbucketable                      </td><td>Sitecore.Buckets.Commands.ResetBucketable, Sitecore.Buckets</td></tr>
+<tr><td>29</td><td>Sitecore.Buckets.config</td><td>item:syncbucket                           </td><td>Sitecore.Buckets.Commands.SyncBucket, Sitecore.Buckets</td></tr>
+<tr><td>30</td><td>Sitecore.Buckets.config</td><td>item:unbucket                             </td><td>Sitecore.Buckets.Commands.UnMakeBucket, Sitecore.Buckets</td></tr>
+<tr><td>31</td><td>Sitecore.Buckets.config</td><td>security:setsecurityrule                  </td><td>Sitecore.Buckets.Commands.SetSecurityRule, Sitecore.Buckets</td></tr>
+<tr><td>32</td><td>Sitecore.Buckets.config</td><td>template:bucketable                       </td><td>Sitecore.Buckets.Commands.MakeTemplateBucketable, Sitecore.Buckets</td></tr>
+<tr><td>33</td><td>Sitecore.Buckets.config</td><td>template:launchstandardvalues             </td><td>Sitecore.Buckets.Commands.LaunchStandardValues, Sitecore.Buckets</td></tr>
+<tr><td>34</td><td>Sitecore.Buckets.config</td><td>contenteditor:addsearchtabwithquery       </td><td>Sitecore.Buckets.Commands.AddSearchTabWithQuery, Sitecore.Buckets</td></tr>
+<tr><td>35</td><td>Sitecore.Commands.config</td><td>accessviewer:selectcolumns</td><td>Sitecore.Shell.Framework.Commands.AccessViewer.SelectColumns,Sitecore.Kernel</td></tr>
+<tr><td>36</td><td>Sitecore.Commands.config</td><td>archive:delete</td><td>Sitecore.Shell.Framework.Commands.Archives.Delete,Sitecore.Kernel</td></tr>
+<tr><td>37</td><td>Sitecore.Commands.config</td><td>archive:empty</td><td>Sitecore.Shell.Framework.Commands.Archives.Empty,Sitecore.Kernel</td></tr>
+<tr><td>38</td><td>Sitecore.Commands.config</td><td>archive:refresh</td><td>Sitecore.Shell.Framework.Commands.Archives.Refresh,Sitecore.Kernel</td></tr>
+<tr><td>39</td><td>Sitecore.Commands.config</td><td>archive:restore</td><td>Sitecore.Shell.Framework.Commands.Archives.Restore,Sitecore.Kernel</td></tr>
+<tr><td>40</td><td>Sitecore.Commands.config</td><td>archive:showversions</td><td>Sitecore.Shell.Framework.Commands.Archives.ShowVersions,Sitecore.Kernel</td></tr>
+<tr><td>41</td><td>Sitecore.Commands.config</td><td>brokenlinks:showsystemitems</td><td>Sitecore.Shell.Framework.Commands.BrokenLinks.ShowSystemItems,Sitecore.Kernel</td></tr>
+<tr><td>42</td><td>Sitecore.Commands.config</td><td>brokenlinks:showonlylatestversion</td><td>Sitecore.Shell.Framework.Commands.BrokenLinks.ShowOnlyLatestVersion,Sitecore.Kernel</td></tr>
+<tr><td>43</td><td>Sitecore.Commands.config</td><td>carousel:home</td><td>Sitecore.Shell.Framework.Commands.Carousel.Home,Sitecore.Kernel </td></tr>
+<tr><td>44</td><td>Sitecore.Commands.config</td><td>carousel:refresh</td><td>Sitecore.Shell.Framework.Commands.Carousel.Refresh,Sitecore.Kernel </td></tr>
+<tr><td>45</td><td>Sitecore.Commands.config</td><td>clipboard:copyidtoclipboard</td><td>Sitecore.Shell.Framework.Commands.Clipboard.CopyIDToClipboard,Sitecore.Kernel </td></tr>
+<tr><td>46</td><td>Sitecore.Commands.config</td><td>clipboard:copypathtoclipboard</td><td>Sitecore.Shell.Framework.Commands.Clipboard.CopyPathToClipboard,Sitecore.Kernel </td></tr>
+<tr><td>47</td><td>Sitecore.Commands.config</td><td>contenteditor:archive</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.Archive,Sitecore.Kernel </td></tr>
+<tr><td>48</td><td>Sitecore.Commands.config</td><td>contenteditor:back</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.Back,Sitecore.Kernel</td></tr>
+<tr><td>49</td><td>Sitecore.Commands.config</td><td>contenteditor:close</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.Close,Sitecore.Kernel</td></tr>
+<tr><td>50</td><td>Sitecore.Commands.config</td><td>contenteditor:closepreview</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.ClosePreview,Sitecore.Kernel</td></tr>
+<tr><td>51</td><td>Sitecore.Commands.config</td><td>contenteditor:edit</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.Edit,Sitecore.Kernel</td></tr>
+<tr><td>52</td><td>Sitecore.Commands.config</td><td>contenteditor:forward</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.Forward,Sitecore.Kernel</td></tr>
+<tr><td>53</td><td>Sitecore.Commands.config</td><td>contenteditor:home</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.Home,Sitecore.Kernel</td></tr>
+<tr><td>54</td><td>Sitecore.Commands.config</td><td>contenteditor:opensecurity</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.OpenSecurity,Sitecore.Kernel</td></tr>
+<tr><td>55</td><td>Sitecore.Commands.config</td><td>contenteditor:incrementmark</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.IncrementMark,Sitecore.Kernel</td></tr>
+<tr><td>56</td><td>Sitecore.Commands.config</td><td>contenteditor:navigate</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.Navigate,Sitecore.Kernel </td></tr>
+<tr><td>57</td><td>Sitecore.Commands.config</td><td>contenteditor:pagedesigner</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.PageDesigner,Sitecore.Kernel</td></tr>
+<tr><td>58</td><td>Sitecore.Commands.config</td><td>contenteditor:preview</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.Preview,Sitecore.Kernel</td></tr>
+<tr><td>59</td><td>Sitecore.Commands.config</td><td>contenteditor:properties</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.Properties,Sitecore.Kernel</td></tr>
+<tr><td>60</td><td>Sitecore.Commands.config</td><td>contenteditor:reminder</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.Reminder,Sitecore.Kernel </td></tr>
+<tr><td>61</td><td>Sitecore.Commands.config</td><td>contenteditor:save</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.Save,Sitecore.Kernel</td></tr>
+<tr><td>62</td><td>Sitecore.Commands.config</td><td>contenteditor:saveandclose</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.SaveAndClose,Sitecore.Kernel</td></tr>
+<tr><td>63</td><td>Sitecore.Commands.config</td><td>contenteditor:seticon</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.SetIcon,Sitecore.Kernel</td></tr>
+<tr><td>64</td><td>Sitecore.Commands.config</td><td>contenteditor:setthumbnail</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.SetThumbnail,Sitecore.Kernel</td></tr>
+<tr><td>65</td><td>Sitecore.Commands.config</td><td>contenteditor:showworkflowcommands</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.ShowWorkflowCommands,Sitecore.Kernel</td></tr>
+<tr><td>66</td><td>Sitecore.Commands.config</td><td>contenteditor:spellcheck</td><td>Sitecore.Shell.Applications.ContentManager.Commands.Spellcheck,Sitecore.Client</td></tr>
+<tr><td>67</td><td>Sitecore.Commands.config</td><td>contenteditor:subitems</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.Subitems,Sitecore.Kernel</td></tr>
+<tr><td>68</td><td>Sitecore.Commands.config</td><td>contenteditor:toggleentiretree</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.ToggleEntireTree,Sitecore.Kernel</td></tr>
+<tr><td>69</td><td>Sitecore.Commands.config</td><td>contenteditor:togglefolders</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.ToggleFolders,Sitecore.Kernel</td></tr>
+<tr><td>70</td><td>Sitecore.Commands.config</td><td>contenteditor:togglehiddenitems</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.ToggleHiddenItems,Sitecore.Kernel</td></tr>
+<tr><td>71</td><td>Sitecore.Commands.config</td><td>contenteditor:togglestandardfields</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.ToggleStandardFields,Sitecore.Kernel</td></tr>
+<tr><td>72</td><td>Sitecore.Commands.config</td><td>contenteditor:togglerawvalues</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.ToggleRawValues,Sitecore.Kernel</td></tr>
+<tr><td>73</td><td>Sitecore.Commands.config</td><td>contenteditor:toggletranslate</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.ToggleTranslate,Sitecore.Kernel</td></tr>
+<tr><td>74</td><td>Sitecore.Commands.config</td><td>contenteditor:up</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.Up,Sitecore.Kernel</td></tr>
+<tr><td>75</td><td>Sitecore.Commands.config</td><td>contenteditor:validatemarkup</td><td>Sitecore.Shell.Applications.ContentManager.Commands.ValidateMarkup,Sitecore.Client</td></tr>
+<tr><td>76</td><td>Sitecore.Commands.config</td><td>createuser:addroles</td><td>Sitecore.Shell.Applications.Security.CreateNewUser.AddRoles,Sitecore.Client</td></tr>
+<tr><td>77</td><td>Sitecore.Commands.config</td><td>databases:cleanup</td><td>Sitecore.Shell.Framework.Commands.Databases.CleanUp,Sitecore.Kernel </td></tr>
+<tr><td>78</td><td>Sitecore.Commands.config</td><td>domainmanager:delete</td><td>Sitecore.Shell.Framework.Commands.DomainManager.DeleteDomain,Sitecore.Kernel</td></tr>
+<tr><td>79</td><td>Sitecore.Commands.config</td><td>domainmanager:newdomain</td><td>Sitecore.Shell.Framework.Commands.DomainManager.NewDomain,Sitecore.Kernel</td></tr>
+<tr><td>80</td><td>Sitecore.Commands.config</td><td>domainmanager:editdomain</td><td>Sitecore.Shell.Framework.Commands.DomainManager.EditDomain,Sitecore.Kernel</td></tr>
+<tr><td>81</td><td>Sitecore.Commands.config</td><td>domainmanager:dumpusers</td><td>Sitecore.Shell.Framework.Commands.Serialization.DumpDomainUsersCommand,Sitecore.Kernel resolve=true </td></tr>
+<tr><td>82</td><td>Sitecore.Commands.config</td><td>domainmanager:loadusers</td><td>Sitecore.Shell.Framework.Commands.Serialization.LoadDomainUsersCommand,Sitecore.Kernel resolve=true </td></tr>
+<tr><td>83</td><td>Sitecore.Commands.config</td><td>domainmanager:dumproles</td><td>Sitecore.Shell.Framework.Commands.Serialization.DumpDomainRolesCommand,Sitecore.Kernel resolve=true </td></tr>
+<tr><td>84</td><td>Sitecore.Commands.config</td><td>domainmanager:loadroles</td><td>Sitecore.Shell.Framework.Commands.Serialization.LoadDomainRolesCommand,Sitecore.Kernel resolve=true </td></tr>
+<tr><td>85</td><td>Sitecore.Commands.config</td><td>domainmanager:dumpusersroles</td><td>Sitecore.Shell.Framework.Commands.Serialization.DumpDomainUsersRolesCommand,Sitecore.Kernel resolve=true </td></tr>
+<tr><td>86</td><td>Sitecore.Commands.config</td><td>domainmanager:loadusersroles</td><td>Sitecore.Shell.Framework.Commands.Serialization.LoadDomainUsersRolesCommand,Sitecore.Kernel resolve=true </td></tr>
+<tr><td>87</td><td>Sitecore.Commands.config</td><td>edithtml:fix</td><td>Sitecore.Shell.Applications.ContentEditor.Dialogs.EditHtml.Commands.Fix,Sitecore.Client</td></tr>
+<tr><td>88</td><td>Sitecore.Commands.config</td><td>edithtml:format</td><td>Sitecore.Shell.Applications.ContentEditor.Dialogs.EditHtml.Commands.Format,Sitecore.Client</td></tr>
+<tr><td>89</td><td>Sitecore.Commands.config</td><td>edithtml:validatexhtml</td><td>Sitecore.Shell.Applications.ContentEditor.Dialogs.EditHtml.Commands.ValidateXHtml,Sitecore.Client</td></tr>
+<tr><td>90</td><td>Sitecore.Commands.config</td><td>favorites:add</td><td>Sitecore.Shell.Framework.Commands.Favorites.Add,Sitecore.Kernel</td></tr>
+<tr><td>91</td><td>Sitecore.Commands.config</td><td>favorites:organize</td><td>Sitecore.Shell.Framework.Commands.Favorites.Organize,Sitecore.Kernel</td></tr>
+<tr><td>92</td><td>Sitecore.Commands.config</td><td>favorites:showmenu</td><td>Sitecore.Shell.Framework.Commands.Favorites.ShowMenu,Sitecore.Kernel</td></tr>
+<tr><td>93</td><td>Sitecore.Commands.config</td><td>globalization:exportlanguage</td><td>Sitecore.Shell.Framework.Commands.ExportLanguage,Sitecore.Kernel</td></tr>
+<tr><td>94</td><td>Sitecore.Commands.config</td><td>globalization:importlanguage</td><td>Sitecore.Shell.Framework.Commands.ImportLanguage,Sitecore.Kernel</td></tr>
+<tr><td>95</td><td>Sitecore.Commands.config</td><td>globalization:untranslatedfields</td><td>Sitecore.Shell.Framework.Commands.UntranslatedFields,Sitecore.Kernel</td></tr>
+<tr><td>96</td><td>Sitecore.Commands.config</td><td>ide:createfile</td><td>Sitecore.Shell.Framework.Commands.IDE.CreateFile,Sitecore.Kernel </td></tr>
+<tr><td>97</td><td>Sitecore.Commands.config</td><td>item:addfromtemplate</td><td>Sitecore.Shell.Framework.Commands.AddFromTemplate,Sitecore.Kernel </td></tr>
+<tr><td>98</td><td>Sitecore.Commands.config</td><td>item:addmaster</td><td>Sitecore.Shell.Framework.Commands.AddMaster,Sitecore.Kernel </td></tr>
+<tr><td>99</td><td>Sitecore.Commands.config</td><td>item:addtemplatefield</td><td>Sitecore.Shell.Framework.Commands.AddTemplateField,Sitecore.Kernel </td></tr>
+<tr><td>100</td><td>Sitecore.Commands.config</td><td>item:addversion</td><td>Sitecore.Shell.Framework.Commands.AddVersion,Sitecore.Kernel </td></tr>
+<tr><td>101</td><td>Sitecore.Commands.config</td><td>item:archiveitem</td><td>Sitecore.Shell.Framework.Commands.Archive,Sitecore.Kernel </td></tr>
+<tr><td>102</td><td>Sitecore.Commands.config</td><td>item:archiveversion</td><td>Sitecore.Shell.Framework.Commands.ArchiveVersion,Sitecore.Kernel </td></tr>
+<tr><td>103</td><td>Sitecore.Commands.config</td><td>item:archivedateset</td><td>Sitecore.Shell.Framework.Commands.ArchiveDateSet,Sitecore.Kernel </td></tr>
+<tr><td>104</td><td>Sitecore.Commands.config</td><td>item:changetemplate</td><td>Sitecore.Shell.Framework.Commands.ChangeTemplate,Sitecore.Kernel </td></tr>
+<tr><td>105</td><td>Sitecore.Commands.config</td><td>item:checkin</td><td>Sitecore.Shell.Framework.Commands.CheckIn,Sitecore.Kernel </td></tr>
+<tr><td>106</td><td>Sitecore.Commands.config</td><td>item:checkout</td><td>Sitecore.Shell.Framework.Commands.CheckOut,Sitecore.Kernel </td></tr>
+<tr><td>107</td><td>Sitecore.Commands.config</td><td>item:compareversions</td><td>Sitecore.Shell.Framework.Commands.CompareVersions,Sitecore.Kernel </td></tr>
+<tr><td>108</td><td>Sitecore.Commands.config</td><td>item:copyto</td><td>Sitecore.Shell.Framework.Commands.CopyTo,Sitecore.Kernel </td></tr>
+<tr><td>109</td><td>Sitecore.Commands.config</td><td>item:copytoclipboard</td><td>Sitecore.Shell.Framework.Commands.CopyToClipboard,Sitecore.Kernel </td></tr>
+<tr><td>110</td><td>Sitecore.Commands.config</td><td>item:cuttoclipboard</td><td>Sitecore.Shell.Framework.Commands.CutToClipboard,Sitecore.Kernel </td></tr>
+<tr><td>111</td><td>Sitecore.Commands.config</td><td>item:create</td><td>Sitecore.Shell.Framework.Commands.Create,Sitecore.Kernel </td></tr>
+<tr><td>112</td><td>Sitecore.Commands.config</td><td>item:delete</td><td>Sitecore.Shell.Framework.Commands.Delete,Sitecore.Kernel </td></tr>
+<tr><td>113</td><td>Sitecore.Commands.config</td><td>item:deletechildren</td><td>Sitecore.Shell.Framework.Commands.DeleteChildren,Sitecore.Kernel </td></tr>
+<tr><td>114</td><td>Sitecore.Commands.config</td><td>item:deletetemplatefield</td><td>Sitecore.Shell.Framework.Commands.DeleteTemplateField,Sitecore.Kernel </td></tr>
+<tr><td>115</td><td>Sitecore.Commands.config</td><td>item:deleteversion</td><td>Sitecore.Shell.Framework.Commands.DeleteVersion,Sitecore.Kernel </td></tr>
+<tr><td>116</td><td>Sitecore.Commands.config</td><td>item:design</td><td>Sitecore.Shell.Framework.Commands.Edit,Sitecore.Kernel </td></tr>
+<tr><td>117</td><td>Sitecore.Commands.config</td><td>item:clone</td><td>Sitecore.Shell.Framework.Commands.Clone,Sitecore.Kernel </td></tr>
+<tr><td>118</td><td>Sitecore.Commands.config</td><td>item:cloneitemwithoutsubitems</td><td>Sitecore.Shell.Framework.Commands.CloneWithoutSubItems,Sitecore.Kernel </td></tr>
+<tr><td>119</td><td>Sitecore.Commands.config</td><td>item:unclone</td><td>Sitecore.Shell.Framework.Commands.Unclone,Sitecore.Kernel </td></tr>
+<tr><td>120</td><td>Sitecore.Commands.config</td><td>item:uncloneitem</td><td>Sitecore.Shell.Framework.Commands.UncloneSingleItem,Sitecore.Kernel </td></tr>
+<tr><td>121</td><td>Sitecore.Commands.config</td><td>item:duplicate</td><td>Sitecore.Shell.Framework.Commands.Duplicate,Sitecore.Kernel </td></tr>
+<tr><td>122</td><td>Sitecore.Commands.config</td><td>item:download</td><td>Sitecore.Shell.Framework.Commands.Download,Sitecore.Kernel </td></tr>
+<tr><td>123</td><td>Sitecore.Commands.config</td><td>item:edit</td><td>Sitecore.Shell.Framework.Commands.Edit,Sitecore.Kernel </td></tr>
+<tr><td>124</td><td>Sitecore.Commands.config</td><td>item:favorites</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.ShowFavorites,Sitecore.Kernel </td></tr>
+<tr><td>125</td><td>Sitecore.Commands.config</td><td>item:gototemplate</td><td>Sitecore.Shell.Framework.Commands.GotoTemplate,Sitecore.Kernel </td></tr>
+<tr><td>126</td><td>Sitecore.Commands.config</td><td>item:gotomaster</td><td>Sitecore.Shell.Framework.Commands.GotoMaster,Sitecore.Kernel </td></tr>
+<tr><td>127</td><td>Sitecore.Commands.config</td><td>item:links</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.ShowLinks,Sitecore.Kernel </td></tr>
+<tr><td>128</td><td>Sitecore.Commands.config</td><td>item:movedown</td><td>Sitecore.Shell.Framework.Commands.MoveDown,Sitecore.Kernel </td></tr>
+<tr><td>129</td><td>Sitecore.Commands.config</td><td>item:movefirst</td><td>Sitecore.Shell.Framework.Commands.MoveFirst,Sitecore.Kernel </td></tr>
+<tr><td>130</td><td>Sitecore.Commands.config</td><td>item:movelast</td><td>Sitecore.Shell.Framework.Commands.MoveLast,Sitecore.Kernel </td></tr>
+<tr><td>131</td><td>Sitecore.Commands.config</td><td>item:moveto</td><td>Sitecore.Shell.Framework.Commands.MoveTo,Sitecore.Kernel </td></tr>
+<tr><td>132</td><td>Sitecore.Commands.config</td><td>item:moveup</td><td>Sitecore.Shell.Framework.Commands.MoveUp,Sitecore.Kernel </td></tr>
+<tr><td>133</td><td>Sitecore.Commands.config</td><td>item:myitems</td><td>Sitecore.Shell.Framework.Commands.MyItems,Sitecore.Kernel </td></tr>
+<tr><td>134</td><td>Sitecore.Commands.config</td><td>item:new</td><td>Sitecore.Shell.Framework.Commands.ItemNew,Sitecore.Kernel </td></tr>
+<tr><td>135</td><td>Sitecore.Commands.config</td><td>item:newfolder</td><td>Sitecore.Shell.Framework.Commands.NewFolder,Sitecore.Kernel </td></tr>
+<tr><td>136</td><td>Sitecore.Commands.config</td><td>item:open</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.OpenItem,Sitecore.Kernel</td></tr>
+<tr><td>137</td><td>Sitecore.Commands.config</td><td>item:openitemsecurityeditor</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.OpenItemSecurityEditorContextAware,Sitecore.Kernel</td></tr>
+<tr><td>138</td><td>Sitecore.Commands.config</td><td>item:pastefromclipboard</td><td>Sitecore.Shell.Framework.Commands.PasteFromClipboard,Sitecore.Kernel </td></tr>
+<tr><td>139</td><td>Sitecore.Commands.config</td><td>item:publish</td><td>Sitecore.Shell.Framework.Commands.PublishItem,Sitecore.Kernel </td></tr>
+<tr><td>140</td><td>Sitecore.Commands.config</td><td>item:publishnow</td><td>Sitecore.Shell.Framework.Commands.PublishNow,Sitecore.Kernel </td></tr>
+<tr><td>141</td><td>Sitecore.Commands.config</td><td>item:publishingviewer</td><td>Sitecore.Shell.Framework.Commands.PublishingViewer,Sitecore.Kernel </td></tr>
+<tr><td>142</td><td>Sitecore.Commands.config</td><td>item:preview</td><td>Sitecore.Shell.Framework.Commands.PreviewItem,Sitecore.Kernel </td></tr>
+<tr><td>143</td><td>Sitecore.Commands.config</td><td>item:rename</td><td>Sitecore.Shell.Framework.Commands.Rename,Sitecore.Kernel </td></tr>
+<tr><td>144</td><td>Sitecore.Commands.config</td><td>item:removelanguage</td><td>Sitecore.Shell.Framework.Commands.RemoveLanguage,Sitecore.Kernel </td></tr>
+<tr><td>145</td><td>Sitecore.Commands.config</td><td>item:reminderclear</td><td>Sitecore.Shell.Framework.Commands.ReminderClear,Sitecore.Kernel </td></tr>
+<tr><td>146</td><td>Sitecore.Commands.config</td><td>item:reminderset</td><td>Sitecore.Shell.Framework.Commands.ReminderSet,Sitecore.Kernel </td></tr>
+<tr><td>147</td><td>Sitecore.Commands.config</td><td>item:resetdefaultworkflow</td><td>Sitecore.Shell.Framework.Commands.ResetDefaultWorkflow,Sitecore.Kernel </td></tr>
+<tr><td>148</td><td>Sitecore.Commands.config</td><td>item:resetfields</td><td>Sitecore.Shell.Framework.Commands.ResetFields,Sitecore.Kernel </td></tr>
+<tr><td>149</td><td>Sitecore.Commands.config</td><td>item:resetsortorder</td><td>Sitecore.Shell.Framework.Commands.ResetSortorder,Sitecore.Kernel </td></tr>
+<tr><td>150</td><td>Sitecore.Commands.config</td><td>item:securitypreset</td><td>Sitecore.Shell.Framework.Commands.SecurityPreset,Sitecore.Kernel </td></tr>
+<tr><td>151</td><td>Sitecore.Commands.config</td><td>item:selecticon</td><td>Sitecore.Shell.Framework.Commands.SelectIcon,Sitecore.Kernel </td></tr>
+<tr><td>152</td><td>Sitecore.Commands.config</td><td>item:selectthumbnail</td><td>Sitecore.Shell.Framework.Commands.SelectThumbnail,Sitecore.Kernel </td></tr>
+<tr><td>153</td><td>Sitecore.Commands.config</td><td>item:selectlanguage</td><td>Sitecore.Shell.Framework.Commands.SelectLanguage,Sitecore.Kernel </td></tr>
+<tr><td>154</td><td>Sitecore.Commands.config</td><td>item:setlayoutdetails</td><td>Sitecore.Shell.Framework.Commands.SetLayoutDetails,Sitecore.Kernel </td></tr>
+<tr><td>155</td><td>Sitecore.Commands.config</td><td>item:setaliases</td><td>Sitecore.Shell.Framework.Commands.SetAliases,Sitecore.Kernel </td></tr>
+<tr><td>156</td><td>Sitecore.Commands.config</td><td>item:setcontextmenu</td><td>Sitecore.Shell.Framework.Commands.SetContextMenu,Sitecore.Kernel </td></tr>
+<tr><td>157</td><td>Sitecore.Commands.config</td><td>item:setcustomeditors</td><td>Sitecore.Shell.Framework.Commands.SetCustomEditors,Sitecore.Kernel </td></tr>
+<tr><td>158</td><td>Sitecore.Commands.config</td><td>item:setdefaultworkflow</td><td>Sitecore.Shell.Framework.Commands.SetDefaultWorkflow,Sitecore.Kernel </td></tr>
+<tr><td>159</td><td>Sitecore.Commands.config</td><td>item:setdisplayname</td><td>Sitecore.Shell.Framework.Commands.SetDisplayName,Sitecore.Kernel </td></tr>
+<tr><td>160</td><td>Sitecore.Commands.config</td><td>item:setfeedpresentation</td><td>Sitecore.Shell.Applications.Feeds.Commands.SetFeedPresentation, Sitecore.Client</td></tr>
+<tr><td>161</td><td>Sitecore.Commands.config</td><td>item:sethelp</td><td>Sitecore.Shell.Framework.Commands.SetHelp,Sitecore.Kernel </td></tr>
+<tr><td>162</td><td>Sitecore.Commands.config</td><td>item:seticon</td><td>Sitecore.Shell.Framework.Commands.SetIcon,Sitecore.Kernel </td></tr>
+<tr><td>163</td><td>Sitecore.Commands.config</td><td>item:setmasters</td><td>Sitecore.Shell.Framework.Commands.SetMasters,Sitecore.Kernel </td></tr>
+<tr><td>164</td><td>Sitecore.Commands.config</td><td>item:setowner</td><td>Sitecore.Shell.Framework.Commands.SetOwner,Sitecore.Kernel </td></tr>
+<tr><td>165</td><td>Sitecore.Commands.config</td><td>item:setpublishing</td><td>Sitecore.Shell.Framework.Commands.SetPublishing,Sitecore.Kernel </td></tr>
+<tr><td>166</td><td>Sitecore.Commands.config</td><td>item:setribbon</td><td>Sitecore.Shell.Framework.Commands.SetRibbon,Sitecore.Kernel </td></tr>
+<tr><td>167</td><td>Sitecore.Commands.config</td><td>item:setsubitemssorting</td><td>Sitecore.Shell.Framework.Commands.SetSubitemsSorting,Sitecore.Kernel </td></tr>
+<tr><td>168</td><td>Sitecore.Commands.config</td><td>item:settreenodestyle</td><td>Sitecore.Shell.Framework.Commands.SetTreeNodeStyle,Sitecore.Kernel </td></tr>
+<tr><td>169</td><td>Sitecore.Commands.config</td><td>item:showvalidationresult</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.ShowValidationResult,Sitecore.Kernel </td></tr>
+<tr><td>170</td><td>Sitecore.Commands.config</td><td>item:showversions</td><td>Sitecore.Shell.Framework.Commands.ShowVersions,Sitecore.Kernel </td></tr>
+<tr><td>171</td><td>Sitecore.Commands.config</td><td>item:subscribetofeed</td><td>Sitecore.Shell.Framework.Commands.SubscribetoFeed,Sitecore.Kernel </td></tr>
+<tr><td>172</td><td>Sitecore.Commands.config</td><td>item:togglehidden</td><td>Sitecore.Shell.Framework.Commands.ToggleHidden,Sitecore.Kernel </td></tr>
+<tr><td>173</td><td>Sitecore.Commands.config</td><td>item:togglereadonly</td><td>Sitecore.Shell.Framework.Commands.ToggleReadOnly,Sitecore.Kernel </td></tr>
+<tr><td>174</td><td>Sitecore.Commands.config</td><td>item:transfertodatabase</td><td>Sitecore.Shell.Framework.Commands.TransferToDatabase,Sitecore.Kernel </td></tr>
+<tr><td>175</td><td>Sitecore.Commands.config</td><td>item:upload</td><td>Sitecore.Shell.Framework.Commands.Upload,Sitecore.Kernel </td></tr>
+<tr><td>176</td><td>Sitecore.Commands.config</td><td>item:unlock</td><td>Sitecore.Shell.Framework.Commands.Unlock, Sitecore.Kernel </td></tr>
+<tr><td>177</td><td>Sitecore.Commands.config</td><td>item:unlockall</td><td>Sitecore.Shell.Framework.Commands.UnlockAll, Sitecore.Kernel resolve=true</td></tr>
+<tr><td>178</td><td>Sitecore.Commands.config</td><td>item:workflow</td><td>Sitecore.Shell.Framework.Commands.Workflow,Sitecore.Kernel </td></tr>
+<tr><td>179</td><td>Sitecore.Commands.config</td><td>itemsync:dumpitem</td><td>Sitecore.Shell.Framework.Commands.Serialization.DumpItemCommand,Sitecore.Kernel resolve=true </td></tr>
+<tr><td>180</td><td>Sitecore.Commands.config</td><td>itemsync:dumptree</td><td>Sitecore.Shell.Framework.Commands.Serialization.DumpTreeCommand,Sitecore.Kernel resolve=true </td></tr>
+<tr><td>181</td><td>Sitecore.Commands.config</td><td>itemsync:loadalldatabases</td><td>Sitecore.Shell.Framework.Commands.Serialization.LoadAllDatabasesCommand,Sitecore.Kernel resolve=true </td></tr>
+<tr><td>182</td><td>Sitecore.Commands.config</td><td>itemsync:loaddatabase</td><td>Sitecore.Shell.Framework.Commands.Serialization.LoadDatabaseCommand,Sitecore.Kernel resolve=true </td></tr>
+<tr><td>183</td><td>Sitecore.Commands.config</td><td>itemsync:loaditem</td><td>Sitecore.Shell.Framework.Commands.Serialization.LoadItemCommand,Sitecore.Kernel resolve=true </td></tr>
+<tr><td>184</td><td>Sitecore.Commands.config</td><td>itemsync:loadtree</td><td>Sitecore.Shell.Framework.Commands.Serialization.LoadTreeCommand,Sitecore.Kernel resolve=true </td></tr>
+<tr><td>185</td><td>Sitecore.Commands.config</td><td>itemsecurityeditor:changedomain</td><td>Sitecore.Shell.Framework.Commands.ItemSecurityEditor.ChangeDomain,Sitecore.Kernel</td></tr>
+<tr><td>186</td><td>Sitecore.Commands.config</td><td>masters:new</td><td>Sitecore.Shell.Framework.Commands.Masters.New,Sitecore.Kernel</td></tr>
+<tr><td>187</td><td>Sitecore.Commands.config</td><td>masters:reset</td><td>Sitecore.Shell.Framework.Commands.Masters.Reset,Sitecore.Kernel</td></tr>
+<tr><td>188</td><td>Sitecore.Commands.config</td><td>media:batchupload</td><td>Sitecore.Shell.Framework.Commands.Media.BatchUpload,Sitecore.Kernel </td></tr>
+<tr><td>189</td><td>Sitecore.Commands.config</td><td>media:download</td><td>Sitecore.Shell.Framework.Commands.Media.Download,Sitecore.Kernel </td></tr>
+<tr><td>190</td><td>Sitecore.Commands.config</td><td>media:newfolder</td><td>Sitecore.Shell.Framework.Commands.Media.NewFolder,Sitecore.Kernel </td></tr>
+<tr><td>191</td><td>Sitecore.Commands.config</td><td>media:multiupload</td><td>Sitecore.Shell.Framework.Commands.Media.MultiUpload,Sitecore.Kernel </td></tr>
+<tr><td>192</td><td>Sitecore.Commands.config</td><td>media:play</td><td>Sitecore.Shell.Framework.Commands.Media.Play,Sitecore.Kernel </td></tr>
+<tr><td>193</td><td>Sitecore.Commands.config</td><td>media:upload</td><td>Sitecore.Shell.Framework.Commands.Media.Upload,Sitecore.Kernel </td></tr>
+<tr><td>194</td><td>Sitecore.Commands.config</td><td>media:view</td><td>Sitecore.Shell.Framework.Commands.Media.View,Sitecore.Kernel </td></tr>
+<tr><td>195</td><td>Sitecore.Commands.config</td><td>pagedesigner:reset</td><td>Sitecore.Shell.Applications.Layouts.PageDesigner.Commands.Reset,Sitecore.Client</td></tr>
+<tr><td>196</td><td>Sitecore.Commands.config</td><td>preferences:changeregionalsettings</td><td>Sitecore.Shell.Framework.Commands.Preferences.ChangeRegionalSettings,Sitecore.Kernel</td></tr>
+<tr><td>197</td><td>Sitecore.Commands.config</td><td>preferences:changeuserinformation</td><td>Sitecore.Shell.Framework.Commands.Preferences.ChangeUserInformation,Sitecore.Kernel</td></tr>
+<tr><td>198</td><td>Sitecore.Commands.config</td><td>preferences:changewallpaper</td><td>Sitecore.Shell.Framework.Commands.Preferences.ChangeWallPaper,Sitecore.Kernel</td></tr>
+<tr><td>199</td><td>Sitecore.Commands.config</td><td>ribbon:new</td><td>Sitecore.Shell.Framework.Commands.Ribbon.New,Sitecore.Kernel</td></tr>
+<tr><td>200</td><td>Sitecore.Commands.config</td><td>ribbon:languages</td><td>Sitecore.Shell.Framework.Commands.Ribbon.Languages,Sitecore.Kernel</td></tr>
+<tr><td>201</td><td>Sitecore.Commands.config</td><td>ribbon:layout</td><td>Sitecore.Shell.Framework.Commands.Ribbon.Layout,Sitecore.Kernel</td></tr>
+<tr><td>202</td><td>Sitecore.Commands.config</td><td>ribbon:security</td><td>Sitecore.Shell.Framework.Commands.Ribbon.Security,Sitecore.Kernel</td></tr>
+<tr><td>203</td><td>Sitecore.Commands.config</td><td>ribbon:customize</td><td>Sitecore.Shell.Framework.Commands.Ribbon.Customize,Sitecore.Kernel</td></tr>
+<tr><td>204</td><td>Sitecore.Commands.config</td><td>rolemanager:addmember</td><td>Sitecore.Shell.Framework.Commands.RoleManager.AddMember,Sitecore.Kernel</td></tr>
+<tr><td>205</td><td>Sitecore.Commands.config</td><td>rolemanager:addmemberof</td><td>Sitecore.Shell.Framework.Commands.RoleManager.AddMemberOf,Sitecore.Kernel</td></tr>
+<tr><td>206</td><td>Sitecore.Commands.config</td><td>rolemanager:delete</td><td>Sitecore.Shell.Framework.Commands.RoleManager.Delete,Sitecore.Kernel</td></tr>
+<tr><td>207</td><td>Sitecore.Commands.config</td><td>rolemanager:newrole</td><td>Sitecore.Shell.Framework.Commands.RoleManager.NewRole,Sitecore.Kernel</td></tr>
+<tr><td>208</td><td>Sitecore.Commands.config</td><td>rolemanager:removemember</td><td>Sitecore.Shell.Framework.Commands.RoleManager.RemoveMember,Sitecore.Kernel</td></tr>
+<tr><td>209</td><td>Sitecore.Commands.config</td><td>rolemanager:removememberof</td><td>Sitecore.Shell.Framework.Commands.RoleManager.RemoveMemberOf,Sitecore.Kernel</td></tr>
+<tr><td>210</td><td>Sitecore.Commands.config</td><td>rolemanager:viewmembers</td><td>Sitecore.Shell.Framework.Commands.RoleManager.ViewMembers,Sitecore.Kernel</td></tr>
+<tr><td>211</td><td>Sitecore.Commands.config</td><td>rolemanager:viewparentroles</td><td>Sitecore.Shell.Framework.Commands.RoleManager.ViewParentRoles,Sitecore.Kernel</td></tr>
+<tr><td>212</td><td>Sitecore.Commands.config</td><td>rolemanager:dumprole</td><td>Sitecore.Shell.Framework.Commands.Serialization.DumpRoleCommand, Sitecore.Kernel resolve=true </td></tr>
+<tr><td>213</td><td>Sitecore.Commands.config</td><td>rolemanager:loadrole</td><td>Sitecore.Shell.Framework.Commands.Serialization.LoadRoleCommand, Sitecore.Kernel resolve=true </td></tr>
+<tr><td>214</td><td>Sitecore.Commands.config</td><td>rolemanager:dumproles</td><td>Sitecore.Shell.Framework.Commands.Serialization.DumpAllRolesCommand, Sitecore.Kernel resolve=true </td></tr>
+<tr><td>215</td><td>Sitecore.Commands.config</td><td>rolemanager:loadroles</td><td>Sitecore.Shell.Framework.Commands.Serialization.LoadAllRolesCommand, Sitecore.Kernel resolve=true </td></tr>
+<tr><td>216</td><td>Sitecore.Commands.config</td><td>security:changeaccount</td><td>Sitecore.Shell.Framework.Commands.UserManager.ChangeAccount,Sitecore.Kernel</td></tr>
+<tr><td>217</td><td>Sitecore.Commands.config</td><td>security:changedomain</td><td>Sitecore.Shell.Framework.Commands.UserManager.ChangeDomain,Sitecore.Kernel</td></tr>
+<tr><td>218</td><td>Sitecore.Commands.config</td><td>security:changepassword</td><td>Sitecore.Shell.Framework.Commands.ChangePassword,Sitecore.Kernel</td></tr>
+<tr><td>219</td><td>Sitecore.Commands.config</td><td>security:createnewrole</td><td>Sitecore.Shell.Framework.Commands.CreateNewRole,Sitecore.Kernel</td></tr>
+<tr><td>220</td><td>Sitecore.Commands.config</td><td>security:createnewuser</td><td>Sitecore.Shell.Framework.Commands.UserManager.NewUser,Sitecore.Kernel resolve=true</td></tr>
+<tr><td>221</td><td>Sitecore.Commands.config</td><td>security:opensecuritymanager</td><td>Sitecore.Shell.Framework.Commands.OpenSecurityManager,Sitecore.Kernel</td></tr>
+<tr><td>222</td><td>Sitecore.Commands.config</td><td>security:openitemsecurityeditor</td><td>Sitecore.Shell.Framework.Commands.UserManager.OpenItemSecurityEditor,Sitecore.Kernel</td></tr>
+<tr><td>223</td><td>Sitecore.Commands.config</td><td>security:selectaccount</td><td>Sitecore.Shell.Framework.Commands.UserManager.SelectAccount,Sitecore.Kernel</td></tr>
+<tr><td>224</td><td>Sitecore.Commands.config</td><td>search:launchresult</td><td>Sitecore.Shell.Applications.Search.Instant.Commands.LaunchResult,Sitecore.Client</td></tr>
+<tr><td>225</td><td>Sitecore.Commands.config</td><td>securityeditor:changedomain</td><td>Sitecore.Shell.Framework.Commands.SecurityEditor.ChangeDomain,Sitecore.Kernel</td></tr>
+<tr><td>226</td><td>Sitecore.Commands.config</td><td>securityeditor:changeuser</td><td>Sitecore.Shell.Framework.Commands.SecurityEditor.ChangeUser,Sitecore.Kernel</td></tr>
+<tr><td>227</td><td>Sitecore.Commands.config</td><td>securityeditor:selectcolumns</td><td>Sitecore.Shell.Framework.Commands.SecurityEditor.SelectColumns,Sitecore.Kernel</td></tr>
+<tr><td>228</td><td>Sitecore.Commands.config</td><td>shell:accessviewer</td><td>Sitecore.Shell.Framework.Commands.Shell.AccessViewer,Sitecore.Kernel</td></tr>
+<tr><td>229</td><td>Sitecore.Commands.config</td><td>shell:audit</td><td>Sitecore.Shell.Framework.Commands.Shell.Audit,Sitecore.Kernel</td></tr>
+<tr><td>230</td><td>Sitecore.Commands.config</td><td>shell:autodoc</td><td>Sitecore.Shell.Framework.Commands.Shell.AutoDoc,Sitecore.Kernel</td></tr>
+<tr><td>231</td><td>Sitecore.Commands.config</td><td>shell:domainmanager</td><td>Sitecore.Shell.Framework.Commands.Shell.DomainManager,Sitecore.Kernel</td></tr>
+<tr><td>232</td><td>Sitecore.Commands.config</td><td>shell:edittemplate</td><td>Sitecore.Shell.Framework.Commands.Shell.EditTemplate,Sitecore.Kernel</td></tr>
+<tr><td>233</td><td>Sitecore.Commands.config</td><td>shell:logviewer</td><td>Sitecore.Shell.Framework.Commands.Shell.LogViewer,Sitecore.Kernel</td></tr>
+<tr><td>234</td><td>Sitecore.Commands.config</td><td>shell:rolemanager</td><td>Sitecore.Shell.Framework.Commands.Shell.RoleManager,Sitecore.Kernel</td></tr>
+<tr><td>235</td><td>Sitecore.Commands.config</td><td>shell:search</td><td>Sitecore.Shell.Framework.Commands.Shell.Search,Sitecore.Kernel</td></tr>
+<tr><td>236</td><td>Sitecore.Commands.config</td><td>shell:securityeditor</td><td>Sitecore.Shell.Framework.Commands.Shell.SecurityEditor,Sitecore.Kernel</td></tr>
+<tr><td>237</td><td>Sitecore.Commands.config</td><td>shell:useroptions</td><td>Sitecore.Shell.Framework.Commands.Shell.UserOptions,Sitecore.Kernel</td></tr>
+<tr><td>238</td><td>Sitecore.Commands.config</td><td>shell:usermanager</td><td>Sitecore.Shell.Framework.Commands.Shell.UserManager,Sitecore.Kernel</td></tr>
+<tr><td>239</td><td>Sitecore.Commands.config</td><td>system:addlanguage</td><td>Sitecore.Shell.Framework.Commands.System.AddLanguage,Sitecore.Kernel</td></tr>
+<tr><td>240</td><td>Sitecore.Commands.config</td><td>system:brokenlinks</td><td>Sitecore.Shell.Framework.Commands.System.BrokenLinks,Sitecore.Kernel</td></tr>
+<tr><td>241</td><td>Sitecore.Commands.config</td><td>system:debug</td><td>Sitecore.Shell.Framework.Commands.System.Debug,Sitecore.Kernel</td></tr>
+<tr><td>242</td><td>Sitecore.Commands.config</td><td>system:deletelanguage</td><td>Sitecore.Shell.Framework.Commands.System.DeleteLanguage,Sitecore.Kernel</td></tr>
+<tr><td>243</td><td>Sitecore.Commands.config</td><td>system:installpackage</td><td>Sitecore.Shell.Framework.Commands.System.InstallPackage,Sitecore.Kernel</td></tr>
+<tr><td>244</td><td>Sitecore.Commands.config</td><td>system:logout</td><td>Sitecore.Shell.Framework.Commands.System.Logout,Sitecore.Kernel</td></tr>
+<tr><td>245</td><td>Sitecore.Commands.config</td><td>system:openwebsite</td><td>Sitecore.Shell.Framework.Commands.System.OpenWebSite,Sitecore.Kernel</td></tr>
+<tr><td>246</td><td>Sitecore.Commands.config</td><td>system:preview</td><td>Sitecore.Shell.Framework.Commands.System.Preview,Sitecore.Kernel</td></tr>
+<tr><td>247</td><td>Sitecore.Commands.config</td><td>system:publish</td><td>Sitecore.Shell.Framework.Commands.System.Publish,Sitecore.Kernel</td></tr>
+<tr><td>248</td><td>Sitecore.Commands.config</td><td>system:rebuilddatabase</td><td>Sitecore.Shell.Framework.Commands.System.RebuildDatabase,Sitecore.Kernel</td></tr>
+<tr><td>249</td><td>Sitecore.Commands.config</td><td>system:rebuildlinkdatabase</td><td>Sitecore.Shell.Framework.Commands.System.RebuildLinkDatabase,Sitecore.Kernel</td></tr>
+<tr><td>250</td><td>Sitecore.Commands.config</td><td>system:run</td><td>Sitecore.Shell.Framework.Commands.System.RunProgram,Sitecore.Kernel</td></tr>
+<tr><td>251</td><td>Sitecore.Commands.config</td><td>system:showabout</td><td>Sitecore.Shell.Framework.Commands.System.ShowAbout,Sitecore.Kernel</td></tr>
+<tr><td>252</td><td>Sitecore.Commands.config</td><td>system:showlicenses</td><td>Sitecore.Shell.Framework.Commands.System.ShowLicenses,Sitecore.Kernel</td></tr>
+<tr><td>253</td><td>Sitecore.Commands.config</td><td>templatebuilder:build</td><td>Sitecore.Shell.Framework.Commands.TemplateBuilder.Build,Sitecore.Kernel</td></tr>
+<tr><td>254</td><td>Sitecore.Commands.config</td><td>templatebuilder:remove</td><td>Sitecore.Shell.Framework.Commands.TemplateBuilder.Remove,Sitecore.Kernel</td></tr>
+<tr><td>255</td><td>Sitecore.Commands.config</td><td>templatebuilder:moveup</td><td>Sitecore.Shell.Framework.Commands.TemplateBuilder.MoveUp,Sitecore.Kernel</td></tr>
+<tr><td>256</td><td>Sitecore.Commands.config</td><td>templatebuilder:movedown</td><td>Sitecore.Shell.Framework.Commands.TemplateBuilder.MoveDown,Sitecore.Kernel</td></tr>
+<tr><td>257</td><td>Sitecore.Commands.config</td><td>templatebuilder:movefirst</td><td>Sitecore.Shell.Framework.Commands.TemplateBuilder.MoveFirst,Sitecore.Kernel</td></tr>
+<tr><td>258</td><td>Sitecore.Commands.config</td><td>templatebuilder:movelast</td><td>Sitecore.Shell.Framework.Commands.TemplateBuilder.MoveLast,Sitecore.Kernel</td></tr>
+<tr><td>259</td><td>Sitecore.Commands.config</td><td>templatebuilder:newmaster</td><td>Sitecore.Shell.Framework.Commands.TemplateBuilder.NewMaster,Sitecore.Kernel</td></tr>
+<tr><td>260</td><td>Sitecore.Commands.config</td><td>templatebuilder:setbasetemplates</td><td>Sitecore.Shell.Framework.Commands.TemplateBuilder.SetBaseTemplates,Sitecore.Kernel</td></tr>
+<tr><td>261</td><td>Sitecore.Commands.config</td><td>templatebuilder:setstandardvalues</td><td>Sitecore.Shell.Framework.Commands.TemplateBuilder.SetStandardValues,Sitecore.Kernel</td></tr>
+<tr><td>262</td><td>Sitecore.Commands.config</td><td>templates:addfield</td><td>Sitecore.Shell.Framework.Commands.Templates.AddField,Sitecore.Kernel</td></tr>
+<tr><td>263</td><td>Sitecore.Commands.config</td><td>templates:addsection</td><td>Sitecore.Shell.Framework.Commands.Templates.AddSection,Sitecore.Kernel</td></tr>
+<tr><td>264</td><td>Sitecore.Commands.config</td><td>templates:addmaster</td><td>Sitecore.Shell.Framework.Commands.Templates.AddMaster,Sitecore.Kernel</td></tr>
+<tr><td>265</td><td>Sitecore.Commands.config</td><td>templates:createstandardvalues</td><td>Sitecore.Shell.Framework.Commands.Templates.CreateStandardValues,Sitecore.Kernel</td></tr>
+<tr><td>266</td><td>Sitecore.Commands.config</td><td>templates:new</td><td>Sitecore.Shell.Framework.Commands.Templates.New,Sitecore.Kernel</td></tr>
+<tr><td>267</td><td>Sitecore.Commands.config</td><td>templates:newfolder</td><td>Sitecore.Shell.Framework.Commands.Templates.NewFolder,Sitecore.Kernel</td></tr>
+<tr><td>268</td><td>Sitecore.Commands.config</td><td>user:opensecurityeditor</td><td>Sitecore.Shell.Framework.Commands.OpenSecurityEditor,Sitecore.Kernel</td></tr>
+<tr><td>269</td><td>Sitecore.Commands.config</td><td>usermanager:delete</td><td>Sitecore.Shell.Framework.Commands.UserManager.Delete,Sitecore.Kernel</td></tr>
+<tr><td>270</td><td>Sitecore.Commands.config</td><td>usermanager:disable</td><td>Sitecore.Shell.Framework.Commands.UserManager.Disable,Sitecore.Kernel</td></tr>
+<tr><td>271</td><td>Sitecore.Commands.config</td><td>usermanager:enable</td><td>Sitecore.Shell.Framework.Commands.UserManager.Enable,Sitecore.Kernel</td></tr>
+<tr><td>272</td><td>Sitecore.Commands.config</td><td>usermanager:edituser</td><td>Sitecore.Shell.Framework.Commands.UserManager.EditUser,Sitecore.Kernel</td></tr>
+<tr><td>273</td><td>Sitecore.Commands.config</td><td>usermanager:newuser</td><td>Sitecore.Shell.Framework.Commands.UserManager.NewUser,Sitecore.Kernel</td></tr>
+<tr><td>274</td><td>Sitecore.Commands.config</td><td>usermanager:resetsettings</td><td>Sitecore.Shell.Framework.Commands.UserManager.ResetSettings,Sitecore.Kernel</td></tr>
+<tr><td>275</td><td>Sitecore.Commands.config</td><td>usermanager:resetmysettings</td><td>Sitecore.Shell.Framework.Commands.UserManager.ResetMySettings,Sitecore.Kernel</td></tr>
+<tr><td>276</td><td>Sitecore.Commands.config</td><td>usermanager:setpassword</td><td>Sitecore.Shell.Framework.Commands.UserManager.SetPassword,Sitecore.Kernel</td></tr>
+<tr><td>277</td><td>Sitecore.Commands.config</td><td>usermanager:unlock</td><td>Sitecore.Shell.Framework.Commands.UserManager.Unlock,Sitecore.Kernel</td></tr>
+<tr><td>278</td><td>Sitecore.Commands.config</td><td>usermanager:dumpuser</td><td>Sitecore.Shell.Framework.Commands.Serialization.DumpUserCommand,Sitecore.Kernel resolve=true </td></tr>
+<tr><td>279</td><td>Sitecore.Commands.config</td><td>usermanager:loaduser</td><td>Sitecore.Shell.Framework.Commands.Serialization.LoadUserCommand,Sitecore.Kernel resolve=true </td></tr>
+<tr><td>280</td><td>Sitecore.Commands.config</td><td>usermanager:dumpusers</td><td>Sitecore.Shell.Framework.Commands.Serialization.DumpAllUsersCommand,Sitecore.Kernel resolve=true </td></tr>
+<tr><td>281</td><td>Sitecore.Commands.config</td><td>usermanager:loadusers</td><td>Sitecore.Shell.Framework.Commands.Serialization.LoadAllUsersCommand,Sitecore.Kernel resolve=true </td></tr>
+<tr><td>282</td><td>Sitecore.Commands.config</td><td>validator:trim</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.Validators.Trim,Sitecore.Kernel</td></tr>
+<tr><td>283</td><td>Sitecore.Commands.config</td><td>validator:viewxhtml</td><td>Sitecore.Shell.Framework.Commands.ContentEditor.Validators.ViewXhtml,Sitecore.Kernel</td></tr>
+<tr><td>284</td><td>Sitecore.Commands.config</td><td>workbox:logout</td><td>Sitecore.Shell.Framework.Commands.Workbox.Logout,Sitecore.Kernel</td></tr>
+<tr><td>285</td><td>Sitecore.SecureCommands.config</td><td>accessviewer:selectcolumns</td><td></td></tr>
+<tr><td>286</td><td>Sitecore.SecureCommands.config</td><td>archive:delete</td><td></td></tr>
+<tr><td>287</td><td>Sitecore.SecureCommands.config</td><td>archive:empty</td><td></td></tr>
+<tr><td>288</td><td>Sitecore.SecureCommands.config</td><td>archive:refresh</td><td></td></tr>
+<tr><td>289</td><td>Sitecore.SecureCommands.config</td><td>archive:restore</td><td></td></tr>
+<tr><td>290</td><td>Sitecore.SecureCommands.config</td><td>archive:showversions</td><td></td></tr>
+<tr><td>291</td><td>Sitecore.SecureCommands.config</td><td>brokenlinks:showonlylatestversion</td><td></td></tr>
+<tr><td>292</td><td>Sitecore.SecureCommands.config</td><td>brokenlinks:showsystemitems</td><td></td></tr>
+<tr><td>293</td><td>Sitecore.SecureCommands.config</td><td>carousel:home</td><td></td></tr>
+<tr><td>294</td><td>Sitecore.SecureCommands.config</td><td>carousel:refresh</td><td></td></tr>
+<tr><td>295</td><td>Sitecore.SecureCommands.config</td><td>clipboard:copyidtoclipboard</td><td></td></tr>
+<tr><td>296</td><td>Sitecore.SecureCommands.config</td><td>clipboard:copypathtoclipboard</td><td></td></tr>
+<tr><td>297</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:archive</td><td></td></tr>
+<tr><td>298</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:back</td><td></td></tr>
+<tr><td>299</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:close</td><td></td></tr>
+<tr><td>300</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:closepreview</td><td></td></tr>
+<tr><td>301</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:edit</td><td></td></tr>
+<tr><td>302</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:forward</td><td></td></tr>
+<tr><td>303</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:home</td><td></td></tr>
+<tr><td>304</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:opensecurity</td><td></td></tr>
+<tr><td>305</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:preview</td><td></td></tr>
+<tr><td>306</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:properties</td><td></td></tr>
+<tr><td>307</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:reminder</td><td></td></tr>
+<tr><td>308</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:save</td><td></td></tr>
+<tr><td>309</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:saveandclose</td><td></td></tr>
+<tr><td>310</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:seticon</td><td></td></tr>
+<tr><td>311</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:spellcheck</td><td></td></tr>
+<tr><td>312</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:subitems</td><td></td></tr>
+<tr><td>313</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:toggleentiretree</td><td></td></tr>
+<tr><td>314</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:togglefolders</td><td></td></tr>
+<tr><td>315</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:togglehiddenitems</td><td></td></tr>
+<tr><td>316</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:togglerawvalues</td><td></td></tr>
+<tr><td>317</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:togglestandardfields</td><td></td></tr>
+<tr><td>318</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:toggletranslate</td><td></td></tr>
+<tr><td>319</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:up</td><td></td></tr>
+<tr><td>320</td><td>Sitecore.SecureCommands.config</td><td>contenteditor:validatemarkup</td><td></td></tr>
+<tr><td>321</td><td>Sitecore.SecureCommands.config</td><td>databases:cleanup</td><td></td></tr>
+<tr><td>322</td><td>Sitecore.SecureCommands.config</td><td>domainmanager:delete</td><td></td></tr>
+<tr><td>323</td><td>Sitecore.SecureCommands.config</td><td>domainmanager:dumproles</td><td></td></tr>
+<tr><td>324</td><td>Sitecore.SecureCommands.config</td><td>domainmanager:dumpusers</td><td></td></tr>
+<tr><td>325</td><td>Sitecore.SecureCommands.config</td><td>domainmanager:dumpusersroles</td><td></td></tr>
+<tr><td>326</td><td>Sitecore.SecureCommands.config</td><td>domainmanager:editdomain</td><td></td></tr>
+<tr><td>327</td><td>Sitecore.SecureCommands.config</td><td>domainmanager:loadroles</td><td></td></tr>
+<tr><td>328</td><td>Sitecore.SecureCommands.config</td><td>domainmanager:loadusers</td><td></td></tr>
+<tr><td>329</td><td>Sitecore.SecureCommands.config</td><td>domainmanager:loadusersroles</td><td></td></tr>
+<tr><td>330</td><td>Sitecore.SecureCommands.config</td><td>domainmanager:newdomain</td><td></td></tr>
+<tr><td>331</td><td>Sitecore.SecureCommands.config</td><td>edithtml:fix</td><td></td></tr>
+<tr><td>332</td><td>Sitecore.SecureCommands.config</td><td>edithtml:format</td><td></td></tr>
+<tr><td>333</td><td>Sitecore.SecureCommands.config</td><td>edithtml:validatexhtml</td><td></td></tr>
+<tr><td>334</td><td>Sitecore.SecureCommands.config</td><td>favorites:add</td><td></td></tr>
+<tr><td>335</td><td>Sitecore.SecureCommands.config</td><td>favorites:organize</td><td></td></tr>
+<tr><td>336</td><td>Sitecore.SecureCommands.config</td><td>globalization:exportlanguage</td><td></td></tr>
+<tr><td>337</td><td>Sitecore.SecureCommands.config</td><td>globalization:importlanguage</td><td></td></tr>
+<tr><td>338</td><td>Sitecore.SecureCommands.config</td><td>globalization:untranslatedfields</td><td></td></tr>
+<tr><td>339</td><td>Sitecore.SecureCommands.config</td><td>item:addfromtemplate</td><td></td></tr>
+<tr><td>340</td><td>Sitecore.SecureCommands.config</td><td>item:addversion</td><td></td></tr>
+<tr><td>341</td><td>Sitecore.SecureCommands.config</td><td>item:archivedateset</td><td></td></tr>
+<tr><td>342</td><td>Sitecore.SecureCommands.config</td><td>item:archiveitem</td><td></td></tr>
+<tr><td>343</td><td>Sitecore.SecureCommands.config</td><td>item:archiveversion</td><td></td></tr>
+<tr><td>344</td><td>Sitecore.SecureCommands.config</td><td>item:changetemplate</td><td></td></tr>
+<tr><td>345</td><td>Sitecore.SecureCommands.config</td><td>item:clone</td><td></td></tr>
+<tr><td>346</td><td>Sitecore.SecureCommands.config</td><td>item:cloneitemwithoutsubitems</td><td></td></tr>
+<tr><td>347</td><td>Sitecore.SecureCommands.config</td><td>item:compareversions</td><td></td></tr>
+<tr><td>348</td><td>Sitecore.SecureCommands.config</td><td>item:copyto</td><td></td></tr>
+<tr><td>349</td><td>Sitecore.SecureCommands.config</td><td>item:copytoclipboard</td><td></td></tr>
+<tr><td>350</td><td>Sitecore.SecureCommands.config</td><td>item:cuttoclipboard</td><td></td></tr>
+<tr><td>351</td><td>Sitecore.SecureCommands.config</td><td>item:delete</td><td></td></tr>
+<tr><td>352</td><td>Sitecore.SecureCommands.config</td><td>item:deletechildren</td><td></td></tr>
+<tr><td>353</td><td>Sitecore.SecureCommands.config</td><td>item:deleteversion</td><td></td></tr>
+<tr><td>354</td><td>Sitecore.SecureCommands.config</td><td>item:duplicate</td><td></td></tr>
+<tr><td>355</td><td>Sitecore.SecureCommands.config</td><td>item:favorites</td><td></td></tr>
+<tr><td>356</td><td>Sitecore.SecureCommands.config</td><td>item:gotomaster</td><td></td></tr>
+<tr><td>357</td><td>Sitecore.SecureCommands.config</td><td>item:gototemplate</td><td></td></tr>
+<tr><td>358</td><td>Sitecore.SecureCommands.config</td><td>item:links</td><td></td></tr>
+<tr><td>359</td><td>Sitecore.SecureCommands.config</td><td>item:movedown</td><td></td></tr>
+<tr><td>360</td><td>Sitecore.SecureCommands.config</td><td>item:movefirst</td><td></td></tr>
+<tr><td>361</td><td>Sitecore.SecureCommands.config</td><td>item:movelast</td><td></td></tr>
+<tr><td>362</td><td>Sitecore.SecureCommands.config</td><td>item:moveto</td><td></td></tr>
+<tr><td>363</td><td>Sitecore.SecureCommands.config</td><td>item:moveup</td><td></td></tr>
+<tr><td>364</td><td>Sitecore.SecureCommands.config</td><td>item:myitems</td><td></td></tr>
+<tr><td>365</td><td>Sitecore.SecureCommands.config</td><td>item:new</td><td></td></tr>
+<tr><td>366</td><td>Sitecore.SecureCommands.config</td><td>item:open</td><td></td></tr>
+<tr><td>367</td><td>Sitecore.SecureCommands.config</td><td>item:openitemsecurityeditor</td><td></td></tr>
+<tr><td>368</td><td>Sitecore.SecureCommands.config</td><td>item:pastefromclipboard</td><td></td></tr>
+<tr><td>369</td><td>Sitecore.SecureCommands.config</td><td>item:preview</td><td></td></tr>
+<tr><td>370</td><td>Sitecore.SecureCommands.config</td><td>item:publish</td><td></td></tr>
+<tr><td>371</td><td>Sitecore.SecureCommands.config</td><td>item:publishingviewer</td><td></td></tr>
+<tr><td>372</td><td>Sitecore.SecureCommands.config</td><td>item:publishnow</td><td></td></tr>
+<tr><td>373</td><td>Sitecore.SecureCommands.config</td><td>item:reminderclear</td><td></td></tr>
+<tr><td>374</td><td>Sitecore.SecureCommands.config</td><td>item:reminderset</td><td></td></tr>
+<tr><td>375</td><td>Sitecore.SecureCommands.config</td><td>item:removelanguage</td><td></td></tr>
+<tr><td>376</td><td>Sitecore.SecureCommands.config</td><td>item:rename</td><td></td></tr>
+<tr><td>377</td><td>Sitecore.SecureCommands.config</td><td>item:resetdefaultworkflow</td><td></td></tr>
+<tr><td>378</td><td>Sitecore.SecureCommands.config</td><td>item:resetfields</td><td></td></tr>
+<tr><td>379</td><td>Sitecore.SecureCommands.config</td><td>item:selectlanguage</td><td></td></tr>
+<tr><td>380</td><td>Sitecore.SecureCommands.config</td><td>item:setaliases</td><td></td></tr>
+<tr><td>381</td><td>Sitecore.SecureCommands.config</td><td>item:setcontextmenu</td><td></td></tr>
+<tr><td>382</td><td>Sitecore.SecureCommands.config</td><td>item:setcustomeditors</td><td></td></tr>
+<tr><td>383</td><td>Sitecore.SecureCommands.config</td><td>item:setdefaultworkflow</td><td></td></tr>
+<tr><td>384</td><td>Sitecore.SecureCommands.config</td><td>item:setdisplayname</td><td></td></tr>
+<tr><td>385</td><td>Sitecore.SecureCommands.config</td><td>item:setfeedpresentation</td><td></td></tr>
+<tr><td>386</td><td>Sitecore.SecureCommands.config</td><td>item:sethelp</td><td></td></tr>
+<tr><td>387</td><td>Sitecore.SecureCommands.config</td><td>item:setlayoutdetails</td><td></td></tr>
+<tr><td>388</td><td>Sitecore.SecureCommands.config</td><td>item:setmasters</td><td></td></tr>
+<tr><td>389</td><td>Sitecore.SecureCommands.config</td><td>item:setowner</td><td></td></tr>
+<tr><td>390</td><td>Sitecore.SecureCommands.config</td><td>item:setpublishing</td><td></td></tr>
+<tr><td>391</td><td>Sitecore.SecureCommands.config</td><td>item:setribbon</td><td></td></tr>
+<tr><td>392</td><td>Sitecore.SecureCommands.config</td><td>item:setsubitemssorting</td><td></td></tr>
+<tr><td>393</td><td>Sitecore.SecureCommands.config</td><td>item:settreenodestyle</td><td></td></tr>
+<tr><td>394</td><td>Sitecore.SecureCommands.config</td><td>item:showversions</td><td></td></tr>
+<tr><td>395</td><td>Sitecore.SecureCommands.config</td><td>item:subscribetofeed</td><td></td></tr>
+<tr><td>396</td><td>Sitecore.SecureCommands.config</td><td>item:togglehidden</td><td></td></tr>
+<tr><td>397</td><td>Sitecore.SecureCommands.config</td><td>item:togglereadonly</td><td></td></tr>
+<tr><td>398</td><td>Sitecore.SecureCommands.config</td><td>item:transfertodatabase</td><td></td></tr>
+<tr><td>399</td><td>Sitecore.SecureCommands.config</td><td>item:unclone</td><td></td></tr>
+<tr><td>400</td><td>Sitecore.SecureCommands.config</td><td>item:uncloneitem</td><td></td></tr>
+<tr><td>401</td><td>Sitecore.SecureCommands.config</td><td>itemsecurityeditor:changedomain</td><td></td></tr>
+<tr><td>402</td><td>Sitecore.SecureCommands.config</td><td>itemsync:dumpitem</td><td></td></tr>
+<tr><td>403</td><td>Sitecore.SecureCommands.config</td><td>itemsync:dumptree</td><td></td></tr>
+<tr><td>404</td><td>Sitecore.SecureCommands.config</td><td>itemsync:loaddatabase</td><td></td></tr>
+<tr><td>405</td><td>Sitecore.SecureCommands.config</td><td>itemsync:loaditem</td><td></td></tr>
+<tr><td>406</td><td>Sitecore.SecureCommands.config</td><td>itemsync:loadtree</td><td></td></tr>
+<tr><td>407</td><td>Sitecore.SecureCommands.config</td><td>masters:reset</td><td></td></tr>
+<tr><td>408</td><td>Sitecore.SecureCommands.config</td><td>media:batchupload</td><td></td></tr>
+<tr><td>409</td><td>Sitecore.SecureCommands.config</td><td>media:download</td><td></td></tr>
+<tr><td>410</td><td>Sitecore.SecureCommands.config</td><td>media:multiupload</td><td></td></tr>
+<tr><td>411</td><td>Sitecore.SecureCommands.config</td><td>media:newfolder</td><td></td></tr>
+<tr><td>412</td><td>Sitecore.SecureCommands.config</td><td>media:play</td><td></td></tr>
+<tr><td>413</td><td>Sitecore.SecureCommands.config</td><td>media:upload</td><td></td></tr>
+<tr><td>414</td><td>Sitecore.SecureCommands.config</td><td>media:view</td><td></td></tr>
+<tr><td>415</td><td>Sitecore.SecureCommands.config</td><td>pagedesigner:reset</td><td></td></tr>
+<tr><td>416</td><td>Sitecore.SecureCommands.config</td><td>preferences:changeregionalsettings</td><td></td></tr>
+<tr><td>417</td><td>Sitecore.SecureCommands.config</td><td>preferences:changeuserinformation</td><td></td></tr>
+<tr><td>418</td><td>Sitecore.SecureCommands.config</td><td>preferences:changewallpaper</td><td></td></tr>
+<tr><td>419</td><td>Sitecore.SecureCommands.config</td><td>ribbon:customize</td><td></td></tr>
+<tr><td>420</td><td>Sitecore.SecureCommands.config</td><td>ribbon:languages</td><td></td></tr>
+<tr><td>421</td><td>Sitecore.SecureCommands.config</td><td>rolemanager:delete</td><td></td></tr>
+<tr><td>422</td><td>Sitecore.SecureCommands.config</td><td>rolemanager:dumprole</td><td></td></tr>
+<tr><td>423</td><td>Sitecore.SecureCommands.config</td><td>rolemanager:dumproles</td><td></td></tr>
+<tr><td>424</td><td>Sitecore.SecureCommands.config</td><td>rolemanager:loadrole</td><td></td></tr>
+<tr><td>425</td><td>Sitecore.SecureCommands.config</td><td>rolemanager:loadroles</td><td></td></tr>
+<tr><td>426</td><td>Sitecore.SecureCommands.config</td><td>rolemanager:newrole</td><td></td></tr>
+<tr><td>427</td><td>Sitecore.SecureCommands.config</td><td>rolemanager:viewmembers</td><td></td></tr>
+<tr><td>428</td><td>Sitecore.SecureCommands.config</td><td>rolemanager:viewparentroles</td><td></td></tr>
+<tr><td>429</td><td>Sitecore.SecureCommands.config</td><td>security:changepassword</td><td></td></tr>
+<tr><td>430</td><td>Sitecore.SecureCommands.config</td><td>security:openitemsecurityeditor</td><td></td></tr>
+<tr><td>431</td><td>Sitecore.SecureCommands.config</td><td>security:opensecuritymanager</td><td></td></tr>
+<tr><td>432</td><td>Sitecore.SecureCommands.config</td><td>security:selectaccount</td><td></td></tr>
+<tr><td>433</td><td>Sitecore.SecureCommands.config</td><td>securityeditor:selectcolumns</td><td></td></tr>
+<tr><td>434</td><td>Sitecore.SecureCommands.config</td><td>shell:accessviewer</td><td></td></tr>
+<tr><td>435</td><td>Sitecore.SecureCommands.config</td><td>shell:domainmanager</td><td></td></tr>
+<tr><td>436</td><td>Sitecore.SecureCommands.config</td><td>shell:edittemplate</td><td></td></tr>
+<tr><td>437</td><td>Sitecore.SecureCommands.config</td><td>shell:logviewer</td><td></td></tr>
+<tr><td>438</td><td>Sitecore.SecureCommands.config</td><td>shell:rolemanager</td><td></td></tr>
+<tr><td>439</td><td>Sitecore.SecureCommands.config</td><td>shell:search</td><td></td></tr>
+<tr><td>440</td><td>Sitecore.SecureCommands.config</td><td>shell:securityeditor</td><td></td></tr>
+<tr><td>441</td><td>Sitecore.SecureCommands.config</td><td>shell:usermanager</td><td></td></tr>
+<tr><td>442</td><td>Sitecore.SecureCommands.config</td><td>shell:useroptions</td><td></td></tr>
+<tr><td>443</td><td>Sitecore.SecureCommands.config</td><td>system:addlanguage</td><td></td></tr>
+<tr><td>444</td><td>Sitecore.SecureCommands.config</td><td>system:brokenlinks</td><td></td></tr>
+<tr><td>445</td><td>Sitecore.SecureCommands.config</td><td>system:debug</td><td></td></tr>
+<tr><td>446</td><td>Sitecore.SecureCommands.config</td><td>system:deletelanguage</td><td></td></tr>
+<tr><td>447</td><td>Sitecore.SecureCommands.config</td><td>system:installpackage</td><td></td></tr>
+<tr><td>448</td><td>Sitecore.SecureCommands.config</td><td>system:logout</td><td></td></tr>
+<tr><td>449</td><td>Sitecore.SecureCommands.config</td><td>system:preview</td><td></td></tr>
+<tr><td>450</td><td>Sitecore.SecureCommands.config</td><td>system:publish</td><td></td></tr>
+<tr><td>451</td><td>Sitecore.SecureCommands.config</td><td>system:rebuildlinkdatabase</td><td></td></tr>
+<tr><td>452</td><td>Sitecore.SecureCommands.config</td><td>system:showabout</td><td></td></tr>
+<tr><td>453</td><td>Sitecore.SecureCommands.config</td><td>system:showlicenses</td><td></td></tr>
+<tr><td>454</td><td>Sitecore.SecureCommands.config</td><td>templatebuilder:movedown</td><td></td></tr>
+<tr><td>455</td><td>Sitecore.SecureCommands.config</td><td>templatebuilder:movefirst</td><td></td></tr>
+<tr><td>456</td><td>Sitecore.SecureCommands.config</td><td>templatebuilder:movelast</td><td></td></tr>
+<tr><td>457</td><td>Sitecore.SecureCommands.config</td><td>templatebuilder:moveup</td><td></td></tr>
+<tr><td>458</td><td>Sitecore.SecureCommands.config</td><td>templatebuilder:remove</td><td></td></tr>
+<tr><td>459</td><td>Sitecore.SecureCommands.config</td><td>templatebuilder:setbasetemplates</td><td></td></tr>
+<tr><td>460</td><td>Sitecore.SecureCommands.config</td><td>templatebuilder:setstandardvalues</td><td></td></tr>
+<tr><td>461</td><td>Sitecore.SecureCommands.config</td><td>templates:addfield</td><td></td></tr>
+<tr><td>462</td><td>Sitecore.SecureCommands.config</td><td>templates:addsection</td><td></td></tr>
+<tr><td>463</td><td>Sitecore.SecureCommands.config</td><td>templates:new</td><td></td></tr>
+<tr><td>464</td><td>Sitecore.SecureCommands.config</td><td>usermanager:delete</td><td></td></tr>
+<tr><td>465</td><td>Sitecore.SecureCommands.config</td><td>usermanager:disable</td><td></td></tr>
+<tr><td>466</td><td>Sitecore.SecureCommands.config</td><td>usermanager:dumpuser</td><td></td></tr>
+<tr><td>467</td><td>Sitecore.SecureCommands.config</td><td>usermanager:dumpusers</td><td></td></tr>
+<tr><td>468</td><td>Sitecore.SecureCommands.config</td><td>usermanager:edituser</td><td></td></tr>
+<tr><td>469</td><td>Sitecore.SecureCommands.config</td><td>usermanager:enable</td><td></td></tr>
+<tr><td>470</td><td>Sitecore.SecureCommands.config</td><td>usermanager:loaduser</td><td></td></tr>
+<tr><td>471</td><td>Sitecore.SecureCommands.config</td><td>usermanager:loadusers</td><td></td></tr>
+<tr><td>472</td><td>Sitecore.SecureCommands.config</td><td>usermanager:newuser</td><td></td></tr>
+<tr><td>473</td><td>Sitecore.SecureCommands.config</td><td>usermanager:resetmysettings</td><td></td></tr>
+<tr><td>474</td><td>Sitecore.SecureCommands.config</td><td>usermanager:resetsettings</td><td></td></tr>
+<tr><td>475</td><td>Sitecore.SecureCommands.config</td><td>usermanager:setpassword</td><td></td></tr>
+<tr><td>476</td><td>Sitecore.SecureCommands.config</td><td>usermanager:unlock</td><td></td></tr>
+<tr><td>477</td><td>Sitecore.SecureCommands.config</td><td>validator:trim</td><td></td></tr>
+<tr><td>478</td><td>Sitecore.SecureCommands.config</td><td>validator:viewxhtml</td><td></td></tr>
+<tr><td>479</td><td>Sitecore.SecureCommands.config</td><td>workbox:logout</td><td></td></tr>
+<tr><td>480</td><td>Sitecore.ContentSearch.config</td><td>indexing:rebuild            </td><td>Sitecore.ContentSearch.Client.Commands.Rebuild,Sitecore.ContentSearch.Client</td></tr>
+<tr><td>481</td><td>Sitecore.ContentSearch.config</td><td>indexing:refreshtree        </td><td>Sitecore.ContentSearch.Client.Commands.RefreshTree,Sitecore.ContentSearch.Client</td></tr>
+<tr><td>482</td><td>Sitecore.ContentSearch.config</td><td>indexing:rebuildall         </td><td>Sitecore.ContentSearch.Client.Commands.RebuildAll,Sitecore.ContentSearch.Client</td></tr>
+<tr><td>483</td><td>Sitecore.ContentSearch.config</td><td>indexing:populatesolrschema </td><td>Sitecore.ContentSearch.Client.Commands.RunSolrSchemaPopulate, Sitecore.ContentSearch.Client</td></tr>
+<tr><td>484</td><td>Sitecore.ContentSearch.config</td><td>indexing:runmanager         </td><td>Sitecore.ContentSearch.Client.Commands.RunIndexingManager, Sitecore.ContentSearch.Client</td></tr>
+<tr><td>485</td><td>Sitecore.ContentTagging.config</td><td>item:tagcontent</td><td>Sitecore.ContentTagging.Commands.TagContentCommand, Sitecore.ContentTagging</td></tr>
+<tr><td>486</td><td>Sitecore.ContentTesting.config</td><td>optimization:componentperformance</td><td>Sitecore.ContentTesting.Commands.ComponentPerformance, Sitecore.ContentTesting</td></tr>
+<tr><td>487</td><td>Sitecore.ContentTesting.config</td><td>test:createTest</td><td>Sitecore.ContentTesting.Commands.CreateTest, Sitecore.ContentTesting </td></tr>
+<tr><td>488</td><td>Sitecore.ContentTesting.config</td><td>device:settestdetails</td><td>Sitecore.ContentTesting.Commands.DeviceSetTestDetails, Sitecore.ContentTesting </td></tr>
+<tr><td>489</td><td>Sitecore.ContentTesting.ExperienceEditor.config</td><td>webedit:editvariations</td><td>Sitecore.Shell.Applications.WebEdit.Commands.EditVariations, Sitecore.ContentTesting</td></tr>
+<tr><td>490</td><td>Sitecore.ContentTesting.ExperienceEditor.config</td><td>webedit:setpagevariation</td><td>Sitecore.Shell.Applications.WebEdit.Commands.Testing.SetPageVariation, Sitecore.ContentTesting </td></tr>
+<tr><td>491</td><td>Sitecore.ContentTesting.ExperienceEditor.config</td><td>item:personalize</td><td>Sitecore.Shell.Applications.WebEdit.Commands.PersonalizeItem, Sitecore.ContentTesting</td></tr>
+<tr><td>492</td><td>Sitecore.EmailExperience.UI.config</td><td>emailcampaign:addmessagemaster</td><td>Sitecore.Modules.EmailCampaign.Commands.AddMessageMaster,Sitecore.EmailCampaign </td></tr>
+<tr><td>493</td><td>Sitecore.EmailExperience.UI.config</td><td>emailcampaign:addwebpagemessage</td><td>Sitecore.Modules.EmailCampaign.Commands.AddWebPageMessage,Sitecore.EmailCampaign</td></tr>
+<tr><td>494</td><td>Sitecore.EmailExperience.UI.config</td><td>emailcampaign:openmanager</td><td>Sitecore.Modules.EmailCampaign.Commands.OpenManager,Sitecore.EmailCampaign</td></tr>
+<tr><td>495</td><td>Sitecore.EmailExperience.UI.config</td><td>emailcampaign:showtargetlayout</td><td>Sitecore.Modules.EmailCampaign.Commands.ShowTargetLayoutDetails,Sitecore.EmailCampaign </td></tr>
+<tr><td>496</td><td>Sitecore.EmailExperience.UI.config</td><td>emailcampaign:testsmtpconnection</td><td>Sitecore.Modules.EmailCampaign.Commands.TestSMTPConnection,Sitecore.EmailCampaign</td></tr>
+<tr><td>497</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:addrendering</td><td>Sitecore.Shell.Applications.WebEdit.Commands.AddRendering, Sitecore.ExperienceEditor</td></tr>
+<tr><td>498</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:chooseimage</td><td>Sitecore.Shell.Applications.WebEdit.Commands.ChooseImage, Sitecore.ExperienceEditor</td></tr>
+<tr><td>499</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:clearimage</td><td>Sitecore.Shell.Applications.WebEdit.Commands.ClearImage, Sitecore.ExperienceEditor</td></tr>
+<tr><td>500</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:componentoptions</td><td>Sitecore.Shell.Applications.WebEdit.Commands.ComponentOptions, Sitecore.ExperienceEditor</td></tr>
+<tr><td>501</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:delete</td><td>Sitecore.Shell.Applications.WebEdit.Commands.Delete, Sitecore.ExperienceEditor</td></tr>
+<tr><td>502</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:edit</td><td>Sitecore.Shell.Applications.WebEdit.Commands.Edit, Sitecore.ExperienceEditor </td></tr>
+<tr><td>503</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:edithtml</td><td>Sitecore.Shell.Applications.WebEdit.Commands.EditHtml, Sitecore.ExperienceEditor</td></tr>
+<tr><td>504</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:cleardate</td><td>Sitecore.Shell.Applications.WebEdit.Commands.ClearDate, Sitecore.ExperienceEditor</td></tr>
+<tr><td>505</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:editdate</td><td>Sitecore.Shell.Applications.WebEdit.Commands.EditDate, Sitecore.ExperienceEditor</td></tr>
+<tr><td>506</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:editdatetime</td><td>Sitecore.Shell.Applications.WebEdit.Commands.EditDateTime, Sitecore.ExperienceEditor</td></tr>
+<tr><td>507</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:editimage</td><td>Sitecore.Shell.Applications.WebEdit.Commands.EditImage, Sitecore.ExperienceEditor</td></tr>
+<tr><td>508</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:editlink</td><td>Sitecore.Shell.Applications.WebEdit.Commands.EditLink, Sitecore.ExperienceEditor</td></tr>
+<tr><td>509</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:clearlink</td><td>Sitecore.Shell.Applications.WebEdit.Commands.ClearLink, Sitecore.ExperienceEditor</td></tr>
+<tr><td>510</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:insertlink</td><td>Sitecore.Shell.Applications.WebEdit.Commands.InsertLink, Sitecore.ExperienceEditor</td></tr>
+<tr><td>511</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:insertexternallink</td><td>Sitecore.Shell.Applications.WebEdit.Commands.InsertExternalLink, Sitecore.ExperienceEditor</td></tr>
+<tr><td>512</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:editplaceholdersettings</td><td>Sitecore.Shell.Applications.WebEdit.Commands.EditPlaceholderSettings, Sitecore.ExperienceEditor</td></tr>
+<tr><td>513</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:editrenderingproperties</td><td>Sitecore.Shell.Applications.WebEdit.Commands.EditRenderingProperties, Sitecore.ExperienceEditor</td></tr>
+<tr><td>514</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:fieldeditor</td><td>Sitecore.Shell.Applications.WebEdit.Commands.FieldEditor, Sitecore.ExperienceEditor </td></tr>
+<tr><td>515</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:insertimage</td><td>Sitecore.Shell.Applications.WebEdit.Commands.InsertImage, Sitecore.ExperienceEditor</td></tr>
+<tr><td>516</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:new</td><td>Sitecore.Shell.Applications.WebEdit.Commands.New, Sitecore.ExperienceEditor</td></tr>
+<tr><td>517</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:open</td><td>Sitecore.Shell.Applications.WebEdit.Commands.Open, Sitecore.ExperienceEditor</td></tr>
+<tr><td>518</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:sortcontent</td><td>Sitecore.Shell.Applications.WebEdit.Commands.SortContent, Sitecore.ExperienceEditor</td></tr>
+<tr><td>519</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:search</td><td>Sitecore.Shell.Applications.WebEdit.Commands.Search, Sitecore.ExperienceEditor</td></tr>
+<tr><td>520</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:setdatasource</td><td>Sitecore.Shell.Applications.WebEdit.Commands.SetDatasource, Sitecore.ExperienceEditor</td></tr>
+<tr><td>521</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:setlanguage</td><td>Sitecore.Shell.Applications.WebEdit.Commands.SetLanguage, Sitecore.ExperienceEditor </td></tr>
+<tr><td>522</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:webedit</td><td>Sitecore.Shell.Applications.WebEdit.Commands.WebEdit, Sitecore.ExperienceEditor</td></tr>
+<tr><td>523</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:openexperienceeditor</td><td>Sitecore.Shell.Applications.WebEdit.Commands.OpenExperienceEditor, Sitecore.ExperienceEditor</td></tr>
+<tr><td>524</td><td>Sitecore.ExperienceEditor.config</td><td>webedit:workflowwithdatasourceitems</td><td>Sitecore.ExperienceEditor.WebEdit.Commands.WorkflowWithDatasourceItems, Sitecore.ExperienceEditor </td></tr>
+<tr><td>525</td><td>Sitecore.ExperienceContentManagement.Administration.config</td><td>admin:showadminpage</td><td>Sitecore.ExperienceContentManagement.Administration.Commands.ShowAdminPage,Sitecore.ExperienceContentManagement.Administration role:require=ContentManagement or Standalone or XMCloud</td></tr>
+<tr><td>526</td><td>Sitecore.Marketing.Client.config</td><td>marketing:asset:deploy</td><td>Sitecore.Marketing.Client.Shell.Framework.Commands.Marketing.Assets.DeployAsset, Sitecore.Marketing.Client  </td></tr>
+<tr><td>527</td><td>Sitecore.Marketing.Client.config</td><td>marketing:opendeploydefinitionsdialog</td><td>Sitecore.Marketing.Client.Shell.Framework.Commands.Marketing.OpenDeployDefinitionsDialog, Sitecore.Marketing.Client  </td></tr>
+<tr><td>528</td><td>Sitecore.Marketing.Client.config</td><td>marketingtaxonomy:deploy</td><td>Sitecore.Marketing.Client.Shell.Framework.Commands.Marketing.Taxonomies.Deploy, Sitecore.Marketing.Client  </td></tr>
+<tr><td>529</td><td>Sitecore.Marketing.Client.config</td><td>item:personalize</td><td>Sitecore.Marketing.Client.Shell.Framework.Commands.Marketing.Profiles.PersonalizeItem, Sitecore.Marketing.Client  </td></tr>
+<tr><td>530</td><td>Sitecore.Analytics.Tracking.config</td><td>analytics:opengoals</td><td>Sitecore.Shell.Applications.Analytics.TrackingField.OpenGoals,Sitecore.Xdb.Tracking.Client  </td></tr>
+<tr><td>531</td><td>Sitecore.Analytics.Tracking.config</td><td>analytics:opentrackingfield</td><td>Sitecore.Shell.Applications.Analytics.TrackingField.OpenTrackingField,Sitecore.Xdb.Tracking.Client  </td></tr>
+<tr><td>532</td><td>Sitecore.Analytics.Tracking.config</td><td>analytics:viewtrackingdetails</td><td>Sitecore.Shell.Applications.Analytics.TrackingField.ViewTrackingDetails,Sitecore.Xdb.Tracking.Client  </td></tr>
+<tr><td>533</td><td>Sitecore.Analytics.Tracking.config</td><td>item:personalizeprofile</td><td>Sitecore.Shell.Applications.Analytics.TrackingField.SetProfileValue,Sitecore.Xdb.Tracking.Client  </td></tr>
+<tr><td>534</td><td>Sitecore.Analytics.config</td><td>analytics:authoringfeedback</td><td>Sitecore.Shell.Applications.Analytics.AuthoringFeedback.AuthoringFeedback,Sitecore.Xdb.Client </td></tr>
+<tr><td>535</td><td>Sitecore.PathAnalyzer.Client.config</td><td>pathanalyzer:open-page-analyzer</td><td>Sitecore.PathAnalyzer.Client.Commands.OpenPageAnalyzer, Sitecore.PathAnalyzer.Client</td></tr>
+<tr><td>536</td><td>Sitecore.PathAnalyzer.Client.config</td><td>pathanalyzer:create-site-specific-map-group</td><td>Sitecore.PathAnalyzer.Client.Commands.CreateSiteSpecificMapGroup, Sitecore.PathAnalyzer.Client</td></tr>
+<tr><td>537</td><td>Sitecore.Personalization.ExperienceEditor.config</td><td>webedit:personalize</td><td>Sitecore.Shell.Applications.WebEdit.Commands.Personalize, Sitecore.Personalization</td></tr>
+<tr><td>538</td><td>Sitecore.Update.config</td><td>update:showupdatewizard</td><td>Sitecore.Update.Shell.Framework.Commands.ShowUpdateInstallationWizard,Sitecore.Update</td></tr>
+  </table>
+<script language="JavaScript">
+
+var oRows = document.getElementById('settings').getElementsByTagName('tr');
+var iRowCount = oRows.length-=2;
+document.getElementById("count").innerHTML = iRowCount + ' settings';
+
+</script>
+</body>
+</html>
+
