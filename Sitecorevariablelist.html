@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Sitecore Variable List</title>
+<style>
+#settings {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#settings td, #settings th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#settings tr:nth-child(even){background-color: #f2f2f2;}
+
+#settings tr:hover {background-color: #ddd;}
+
+#settings th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #790501;
+  color: white;
+}
+
+#settings2 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #EB1F1F;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+<table width=100% >
+<h2 align=center>Sitecore Variable list</h2>
+<tr><td><label id="count"></label></td><td align=right>v10.4.0 / xp0</td></tr>
+</table>
+  <table  id="settings">
+
+	<tr><th>S.No.</th><th>Description</th><th>Variable</th><th>Default Value</th><th>File Name</th><tr>  
+<tr><td>1</td><td></td><td>dataFolder</td><td>"/App_Data"</td><td>Sitecore.config</td></tr>
+<tr><td>2</td><td></td><td>mediaFolder</td><td>"/upload"</td><td>Sitecore.config</td></tr>
+<tr><td>3</td><td></td><td>tempFolder</td><td>"/temp"</td><td>Sitecore.config</td></tr>
+<tr><td>4</td><td></td><td>defaultDatabaseConnectionStringName</td><td>"master"</td><td>Sitecore.config</td></tr>
+<tr><td>5</td><td>role:require="ContentDelivery or ContentManagement or XMCloud"</td><td>defaultDatabaseConnectionStringName</td><td>web</td><td>Sitecore.config</td></tr>
+<tr><td>6</td><td></td><td>defaultContentDatabaseName</td><td>"master"</td><td>Sitecore.config</td></tr>
+<tr><td>7</td><td>role:require="ContentDelivery"</td><td>defaultContentDatabaseName</td><td>web</td><td>Sitecore.config</td></tr>
+<tr><td>8</td><td></td><td>defaultLinkDatabaseConnectionStringName</td><td>"core"</td><td>Sitecore.Variables.config</td></tr>
+<tr><td>9</td><td>role:require="ContentDelivery or ContentManagement or XMCloud"</td><td>defaultLinkDatabaseConnectionStringName</td><td>web</td><td>Sitecore.Variables.config</td></tr>
+<tr><td>10</td><td>IDENTITY PROCESSING PATH PREFIX variable Specifies the path prefix that should only be processed by OWIN middlewares. Paths that start with this prefix will not be handled by httpRequestBegin pipeline.</td><td>identityProcessingPathPrefix</td><td>"/identity/"</td><td>Sitecore.Owin.Authentication.config</td></tr>
+<tr><td>11</td><td>LOGIN PATH variable Specifies the login path prefix for federated authentication. It should be used in the site nodes in the loginPage attribute. The full login path must have this structure: $(loginPath)site_name/identity_provider or $(loginPath)site_name/identity_provider/inner_identity_provider, The site_name must have the name attribute value of the site node where the login path is set. The identity_provider must have the id attribute value of the configured identity provider that you want to use. The inner_identity_provider must be equal to the name or AuthenticationScheme of the underlying identity provider in the identity_provider.  Note: The inner_identity_provider value is sent to the identity_provider as an acr_value - idp:inner_identity_provider. Thus, identity_provider have to support acr_value.  Examples: <sites <site name=shell set:loginPage=$(loginPath)shell/IdentityServer/ <site name=admin set:loginPage=$(loginPath)admin/IdentityServer/IdS4-AzureAd/ </sites</td><td>loginPath</td><td>"$(identityProcessingPathPrefix)login/"</td><td>Sitecore.Owin.Authentication.config</td></tr>
+<tr><td>12</td><td></td><td>identityServerAuthority</td><td>"https://sc104siaidentityserver.dev.local"</td><td>Sitecore.Owin.Authentication.IdentityServer.config</td></tr>
+  </table>
+<script language="JavaScript">
+
+var oRows = document.getElementById('settings').getElementsByTagName('tr');
+var iRowCount = oRows.length-=2;
+document.getElementById("count").innerHTML = iRowCount + ' variables';
+
+</script>
+</body>
+</html>
+
